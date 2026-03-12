@@ -1,0 +1,179 @@
+---
+const placeholder = Astro.props.placeholder || '¿Quieres recibir mis artículos?';
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
+---
+
+<div class="newsletter" id="newsletter">
+  <div class="newsletter__content">
+    <h3 class="newsletter__title">📬 {placeholder}</h3>
+    <p class="newsletter__text">
+      Suscríbete y recibe artículos sobre desarrollo personal, creatividad y filosofía de vida directamente en tu bandeja.
+    </p>
+    <form class="newsletter__form" id="newsletter-form">
+      <input
+        type="email"
+        name="email"
+        placeholder="tu@email.com"
+        required
+        class="newsletter__input"
+        id="newsletter-email"
+      />
+      <button type="submit" class="btn btn--primary newsletter__btn">
+        Suscribirme
+      </button>
+    </form>
+    <!-- Contenedor del Turnstile widget -->
+    <div class="turnstile-container">
+      <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="dark"></div>
+    </div>
+    <p class="newsletter__privacy">Sin spam. Cancela cuando quieras.</p>
+  </div>
+</div>
+
+<script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<style>
+  .newsletter {
+    background: linear-gradient(135deg, var(--color-bg-dark), var(--color-bg-dark-soft));
+    border-radius: var(--radius-xl);
+    padding: var(--space-12) var(--space-8);
+    text-align: center;
+    border: 1px solid var(--color-border-dark);
+  }
+
+  .newsletter__title {
+    font-family: var(--font-display);
+    color: var(--color-text-on-dark);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-3);
+  }
+
+  .newsletter__text {
+    color: var(--color-text-on-dark-muted);
+    font-size: var(--text-base);
+    max-width: 480px;
+    margin: 0 auto var(--space-6);
+  }
+
+  .newsletter__form {
+    display: flex;
+    gap: var(--space-3);
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .turnstile-container {
+    max-width: 440px;
+    margin: var(--space-4) auto 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .newsletter__input {
+    flex: 1;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-md);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-text-on-dark);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    transition: border-color var(--transition-fast);
+  }
+
+  .newsletter__input::placeholder {
+    color: var(--color-text-on-dark-muted);
+  }
+
+  .newsletter__input:focus {
+    outline: none;
+    border-color: var(--color-accent-primary);
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+  }
+
+  .newsletter__btn {
+    white-space: nowrap;
+    border-radius: var(--radius-md);
+  }
+
+  .newsletter__privacy {
+    margin-top: var(--space-3);
+    font-size: var(--text-xs);
+    color: var(--color-text-on-dark-muted);
+    opacity: 0.6;
+  }
+
+  @media (max-width: 480px) {
+    .newsletter__form {
+      flex-direction: column;
+    }
+
+    .newsletter {
+      padding: var(--space-8) var(--space-5);
+    }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('newsletter-form') as HTMLFormElement;
+  const emailInput = document.getElementById('newsletter-email') as HTMLInputElement;
+
+  if (form && emailInput) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const email = emailInput.value;
+      const btn = form.querySelector('button');
+      
+      if (btn) {
+        btn.textContent = 'Procesando...';
+        btn.setAttribute('disabled', 'true');
+      }
+
+      try {
+        const formData = new FormData();
+        formData.append('email', email);
+
+        // Append turnstile response explicitly
+        const turnstileResponse = form.querySelector('[name="cf-turnstile-response"]') as HTMLInputElement;
+        if (turnstileResponse && turnstileResponse.value) {
+          formData.append('cf-turnstile-response', turnstileResponse.value);
+        } else {
+          throw new Error('Por favor, espera a que se complete la verificación de seguridad.');
+        }
+
+        const response = await fetch('/api/subscribe', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          if (btn) {
+            btn.textContent = '✓ ¡Suscrito!';
+            btn.classList.add('bg-green-600', 'border-green-600');
+          }
+          emailInput.value = '';
+          emailInput.setAttribute('disabled', 'true');
+        } else {
+          // If turnstile failed or other error, might need to reset widget
+          if (window.turnstile) {
+              window.turnstile.reset();
+          }
+          throw new Error(data.error || 'Error al suscribir');
+        }
+      } catch (err) {
+        console.error('Newsletter error:', err);
+        const errorMsg = err instanceof Error ? err.message : 'Error. Reintenta';
+        if (btn) {
+          btn.textContent = '✕ ' + errorMsg;
+          btn.removeAttribute('disabled');
+          setTimeout(() => {
+            btn.textContent = 'Suscribirme';
+          }, 4000);
+        }
+      }
+    });
+  }
+</script>

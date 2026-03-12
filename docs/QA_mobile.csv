@@ -1,0 +1,13 @@
+ID,Page,Component/Section,Test Procedure,Expected Result,Status,Notes
+1,Homepage,Hero Section,"Check rendering on 375x667 and 414x896 viewports. Verify hero image is hidden and title is centered.","Hero image is hidden, text takes full width, button is large.",Pending,
+2,Homepage,Articles Grid,"Verify article cards stack vertically (1 column grid).","Cards stack gracefully with proper spacing.",Pending,
+3,Homepage,Creativity Grid,"Verify masonry grid turns into 1 column mapping. Images scale to 100%.","Categories stack, text overlay retains readability.",Pending,
+4,Homepage,Newsletter Form,"Verify input and button stack vertically. Form doesn't overflow right edge.","Input takes 100% width, button takes 100% width underneath it.",Pending,
+5,Global,Header (Menu),"Verify hamburger icon appears. Click to open modal menu. Check links.","Hamburger menu opens overlay covering screen, links work.",Pending,
+6,Global,Footer,"Check footer links wrapping. Social icons should wrap nicely.","Footer columns stack linearly.",Pending,
+7,Global,Cookie Banner,"Load site. Verify banner takes full width of bottom screen without breaking layout.","Banner attaches to bottom securely.",Pending,
+8,Contact,Form inputs,"Check text scaling. Form shouldn't trigger horizontal scroll.","Inputs scale full width.",Pending,
+9,Blog Post,TOC/Sidebar,"Verify any sidebar elements are pushed below content or hidden.","Content is priority, sidebars stacked below.",Pending,
+10,Blog Post,Images,"Verify post images don't exceed screen width (max-width: 100%).","No horizontal scrolling caused by large images.",Pending,
+11,Device,Orientation,"Rotate device to landscape mode. Verify layout adjusts.","Layout stretches to fill horizontal space, no breakage.",Pending,
+12,Device,Touch targets,"Verify all links and buttons are easy to tap (min 44px height).","Controls are thumb-friendly.",Pending,

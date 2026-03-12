@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Política de Cookies";
+const description = "Información sobre el uso de cookies en el sitio web ibaifernandez.com";
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="page-content">
+    <div class="container container--narrow">
+      <div class="legal-header">
+        <h1>{title}</h1>
+      </div>
+      
+      <div class="prose">
+        <h2>1. ¿Qué son las cookies?</h2>
+        <p>Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.</p>
+
+        <h2>2. Tipos de cookies utilizadas en esta web</h2>
+        <p>Este sitio web utiliza los siguientes tipos de cookies:</p>
+        
+        <h3>Cookies Técnicas y Esenciales (Estrictamente necesarias)</h3>
+        <p>Son aquellas que permiten al usuario la navegación a través de la página web y la utilización de las diferentes opciones o servicios que en ella existen. Por ejemplo: controlar el tráfico y la comunicación de datos, identificar la sesión o recordar el estado de consentimiento de cookies del usuario. Estas cookies no requieren el consentimiento del usuario.</p>
+        
+        <h3>Cookies de Seguridad (Cloudflare Turnstile)</h3>
+        <p>Utilizamos Cloudflare Turnstile para proteger nuestros formularios contra el spam y el abuso. Turnstile puede establecer cookies técnicas estrictamente necesarias para verificar que usted es una persona y no un bot.</p>
+        
+        <h3>Cookies de Terceros (Análisis)</h3>
+        <p>Son aquellas que nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios de la web. En nuestra web, estas cookies están desactivadas por defecto hasta que el usuario indique explícitamente su consentimiento aceptándolas en el aviso de cookies.</p>
+
+        <h2>3. Gestión de cookies</h2>
+        <p>Puedes cambiar tus preferencias de consentimiento de cookies en nuestro sitio en cualquier momento:</p>
+        <button id="reopen-cookie-banner" class="btn btn--secondary btn--small" style="margin-bottom: 2rem;">Gestionar preferencias de cookies</button>
+        
+        <p>Además, usted puede permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador:</p>
+        <ul>
+          <li><strong>Chrome:</strong> Configuración &gt; Privacidad y seguridad &gt; Cookies y otros datos de sitios.</li>
+          <li><strong>Firefox:</strong> Opciones &gt; Privacidad &gt; Rastreo.</li>
+          <li><strong>Safari:</strong> Preferencias &gt; Privacidad.</li>
+          <li><strong>Edge:</strong> Configuración &gt; Privacidad, búsqueda y servicios.</li>
+        </ul>
+
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const reopenBtn = document.getElementById('reopen-cookie-banner');
+    if (reopenBtn) {
+      reopenBtn.addEventListener('click', () => {
+        // Find and show the cookie banner from the BaseLayout
+        const banner = document.getElementById('cookie-consent-banner');
+        if (banner) {
+          banner.classList.add('cookie-banner--visible');
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  .page-content {
+    padding: var(--space-20) 0;
+  }
+  .legal-header {
+    margin-bottom: var(--space-12);
+    text-align: center;
+  }
+  .legal-header h1 {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    color: var(--color-text-on-dark);
+  }
+  .prose {
+    color: var(--color-text-on-dark-muted);
+    line-height: var(--leading-relaxed);
+  }
+  .prose h2 {
+    color: var(--color-white);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-4);
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+  }
+  .prose h3 {
+    color: var(--color-text-on-dark);
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-2);
+    font-size: var(--text-xl);
+  }
+  .prose p {
+    margin-bottom: var(--space-4);
+  }
+  .prose ul {
+    margin-bottom: var(--space-4);
+    padding-left: var(--space-6);
+  }
+  .prose li {
+    margin-bottom: var(--space-2);
+  }
+</style>

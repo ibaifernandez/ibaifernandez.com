@@ -1,0 +1,90 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>404 - Ibai Fernández</title>
+<script is:inline src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script is:inline id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f26c0d",
+            "background-dark": "#181411",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      background-color: #181411;
+      overflow: hidden;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-50% - 1.5rem)); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-background-dark text-slate-100 font-display selection:bg-primary selection:text-white h-screen w-screen relative">
+
+  <!-- Background Typography -->
+  <div class="absolute inset-0 flex flex-col justify-center items-center pointer-events-none select-none overflow-hidden opacity-5 z-0">
+    <h1 class="text-[30vw] font-black leading-none whitespace-nowrap uppercase">404</h1>
+  </div>
+
+<div class="relative flex h-screen w-full flex-col overflow-hidden z-10">
+<!-- Navigation -->
+<header class="w-full flex items-center justify-between px-6 py-4 md:px-12 border-b border-white/10 shrink-0 bg-background-dark/80 backdrop-blur-sm z-50">
+<div class="flex items-center gap-3">
+<a href="/en/">
+  <img src="/images/branding/260213-ibai-fernandez-visual-id-2026-03.svg" alt="Ibai Fernández" class="h-16 md:h-20 w-auto brightness-200 contrast-200 hover:opacity-80 transition-opacity" />
+</a>
+</div>
+</header>
+
+<main class="flex-1 flex flex-col justify-center items-center px-6 md:px-12 lg:px-24 h-full min-h-0 relative z-20 text-center">
+    <div class="max-w-3xl flex flex-col items-center">
+      <span class="text-primary font-black tracking-widest uppercase mb-4 text-xs md:text-sm">Error 404</span>
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] uppercase mb-8">
+        THE DIGITAL<br/>VOID
+      </h1>
+      <p class="text-base md:text-xl lg:text-2xl font-medium leading-relaxed mb-12 opacity-80 max-w-2xl">
+        You are lost among the wires. Or maybe what you seek never existed. Entropy is inevitable, but you can still turn back.
+      </p>
+      <a href="/en/" class="inline-flex bg-white hover:bg-primary text-background-dark hover:text-white py-5 px-10 text-lg lg:text-2xl font-black uppercase tracking-tighter items-center justify-center gap-4 group transition-all shadow-lg hover:shadow-primary/20">
+        <span class="material-symbols-outlined group-hover:-translate-x-2 transition-transform">arrow_back</span>
+        <span>RETURN TO ORIGIN</span>
+      </a>
+    </div>
+</main>
+
+<!-- Bottom Banner / Marquee style -->
+<section class="w-full border-t border-white/10 py-3 shrink-0 overflow-hidden bg-white/5 relative z-30">
+<div class="animate-marquee gap-12">
+<div class="flex items-center gap-12 text-sm md:text-base font-black uppercase tracking-tighter text-white/40">
+<span>Error 404</span><span class="text-primary">•</span><span>Not Found</span><span class="text-primary">•</span><span>Existential Crisis</span><span class="text-primary">•</span><span>Error 404</span><span class="text-primary">•</span><span>Not Found</span><span class="text-primary">•</span><span>Existential Crisis</span><span class="text-primary">•</span><span>Error 404</span><span class="text-primary">•</span>
+</div>
+<div class="flex items-center gap-12 text-sm md:text-base font-black uppercase tracking-tighter text-white/40" aria-hidden="true">
+<span>Error 404</span><span class="text-primary">•</span><span>Not Found</span><span class="text-primary">•</span><span>Existential Crisis</span><span class="text-primary">•</span><span>Error 404</span><span class="text-primary">•</span><span>Not Found</span><span class="text-primary">•</span><span>Existential Crisis</span><span class="text-primary">•</span><span>Error 404</span><span class="text-primary">•</span>
+</div>
+</div>
+</section>
+
+</div>
+</body></html>

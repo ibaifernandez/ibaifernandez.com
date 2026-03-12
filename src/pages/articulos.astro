@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BlogCard from '../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Get unique categories
+const categories = [...new Set(allPosts.map((post) => post.data.category))];
+---
+
+<BaseLayout
+  title="Artículos"
+  description="Artículos sobre desarrollo personal, creatividad, bienestar emocional y filosofía de vida por Ibai Fernández."
+>
+  <Header />
+
+  <!-- HERO -->
+  <section class="page-hero section--dark" style="padding-top: var(--header-height);">
+    <div class="container">
+      <h1 class="page-hero__title animate-fade-in-up">Artículos</h1>
+      <p class="page-hero__subtitle animate-fade-in-up animate-delay-1">
+        Reflexiones sobre desarrollo personal, creatividad y filosofía de vida.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="section section--light">
+    <div class="container">
+      {categories.length > 0 && (
+        <div class="category-filters" id="category-filters">
+          <button class="category-filter active" data-category="all">Todos</button>
+          {categories.map((cat) => (
+            <button class="category-filter" data-category={cat}>{cat}</button>
+          ))}
+        </div>
+      )}
+
+      {allPosts.length > 0 ? (
+        <div class="posts-grid" id="posts-grid">
+          {allPosts.map((post) => (
+            <div class="post-item" data-category={post.data.category}>
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                pubDate={post.data.pubDate}
+                heroImage={post.data.heroImage}
+                category={post.data.category}
+                slug={post.id}
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <p>Aún no hay artículos publicados. ¡Muy pronto habrá contenido!</p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-24) 0 var(--space-16);
+    text-align: center;
+  }
+
+  .page-hero__title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    color: var(--color-text-on-dark);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+  }
+
+  .page-hero__subtitle {
+    font-size: var(--text-xl);
+    color: var(--color-text-on-dark-muted);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: center;
+    margin-bottom: var(--space-10);
+  }
+
+  .category-filter {
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: var(--color-text-secondary);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+  }
+
+  .category-filter:hover,
+  .category-filter.active {
+    background-color: var(--color-accent-secondary);
+    border-color: var(--color-accent-secondary);
+    color: white;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-8);
+  }
+
+  .post-item {
+    transition: opacity var(--transition-base), transform var(--transition-base);
+  }
+
+  .post-item.hidden {
+    display: none;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: var(--space-20);
+    color: var(--color-text-muted);
+    font-size: var(--text-xl);
+  }
+
+  @media (max-width: 768px) {
+    .page-hero__title {
+      font-size: var(--text-3xl);
+    }
+  }
+</style>
+
+<script>
+  const filters = document.querySelectorAll('.category-filter');
+  const items = document.querySelectorAll('.post-item');
+
+  filters.forEach((filter) => {
+    filter.addEventListener('click', () => {
+      // Update active state
+      filters.forEach((f) => f.classList.remove('active'));
+      filter.classList.add('active');
+
+      const category = filter.getAttribute('data-category');
+
+      items.forEach((item) => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>

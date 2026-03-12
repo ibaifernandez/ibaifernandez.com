@@ -1,0 +1,526 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BlogCard from '../components/BlogCard.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import heroImage from '../assets/images/ibai-hero.png';
+import imgLiteratura from '../assets/images/creatividad/literatura.jpeg';
+import imgLibros from '../assets/images/creatividad/libros.jpg';
+import imgPoemas from '../assets/images/creatividad/poemas.jpeg';
+import imgBocetos from '../assets/images/creatividad/bocetos.jpeg';
+import imgCitas from '../assets/images/creatividad/citas.jpeg';
+import imgMiscelanea from '../assets/images/creatividad/miscelanea.jpg';
+
+const allPosts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const recentPosts = allPosts.slice(0, 3);
+---
+
+<BaseLayout title="Ibai Fernández" description="Escritor, fundador de Filosofía Rebelde. Nomada digital explorando desarrollo humano, crecimiento personal y creatividad.">
+  <Header />
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <p class="hero__greeting animate-fade-in-up">Hola, soy</p>
+        <h1 class="hero__name animate-fade-in-up animate-delay-1">Ibai Fernández.</h1>
+        <p class="hero__bio animate-fade-in-up animate-delay-2">
+          Escritor, fundador de <a href="#" class="hero__link">Filosofía Rebelde</a>,
+          autor de la novela <em><a href="#" class="hero__link">Un final para su final</a></em>
+          y del ensayo filosófico <em><a href="#" class="hero__link">El oficio de escritor</a></em>,
+          donde exploro, mucho más allá de los consejos literarios que su título promete,
+          cuestiones sobre desarrollo humano y crecimiento personal.
+        </p>
+        <p class="hero__bio animate-fade-in-up animate-delay-3">
+          Nómada digital y <a href="/conoceme" class="hero__link">extremadamente polifacético a nivel profesional</a>,
+          mi sueño y, por tanto, mi misión es ayudar a las personas a vivir mejor
+          <a href="#" class="hero__link">desafiando constantemente el <em>status quo</em></a>,
+          fomentando así una vida llena de propósito y autenticidad.
+        </p>
+        <div class="hero__actions animate-fade-in-up animate-delay-4">
+          <a href="/articulos" class="btn btn--primary btn--lg">Explora mis artículos</a>
+          <a href="/conoceme" class="btn btn--outline btn--lg">Conóceme</a>
+        </div>
+      </div>
+      <div class="hero__image animate-fade-in animate-delay-2">
+        <Image src={heroImage} alt="Ibai Fernández" format="webp" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="about section section--white" id="sobre-mi">
+    <div class="container">
+      <div class="about__header">
+        <span class="section-label">Sobre mí</span>
+        <h2 class="about__title">Mejor pedir perdón…</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            Como todos vosotros, soy el reflejo de mis valores —tanto los más positivos
+            como los más negativos—, de mis experiencias y de mis expectativas.
+          </p>
+          <p>
+            Me gustaría que tuvieses en cuenta las herramientas y las estrategias efectivas
+            que te ofrezco para ayudarte a superar desafíos, a alcanzar tus metas y a
+            <a href="#">conseguir la excelencia en cada aspecto de tu vida</a>.
+          </p>
+          <p>
+            Te propongo una <a href="#">rebeli(ón) consciente</a> de inspiración y determinación
+            proporcionándote métodos prácticos para cultivar una vida plena de propósito y
+            autenticidad, <a href="#">con base en el desafío continuo a la norma establecida
+            y a la convención social</a>.
+          </p>
+          <p>
+            Creo firmemente en que, en la vida, es mejor «pedir perdón que permiso».
+            Únete a mí y descubre cómo transformar tu vida con una nueva perspectiva
+            y un enfoque renovado. <a href="/articulos">¡Empieza hoy tu camino hacia una
+            vida extraordinaria!</a>
+          </p>
+        </div>
+        <div class="about__social">
+          <h3 class="about__social-title">Mi ventana social</h3>
+          <p class="about__social-desc">
+            Las redes sociales son como ventanas: se abren y se cierran según lo requiera la ocasión.
+            Si deseas seguirme y descubrir mis pensamientos y contenidos cuando las abro, aquí tienes los botones correspondientes.
+          </p>
+          <div class="about__social-grid">
+            <a href="https://facebook.com/IbaiFernandezEC/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/IbaiFernandezEC" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X (Twitter)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="http://youtube.com/@the-if-show" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/ibaifernandezec/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 1 1-2.882 0 1.441 1.441 0 0 1 2.882 0z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ibaifernandez/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/ibaifernandez/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULOS RECIENTES -->
+  {recentPosts.length > 0 && (
+    <section class="recent-posts section section--light" id="articulos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Blog</span>
+          <h2>Últimos artículos</h2>
+          <p class="section-subtitle">Reflexiones sobre desarrollo personal, creatividad y filosofía de vida.</p>
+        </div>
+        <div class="posts-grid">
+          {recentPosts.map((post) => (
+            <BlogCard
+              title={post.data.title}
+              description={post.data.description}
+              pubDate={post.data.pubDate}
+              heroImage={post.data.heroImage}
+              category={post.data.category}
+              slug={post.id}
+            />
+          ))}
+        </div>
+        <div class="section-cta">
+          <a href="/articulos" class="btn btn--secondary">Ver todos los artículos →</a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CREATIVIDAD -->
+  <section class="creativity section section--dark" id="creatividad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label section-label--light">Creatividad</span>
+        <h2>Creatividad</h2>
+        <p class="section-subtitle section-subtitle--light">
+          En un mundo lleno de rutinas y estándares rígidos, las personas que se atreven
+          a explorar su creatividad son las que redefinen nuestro mundo y conectan con
+          nuestras aspiraciones más profundas.
+        </p>
+      </div>
+      <div class="creativity__grid">
+        <a href="#" class="creativity__card">
+          <Image src={imgLiteratura} alt="Literatura" class="creativity__img" width={600} />
+          <div class="creativity__overlay">
+            <h3>Literatura</h3>
+          </div>
+        </a>
+        <a href="#" class="creativity__card">
+          <Image src={imgLibros} alt="Libros" class="creativity__img" width={600} />
+          <div class="creativity__overlay">
+            <h3>Libros</h3>
+          </div>
+        </a>
+        <a href="#" class="creativity__card">
+          <Image src={imgPoemas} alt="Poemas" class="creativity__img" width={600} />
+          <div class="creativity__overlay">
+            <h3>Poemas</h3>
+          </div>
+        </a>
+        <a href="#" class="creativity__card">
+          <Image src={imgBocetos} alt="Bocetos" class="creativity__img" width={600} />
+          <div class="creativity__overlay">
+            <h3>Bocetos</h3>
+          </div>
+        </a>
+        <a href="#" class="creativity__card">
+          <Image src={imgCitas} alt="Citas" class="creativity__img" width={600} />
+          <div class="creativity__overlay">
+            <h3>Citas</h3>
+          </div>
+        </a>
+        <a href="#" class="creativity__card">
+          <Image src={imgMiscelanea} alt="Miscelánea" class="creativity__img" width={600} />
+          <div class="creativity__overlay">
+            <h3>Miscelánea</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section section--white">
+    <div class="container container--narrow">
+      <NewsletterForm />
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* HERO */
+  .hero {
+    position: relative;
+    min-height: 655px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: var(--header-height);
+  }
+
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 40%, #1a2332 70%, #0d1117 100%);
+    z-index: 0;
+  }
+
+  .hero__bg::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 80%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero__inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-16) 0;
+  }
+
+  .hero__greeting {
+    font-size: var(--text-lg);
+    color: var(--color-accent-primary-light);
+    font-weight: 500;
+    margin-bottom: var(--space-2);
+  }
+
+  .hero__name {
+    font-family: var(--font-display);
+    font-size: var(--text-6xl);
+    color: var(--color-text-on-dark);
+    margin-bottom: var(--space-6);
+    line-height: 1.1;
+  }
+
+  .hero__bio {
+    font-size: var(--text-lg);
+    color: var(--color-text-on-dark-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .hero__link {
+    color: var(--color-accent-secondary-light);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(56, 189, 248, 0.3);
+    transition: text-decoration-color var(--transition-fast);
+  }
+
+  .hero__link:hover {
+    text-decoration-color: var(--color-accent-secondary-light);
+    color: var(--color-accent-secondary-light);
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-8);
+  }
+
+  .hero__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+  }
+
+  .hero__image img {
+    height: 105%;
+    width: auto;
+    object-fit: contain;
+    object-position: bottom center;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+    pointer-events: auto;
+  }
+
+  /* ABOUT */
+  .about__header {
+    margin-bottom: var(--space-12);
+  }
+
+  .about__title {
+    font-size: var(--text-4xl);
+    color: var(--color-accent-secondary);
+    font-style: italic;
+  }
+
+  .about__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-16);
+    align-items: start;
+  }
+
+  .about__text p {
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    color: var(--color-text-secondary);
+  }
+
+  .about__text a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .about__social-title {
+    font-family: var(--font-display);
+    color: var(--color-accent-secondary);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-3);
+  }
+
+  .about__social-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-6);
+  }
+
+  .about__social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+  }
+
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-lg);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-secondary);
+    transition: all var(--transition-base);
+  }
+
+  .social-btn:hover {
+    background-color: var(--color-accent-secondary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+  }
+
+  /* SECTION COMMONS */
+  .section-label {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-accent-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .section-label--light {
+    color: var(--color-accent-primary-light);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .section-subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: var(--space-4) auto 0;
+    line-height: var(--leading-relaxed);
+  }
+
+  .section-subtitle--light {
+    color: var(--color-text-on-dark-muted);
+  }
+
+  .section-cta {
+    text-align: center;
+    margin-top: var(--space-10);
+  }
+
+  /* POSTS GRID */
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-8);
+  }
+
+  /* CREATIVITY */
+  .creativity__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: var(--space-6);
+  }
+
+  .creativity__card {
+    position: relative;
+    display: block;
+    background-color: var(--color-bg-dark-soft);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    transition: all var(--transition-base);
+  }
+
+  .creativity__card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .creativity__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .creativity__card:hover .creativity__img {
+    transform: scale(1.05);
+  }
+
+  .creativity__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    transition: background var(--transition-base);
+  }
+
+  .creativity__card:hover .creativity__overlay {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .creativity__overlay h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    color: var(--color-white);
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero__inner {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: var(--space-8) 0;
+    }
+
+    .hero__name {
+      font-size: var(--text-4xl);
+    }
+
+    .hero__actions {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      min-height: auto;
+    }
+
+    .hero__image {
+      display: none;
+    }
+
+    .about__grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-10);
+    }
+
+    .about__social-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .social-btn {
+      width: 44px;
+      height: 44px;
+    }
+  }
+</style>

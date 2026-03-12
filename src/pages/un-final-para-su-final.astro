@@ -1,0 +1,409 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = "Un final para su final";
+const description = "Una novela de Ibai Fernández";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="landing-page">
+    
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <!-- Title Center -->
+        <div class="hero-header">
+          <h1>Un final para su final</h1>
+          <p class="subtitle">Una novela de <a href="/">Ibai Fernández</a>.</p>
+        </div>
+
+        <!-- 2 Column Layout -->
+        <div class="hero-grid">
+          <!-- Left: Book Cover -->
+          <div class="book-cover">
+            <img src="https://ibaifernandez.com/wp-content/uploads/2021/07/Portada-Un-final-para-su-final.jpeg" alt="Portada Un final para su final" />
+            <p class="caption">Ilustraciones de portada por Van Chacín.</p>
+          </div>
+          
+          <!-- Right: Text & Accordion -->
+          <div class="book-info">
+            <p class="tagline"><em>La muerte siempre hace clic. No importa lo viejo que seas.</em></p>
+            <h2>Un final para su final</h2>
+            <p class="teaser">¿Qué es lo peor que podría pasar si nos lanzamos a perseguir el último de nuestros buenos recuerdos?</p>
+            
+            <!-- Custom Accordion JS -->
+            <div class="accordion">
+              <details open>
+                <summary>Sinopsis</summary>
+                <div class="details-content">
+                  <p>¿Serías capaz de dejarlo todo por perseguir el último recuerdo feliz que tuviste? ¿Qué sería lo peor que podría pasarnos al ir en su búsqueda? Acompaña a Arturo en este viaje físico y metafórico que es <strong><em>Un final para su final</em></strong> para averiguarlo. Quizás, junto a él, decidas que este haya de ser el punto de partida de tu propio viaje, en el que comiences a ir tras tus sueños antes de que no sean más que pálidos recuerdos…</p>
+                </div>
+              </details>
+
+              <details>
+                <summary>Las claves</summary>
+                <div class="details-content">
+                  <ul>
+                    <li><strong>Autor</strong>: Ibai Fernández​</li>
+                    <li><strong>Género</strong>: novela contemporánea</li>
+                    <li><strong>Nº de páginas</strong>: 154​​</li>
+                    <li><strong>Fecha de publicación</strong>: agosto 2021​</li>
+                    <li><strong>Idioma original</strong>: español​</li>
+                    <li><strong>Editorial</strong>: <a href="https://editorialcirculorojo.com/" target="_blank">Editorial Círculo Rojo</a>​</li>
+                    <li><strong>Ilustración de portada</strong> por <a href="https://www.behance.net/vanchacinb827" target="_blank">Van Chacín</a></li>
+                    <li><strong>Precio</strong>: 14,99 €</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>Sobre el autor</summary>
+                <div class="details-content">
+                  <p><strong>Ibai Fernández</strong> es un soñador empedernido, un existencialista nato y un cínico con corazón. Es un niño jugando a ser grande, un adulto que no ha crecido, un filósofo obtuso, un explorador. Un ludópata con fobia al riesgo, un piloto con trazas de vértigo... Un antihéroe, un diletante, un paria, un energúmeno, un filisteo, un sibarita sin posibilidad de redención.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="cta-wrapper">
+              <p><strong>¿Quieres conocer más sobre <em>Un final para su final</em>?</strong></p>
+              <a href="#contacto" class="btn-primary">Lee esta entrevista al autor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONVERSION SECTION -->
+    <section class="conversion-section">
+      <div class="conversion-grid">
+        <div class="conversion-col">
+          <h3>Descárgate el 1er episodio aquí</h3>
+          <p>Es 100% gratis</p>
+          <a href="#" class="btn-primary">Descárgate el 1er episodio</a>
+        </div>
+        <div class="conversion-col divider-left">
+          <h3>Y adquiérela en Amazon</h3>
+          <p>Formato físico y electrónico</p>
+          <a href="https://www.amazon.com/dp/8411041468/" target="_blank" class="amazon-btn">
+            <img src="https://ibaifernandez.com/wp-content/uploads/elementor/thumbs/Botón-Amazon-pdghfsi1oxspnvo2sji0fel8zpgjkf8swbqny38buk.png" alt="Amazon Botón" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAILERS SECTION (Mockup) -->
+    <section class="trailers-section">
+      <div class="divider-icon">🍷</div>
+      <h2>Book-tráilers de <em>Un final para su final</em></h2>
+      <div class="trailers-grid">
+        <div class="video-mockup">
+           <h3>Book-trailer 01</h3>
+           <div class="video-box">Trailer 1 Placeholder</div>
+        </div>
+        <div class="video-mockup">
+           <h3>Book-trailer 02</h3>
+           <div class="video-box">Trailer 2 Placeholder</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section">
+      <h2>Los artes de <em>Un final para su final</em></h2>
+      <p class="subtitle">Ilustraciones interiores por Van Chacín.</p>
+      <div class="masonry-gallery">
+        <img src="https://ibaifernandez.com/wp-content/uploads/2021/08/Episodio-1-JPG-72-dpi-COLOR.jpg" alt="Arte" />
+        <img src="https://ibaifernandez.com/wp-content/uploads/2021/08/Episodio-2-JPG-72-dpi-COLOR.jpg" alt="Arte" />
+        <img src="https://ibaifernandez.com/wp-content/uploads/2021/08/Episodio-4-JPG-72-dpi-COLOR.jpg" alt="Arte" />
+        <img src="https://ibaifernandez.com/wp-content/uploads/2021/08/Episodio-5-JPG-72-dpi-COLOR.jpg" alt="Arte" />
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+      <div class="divider-icon">🍷</div>
+      <h2>Conoce las opiniones de los lectores de <em>Un final para su final</em></h2>
+      
+      <div class="testimonials-grid">
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="test-header">
+            <div class="test-avatar"></div>
+            <div>
+              <h4>Eduardo Bravo</h4>
+              <p class="test-role">Doctorando en Estudios Literarios</p>
+            </div>
+          </div>
+          <p class="test-quote">"Arturo es incómodo. Incómodo y a veces desagradable. Es el peso de supuestas malas acciones... ¡100% recomendado!"</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div class="test-header">
+            <div class="test-avatar"></div>
+            <div>
+              <h4>Nazareth Martín</h4>
+              <p class="test-role">Psicóloga</p>
+            </div>
+          </div>
+          <p class="test-quote">"He tenido que leer dos veces esta historia. Arturo bien podría ser un viejo Holden Cauldfield. Una novela que engancha."</p>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
+
+<style>
+  /* Base Reset for Landing */
+  .landing-page {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #f8fafc;
+    line-height: 1.6;
+  }
+
+  /* Typography */
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #111;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #0ea5e9;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .divider-icon {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 4rem 0 2rem 0;
+    position: relative;
+  }
+  
+  .divider-icon::before, .divider-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #333;
+  }
+  .divider-icon::before { left: 0; }
+  .divider-icon::after { right: 0; }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(180deg, rgba(13,17,23,0.05) 0%, rgba(248,250,252,1) 100%);
+  }
+  
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-header h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .book-cover img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+  .caption {
+    font-size: 0.875rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+  }
+
+  .tagline {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  .book-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .teaser {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Accordion */
+  .accordion details {
+    border-top: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+  .accordion details:last-child {
+    border-bottom: 1px solid #ddd;
+  }
+  .accordion summary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 1.5rem;
+  }
+  .accordion summary::after {
+    content: '▶';
+    position: absolute;
+    right: 0;
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+  }
+  .accordion details[open] summary::after {
+    transform: rotate(90deg);
+  }
+  .details-content {
+    padding-top: 1rem;
+    color: #444;
+  }
+  .details-content ul {
+    padding-left: 1.5rem;
+  }
+
+  /* CTAs */
+  .cta-wrapper {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .btn-primary {
+    display: inline-block;
+    background-color: #0369a1;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s;
+    margin-top: 0.5rem;
+  }
+  .btn-primary:hover {
+    background-color: #0ea5e9;
+  }
+
+  /* Conversion Section */
+  .conversion-section {
+    padding: 4rem 2rem;
+    background-color: #f1f5f9;
+  }
+  .conversion-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .conversion-col {
+    padding: 2rem;
+  }
+  .divider-left {
+    border-left: 1px solid #ccc;
+  }
+  .conversion-col h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .amazon-btn img {
+    height: 50px;
+    margin-top: 1rem;
+  }
+
+  /* Galleries & Media */
+  .trailers-section, .gallery-section, .testimonials-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .trailers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .video-box {
+    background: #000;
+    color: #fff;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  .masonry-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .masonry-gallery img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+    text-align: left;
+  }
+  .testimonial-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  .test-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .test-avatar {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 50%;
+  }
+  .test-role {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  .test-quote {
+    font-style: italic;
+    color: #444;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-grid, .conversion-grid, .trailers-grid, .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+    .divider-left {
+      border-left: none;
+      border-top: 1px solid #ccc;
+    }
+  }
+</style>

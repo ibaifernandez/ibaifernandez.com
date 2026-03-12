@@ -1,0 +1,244 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/conoceme', label: 'Sobre mí' },
+  { href: '/articulos', label: 'Artículos' },
+];
+---
+
+<header class="header" id="main-header">
+  <div class="header__inner container">
+    <a href="/" class="header__logo">Ibai Fernández</a>
+
+    <button
+      class="header__menu-toggle"
+      id="menu-toggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+    >
+      <span class="header__menu-icon"></span>
+    </button>
+
+    <nav class="header__nav" id="main-nav" aria-label="Navegación principal">
+      <ul class="header__nav-list">
+        {navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class:list={['header__nav-link', { active: currentPath.startsWith(link.href) }]}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a href="/contacto" class="btn btn--primary btn--sm header__cta">¿Conversamos?</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: var(--header-height);
+    background-color: rgba(13, 17, 23, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: background-color var(--transition-base);
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .header__logo {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-text-on-dark);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+
+  .header__logo:hover {
+    color: var(--color-accent-primary-light);
+  }
+
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__nav-link {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-on-dark-muted);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: var(--space-2) 0;
+    position: relative;
+    transition: color var(--transition-fast);
+  }
+
+  .header__nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent-primary);
+    transition: width var(--transition-base);
+  }
+
+  .header__nav-link:hover,
+  .header__nav-link.active {
+    color: var(--color-text-on-dark);
+  }
+
+  .header__nav-link:hover::after,
+  .header__nav-link.active::after {
+    width: 100%;
+  }
+
+  .btn--sm {
+    padding: var(--space-2) var(--space-5);
+    font-size: var(--text-xs);
+  }
+
+  .header__cta {
+    border-radius: var(--radius-full);
+  }
+
+  /* Hamburger Menu */
+  .header__menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+  }
+
+  .header__menu-icon,
+  .header__menu-icon::before,
+  .header__menu-icon::after {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-text-on-dark);
+    border-radius: 2px;
+    transition: all var(--transition-base);
+  }
+
+  .header__menu-icon::before,
+  .header__menu-icon::after {
+    content: '';
+    position: relative;
+  }
+
+  .header__menu-icon::before {
+    top: -7px;
+  }
+
+  .header__menu-icon::after {
+    top: 5px;
+  }
+
+  /* Open state */
+  .header__menu-toggle[aria-expanded='true'] .header__menu-icon {
+    background-color: transparent;
+  }
+
+  .header__menu-toggle[aria-expanded='true'] .header__menu-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .header__menu-toggle[aria-expanded='true'] .header__menu-icon::after {
+    top: -2px;
+    transform: rotate(-45deg);
+  }
+
+  @media (max-width: 768px) {
+    .header__menu-toggle {
+      display: flex;
+    }
+
+    .header__nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 280px;
+      height: 100vh;
+      background-color: var(--color-bg-dark);
+      padding: calc(var(--header-height) + var(--space-8)) var(--space-6) var(--space-6);
+      transition: right var(--transition-slow);
+      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .header__nav.is-open {
+      right: 0;
+    }
+
+    .header__nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-6);
+    }
+
+    .header__nav-link {
+      font-size: var(--text-lg);
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('main-nav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Abrir menú' : 'Cerrar menú');
+      nav.classList.toggle('is-open');
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target as Node) && !toggle.contains(e.target as Node)) {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+      }
+    });
+
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+      }
+    });
+  }
+</script>

@@ -1,0 +1,13 @@
+ID,Page,Component/Section,Test Procedure,Expected Result,Status,Notes
+1,Homepage,Hero Section,"Check rendering on 1920x1080 and 1440x900 viewports. Verify hero image is right-aligned, title is clear, background gradient is visible.","Hero visually balanced, text readable, CTA button clickable.",Pending,
+2,Homepage,About Me,"Scroll down to 'Conóceme' snippet. Verify text formatting and button visibility.","Text is formatted nicely, button hover effects work.",Pending,
+3,Homepage,Articles Grid,"Verify 3 cards display side by side (3 column grid). Hover over cards.","Cards are 3 per row. Hover effect translates card slightly up.",Pending,
+4,Homepage,Creativity Grid,"Check masonry grid layout. Verify 6 images load and have dark overlay.","Grid renders properly, text centers, hover slightly scales image.",Pending,
+5,Homepage,Newsletter,"Verify Turnstile widget loads successfully. Test valid and invalid email submission.","Widget is visible, success/error UI states update text correctly.",Pending,
+6,Global,Header,"Verify navigation links load correct pages. Check sticky header on scroll.","Header is readable on scroll, links work.",Pending,
+7,Global,Footer,"Check footer links for Legal pages and social icons.","All icons link to actual profiles, Legal pages open correctly.",Pending,
+8,Global,Cookie Banner,"Clear cookies, load site. Verify banner appears. Test 'Accept All'.","Banner slides in from bottom. Accepting hides it and saves cookie.",Pending,
+9,Contact,Form,"Fill out contact form. Verify Turnstile widget load and function.","Form submits properly to Netlify.",Pending,
+10,Articles,Filtration,"Click on different category buttons. Verify filtering.","Grid isolates correct articles natively or via URL params if implemented.",Pending,
+11,Blog Post,Reading Exp,"Open a post. Verify font size, code formatting, image rendering.","Text is comfortable, images fit width.",Pending,
+12,Blog Post,Highlight Share,"Select text. Verify share tooltip appears.","Share tooltip for Twitter/LinkedIn pops up.",Pending,

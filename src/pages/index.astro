@@ -1,0 +1,129 @@
+---
+import { Image } from 'astro:assets';
+import heroImage from '../assets/images/ibai-hero.png';
+---
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ibai Fernández - Coming Soon</title>
+<script is:inline src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script is:inline id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f26c0d",
+            "background-light": "#f8f7f5",
+            "background-dark": "#181411",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      background-color: #181411;
+      overflow: hidden; /* Prevent scrolling entirely for this version */
+    }
+    .text-stroke {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-50% - 1.5rem)); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-background-dark text-slate-100 font-display selection:bg-primary selection:text-white h-screen w-screen relative">
+
+  <!-- Background Marquee/Typography -->
+  <div class="absolute inset-0 flex flex-col justify-between pointer-events-none select-none overflow-hidden opacity-5 z-0">
+    <h1 class="text-[14vw] font-black leading-none whitespace-nowrap uppercase mt-8">IBAI FERNÁNDEZ</h1>
+    <h1 class="text-[14vw] font-black leading-none whitespace-nowrap uppercase mb-8">COMING SOON</h1>
+  </div>
+
+<div class="relative flex h-screen w-full flex-col overflow-hidden z-10">
+<!-- Navigation -->
+<header class="w-full flex items-center justify-between px-6 py-4 md:px-12 border-b border-white/10 shrink-0 bg-background-dark/80 backdrop-blur-sm z-50">
+<div class="flex items-center gap-3">
+<img src="/images/branding/260213-ibai-fernandez-visual-id-2026-03.svg" alt="Ibai Fernández" class="h-16 md:h-20 w-auto brightness-200 contrast-200" />
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a href="https://youtube.com/@the-if-show" target="_blank" rel="noopener noreferrer" class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">YouTube</a>
+<a href="https://linkedin.com/in/ibaifernandez" target="_blank" rel="noopener noreferrer" class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">LinkedIn</a>
+<a href="https://github.com/ibaifernandez" target="_blank" rel="noopener noreferrer" class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">GitHub</a>
+<a class="bg-primary hover:bg-primary/90 text-white px-6 py-2 text-xs font-black uppercase tracking-widest transition-transform active:scale-95 shadow-lg shadow-primary/20" href="https://portfolio.ibaifernandez.com/">
+          Ver Portafolio
+</a>
+</nav>
+</header>
+
+<main class="flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-24 h-full min-h-0 relative z-20">
+  <div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center h-full max-h-[80vh] min-h-0 py-8">
+    
+    <!-- Portrait Container (Left) -->
+    <div class="relative group h-full max-h-full flex items-center justify-center lg:justify-end lg:pr-8">
+      <div class="w-full max-w-md h-[50vh] lg:h-full lg:max-h-[70vh] bg-slate-800 overflow-hidden border-4 border-white relative z-10 shadow-2xl">
+        <Image src={heroImage} alt="Professional portrait of Ibai Fernández" format="webp"
+          class="w-full h-full object-cover object-top grayscale contrast-125 hover:grayscale-0 transition-all duration-700" />
+      </div>
+      <!-- Decorative Brutalist Elements -->
+      <div class="absolute bottom-[10%] left-[5%] lg:bottom-[5%] lg:left-[10%] w-20 h-20 md:w-32 md:h-32 bg-primary hidden sm:block z-0 shadow-lg"></div>
+      <div class="absolute top-[5%] right-[5%] lg:top-[5%] lg:right-[15%] w-24 h-24 md:w-40 md:h-40 border-2 border-white hidden sm:block z-0 opacity-50"></div>
+    </div>
+
+    <!-- Content Side (Right) -->
+    <div class="flex flex-col justify-center p-6 md:p-10 bg-white text-background-dark relative z-20 shadow-2xl h-auto lg:-ml-12 border border-black/10">
+      <span class="text-primary font-black tracking-widest uppercase mb-2 text-xs md:text-sm">Próximamente...</span>
+      <h1 class="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black leading-[0.9] uppercase mb-4">
+        Ibai<br/>Fernández
+      </h1>
+      <p class="text-sm md:text-base lg:text-lg font-medium leading-relaxed mb-6 lg:mb-8 opacity-80">
+        End-to-End Digital Architecture. Full-Stack engineering, AI automation, and enterprise-grade revenue systems.
+      </p>
+      <div class="flex flex-col gap-4">
+        <a href="https://portfolio.ibaifernandez.com/" class="w-full bg-primary hover:bg-orange-600 focus:ring-4 focus:ring-orange-600/50 outline-none text-white py-4 px-6 text-base lg:text-xl font-black uppercase tracking-tighter flex items-center justify-between group transition-all shadow-lg shadow-primary/20">
+          <span>Ver Portafolio</span>
+          <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+        </a>
+        <div class="flex flex-col gap-1 border-t border-background-dark/10 pt-4 mt-2">
+          <span class="text-[10px] uppercase tracking-widest font-bold opacity-50">Contacto Directo</span>
+          <a class="text-lg md:text-xl font-black hover:text-primary transition-colors underline decoration-2 underline-offset-4" href="mailto:info@ibaifernandez.com">
+            info@ibaifernandez.com
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+<!-- Bottom Banner / Marquee style -->
+<section class="w-full border-t border-white/10 py-3 shrink-0 overflow-hidden bg-white/5 relative z-30">
+<div class="animate-marquee gap-12">
+<div class="flex items-center gap-12 text-sm md:text-base font-black uppercase tracking-tighter text-white/40">
+<span>Full-Stack &amp; AI Automation</span><span class="text-primary">•</span><span>UX/UI &amp; Narrative Architecture</span><span class="text-primary">•</span><span>Data-Driven Strategy</span><span class="text-primary">•</span><span>Operations &amp; Leadership</span><span class="text-primary">•</span><span>Message Flow Mastery</span><span class="text-primary">•</span><span>Revenue Engineering</span><span class="text-primary">•</span><span>Tech Evangelism &amp; Upskilling</span><span class="text-primary">•</span>
+</div>
+<div class="flex items-center gap-12 text-sm md:text-base font-black uppercase tracking-tighter text-white/40" aria-hidden="true">
+<span>Full-Stack &amp; AI Automation</span><span class="text-primary">•</span><span>UX/UI &amp; Narrative Architecture</span><span class="text-primary">•</span><span>Data-Driven Strategy</span><span class="text-primary">•</span><span>Operations &amp; Leadership</span><span class="text-primary">•</span><span>Message Flow Mastery</span><span class="text-primary">•</span><span>Revenue Engineering</span><span class="text-primary">•</span><span>Tech Evangelism &amp; Upskilling</span><span class="text-primary">•</span>
+</div>
+</div>
+</section>
+
+</div>
+</body></html>

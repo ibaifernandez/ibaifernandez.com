@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Política de Privacidad";
+const description = "Política de privacidad y protección de datos del sitio web ibaifernandez.com";
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="page-content">
+    <div class="container container--narrow">
+      <div class="legal-header">
+        <h1>{title}</h1>
+      </div>
+      
+      <div class="prose">
+        <h2>1. Información al usuario</h2>
+        <p>En cumplimiento con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), se informa al usuario de que los datos personales recogidos a través de este sitio web serán tratados por Ibai Fernández en calidad de Responsable del Tratamiento.</p>
+
+        <h2>2. Finalidad del tratamiento</h2>
+        <p>Los datos personales (nombre y correo electrónico) facilitados por los usuarios se utilizarán exclusivamente para las siguientes finalidades:</p>
+        <ul>
+          <li>Gestionar las peticiones o consultas recibidas a través del formulario de contacto.</li>
+          <li>Gestionar la suscripción a la newsletter mediante la plataforma MailerLite.</li>
+        </ul>
+
+        <h2>3. Legitimación del tratamiento</h2>
+        <p>La base legal para el tratamiento de sus datos es el consentimiento expreso del interesado, otorgado mediante la aceptación de las correspondientes casillas durante la recogida de los datos o al enviar correos electrónicos.</p>
+
+        <h2>4. Conservación de los datos</h2>
+        <p>Los datos se conservarán durante el tiempo necesario para cumplir con la finalidad para la que se recabaron y para determinar las posibles responsabilidades que se pudieran derivar de dicha finalidad y del tratamiento de los datos. En el caso de la newsletter, hasta que el usuario revoque su consentimiento.</p>
+
+        <h2>5. Comunicación de datos</h2>
+        <p>Para la gestión de la newsletter y el servidor de la página web, utilizamos servicios de terceros (como MailerLite y Netlify) que actúan como Encargados del Tratamiento. Sus datos no serán cedidos a otros terceros salvo obligación legal.</p>
+
+        <h2>6. Derechos de los usuarios</h2>
+        <p>Cualquier persona tiene derecho a obtener confirmación sobre si en esta web estamos tratando datos personales que les conciernan, o no. Las personas interesadas tienen derecho a:</p>
+        <ul>
+          <li>Acceder a sus datos personales.</li>
+          <li>Solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión.</li>
+          <li>Solicitar la limitación del tratamiento de sus datos.</li>
+          <li>Oponerse al tratamiento de los mismos.</li>
+          <li>Solicitar la portabilidad de los datos.</li>
+        </ul>
+        <p>El interesado podrá ejercer sus derechos mediante un correo electrónico a contacto@ibaifernandez.com.</p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    padding: var(--space-20) 0;
+  }
+  .legal-header {
+    margin-bottom: var(--space-12);
+    text-align: center;
+  }
+  .legal-header h1 {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    color: var(--color-text-on-dark);
+  }
+  .prose {
+    color: var(--color-text-on-dark-muted);
+    line-height: var(--leading-relaxed);
+  }
+  .prose h2 {
+    color: var(--color-white);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-4);
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+  }
+  .prose p {
+    margin-bottom: var(--space-4);
+  }
+  .prose ul {
+    margin-bottom: var(--space-4);
+    padding-left: var(--space-6);
+  }
+  .prose li {
+    margin-bottom: var(--space-2);
+  }
+</style>

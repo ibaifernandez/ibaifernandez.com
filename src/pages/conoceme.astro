@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Conóceme"
+  description="Cada uno de nosotros es un crisol de valores, sueños y experiencias. Descubre el camino de Ibai Fernández."
+>
+  <Header />
+
+  <!-- HERO -->
+  <section class="page-hero section--dark" style="padding-top: var(--header-height);">
+    <div class="container">
+      <h1 class="page-hero__title animate-fade-in-up">Sobre Ibai Fernández</h1>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="section section--white">
+    <div class="container container--narrow">
+      <h2 class="conoceme-heading">Conóceme</h2>
+
+      <div class="conoceme-content">
+        <p>
+          Cada uno de nosotros es un crisol de valores, sueños y experiencias, reflejo de lo mejor
+          y lo más desafiante de nuestra esencia. Mi camino ha estado lleno de lecciones y momentos
+          significativos que quiero compartir contigo a través de mis palabras y creaciones.
+        </p>
+
+        <p>
+          En el prólogo de <strong><em>No somos héroes: un manual de anti-terapia</em></strong>
+          encontrarás una introducción sobre mí y mi enfoque. De otro modo, si te interesa conocer
+          más sobre mi trayectoria profesional, puedes explorar mi portafolio profesional.
+        </p>
+
+        <div class="conoceme-actions">
+          <a href="#" class="btn btn--secondary btn--lg">«No somos héroes»: prólogo</a>
+          <a href="#" class="btn btn--secondary btn--lg">Portafolio profesional</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section section--light">
+    <div class="container container--narrow">
+      <h2 class="conoceme-heading">Mis valores</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-card__icon">🔥</span>
+          <h3>Autenticidad</h3>
+          <p>Ser fiel a uno mismo, sin máscaras ni pretensiones, es el primer paso hacia una vida extraordinaria.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">💡</span>
+          <h3>Creatividad</h3>
+          <p>La capacidad de crear es lo que nos hace únicos. La creatividad es mi motor y mi refugio.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">🌍</span>
+          <h3>Libertad</h3>
+          <p>Nómada digital por convicción, creo en la libertad de movimiento, pensamiento y expresión.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">⚡</span>
+          <h3>Rebeldía consciente</h3>
+          <p>Cuestionar el status quo no es destruir: es construir algo mejor sobre cimientos más sólidos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-24) 0 var(--space-16);
+    text-align: center;
+  }
+
+  .page-hero__title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    color: var(--color-text-on-dark);
+    font-weight: 700;
+  }
+
+  .conoceme-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    color: var(--color-accent-secondary);
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .conoceme-content {
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    color: var(--color-text-secondary);
+  }
+
+  .conoceme-content p {
+    margin-bottom: var(--space-6);
+  }
+
+  .conoceme-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    margin-top: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+  }
+
+  .value-card {
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    transition: all var(--transition-base);
+  }
+
+  .value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent-secondary-light);
+  }
+
+  .value-card__icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: var(--space-4);
+  }
+
+  .value-card h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-3);
+  }
+
+  .value-card p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-normal);
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero__title {
+      font-size: var(--text-3xl);
+    }
+  }
+</style>

@@ -1,0 +1,189 @@
+---
+title: "Entrevista sobre «Un final para su final»"
+description: "Entrevista sobre «Un final para su final»"
+pubDate: "2021-09-22"
+heroImage: "https://ibaifernandez.com/wp-content/uploads/2021/07/Portada-Un-final-para-su-final.jpeg"
+category: "Artículos"
+---
+
+## ¿Cuánto tiempo llevas escribiendo?
+
+Escribir, escribo desde —no estoy de coña— los 4 años que me inventé una historia tipo Indiana Jones en un cuaderno A5 de tapas grises… ¡lo que es la memoria!, ¿verdad? Desde entonces he escrito un poco de todo. [_Un final para su final_](http://box5791.temp.domains/~aglayabi/ibaifernandez/un-final-para-su-final/) es mi primera novela «completa», si bien, con anterioridad, lo que he escrito —desde que llegó el internet— es mucho [artículo](http://box5791.temp.domains/~aglayabi/ibaifernandez/articulos/) que cabría encajar dentro de la categoría de ensayo, creo, principalmente; de hecho, dentro de esa misma categoría podríamos encajar [_El oficio de escritor — Vol. 1 — Reflexiones de un escritor primerizo_](http://box5791.temp.domains/~aglayabi/ibaifernandez/el-oficio-de-escritor-vol-1/), que es un libro que he escrito a partir de las reflexiones que he tenido mientras ultimaba _Un final para su final_, pero que habla de todas las experiencias y enseñanzas que he recogido a medida que ahondaba en el arte de la narrativa. Y es que, no en formato novela, pero sí que en formato cinematográfico, he escrito, producido, realizado y editado algunos cortometrajes en mi vida —ya que mi objetivo desde los 9 años era llegar a ser director de cine algún día—; de los que más orgulloso me siento a día de hoy son el primero y los dos últimos, cuyos títulos respectivamente y en orden cronográfico son: [_The Couple_](https://www.youtube.com/watch?v=ZtPy10LVgK8) —mientras estudiaba en Missouri en 2008—, [_2×2_](http://box5791.temp.domains/~aglayabi/ibaifernandez/2x2/) —en España, presentado justo antes de venirme a vivir a Ecuador— y [_Noche sin mañana_](https://ibaifernandez.com/noche-sin-manana/), grabado aquí en Ecuador en enero de 2016. Cada enlace te llevará a cada uno de ellos en YouTube; al respecto de _The Couple_, el título que ostenta el registro en Youtube dice «2010» pero fue grabado y editado en 2008; lo de 2010 es solo una revisión que le hice a nivel de edición ya que fue grabado en calidad DV justo antes de la salida del HDV, del HD y del Full HD y, bueno, quería ver si podía hacer que se viera un poquito mejor de lo que se veía.
+
+Con todo, para ver —casi— toda la producción audiovisual que he hecho en mi vida te puedes referir al canal de Youtube de mi productora [**Elm St. Productions**](https://youtube.com/elmstproductions).
+
+## ¿Cuánto tiempo te ha llevado escribir esta obra?
+
+Respecto a cuánto me ha llevado escribir _Un final para su final_, pues… bastante. Jaja. Y es que, precisamente, nació como el guión de un cortometraje en 2014 —cuando estudiaba arte dramático en la ESAD de Málaga—. Un guión que desarrollé junto a grandes amigos míos como son Víctor Castilla e Iván Aranda. Pero el costo de la que habría sido la producción de ese cortometraje nos impidió realizarlo y poco después de haberlo terminado como guión cinematográfico partí hacia Ecuador. Una vez aquí —en Ecuador— me decidí a rodarlo… pero, no sé por qué, sentí que no podía (no debía) hacerlo sin mis amigos… Ahora bien, también sentía que era una historia que no se podía dejar sin comunicar al mundo, por lo que —a la inversa de lo que suele hacerse— decidí adaptar el guión a una novela incluyendo, por supuesto y para distanciarme del original, nuevos pasajes y personajes y, sobre todo, un punto de unión entre el clásico narrador omnisciente y el personaje principal, Arturo, en lo que alguna crítica ha dicho que es la forma más inteligente que ha leído en su vida de hacer una fusión en la que el uno y el otro, sin ser el mismo —y estando la novela escrita en tercera persona— se complementan perfectamente.
+
+Así pues, la novela como tal la fragüé en algún momento —creo recordar— de 2016, pero no fue hasta el tiempo de pandemia (2020) que decidí revisarla y editarla, lo que en principio pensé en hacer por mi cuenta y sin el apoyo de ninguna editorial. Fue debido al empuje que al respecto me dio, principalmente, mi madre que acabé optando por contactar a [Editorial Círculo Rojo](https://editorialcirculorojo.com/) y auto-editar con ellos. Empezamos el proceso en febrero de 2021 si mal no recuerdo y la obra ha sido definitivamente publicada en septiembre de ese mismo año.
+
+## ¿Qué es lo que más destacarías de _Un final para su final_?
+
+A nivel de valor literario, una vez más, supongo que esa fusión —me atrevería a decir— relativamente innovadora en la que narrador omnisciente y protagonista principal son un poco como el misterio de la Santísima Trinidad (en este caso sería dualidad, claro está); es decir, no son la misma cosa, pero a la vez sí que parecen serlo. Hay un distanciamiento obvio entre lo que sabe uno —que lo sabe todo— y lo que sabe el otro —que sabe lo que percibe—, pero, con todo, hay algo en el tono, en la naturaleza de las opiniones vertidas por el uno —el protagonista principal, Arturo— y reforzadas por el otro —el narrador omnisciente— a nivel filosófico que definitivamente supongo un soplo de aire refrescante en lo que a narrativa se refiere.
+
+Por otro lado —sin salirnos aún de los valores literarios de la novela—, el uso de los tiempos verbales es, cuanto menos, curioso: por un lado —de forma muy cercana a la tradición narrativa de la novela estadounidense más contemporánea—, la novela se narra principalmente en presente de indicativo, haciendo de ella una sencilla de leer donde es la acción la que toma un lugar relevante que abre el camino al resto de componentes de la narración (descripción, reflexión, diálogo…); por el otro, el uso de una forma verbal tan preciosa como olvidada como es el futuro de subjuntivo está muy presente en la novela y le da ese toque vetusto y oxidado del que la novela quiere hacer eco en cada una de sus páginas en función a uno de sus temas principales que, precisamente, es **el paso del tiempo** y como este se encarga de corroerlo todo: del sofá del primer episodio a la relación del protagonista con su esposa, con su entorno y con todos aquellos personajes con los que se cruza a lo largo de su viaje, pues esto es la novela:
+
+> \[_Un final para su final_ es\] un viaje tanto físico como metafórico para darnos cuenta de que lo peor que puede pasar cuando perseguimos la última de nuestras (buenas) memorias no es que la memoria se haya disuelto, haya desaparecido, haya muerto; sino que la memoria siga bien viva, coleando… pero que sea ella la que nos haya olvidado a nosotros
+
+A nivel narrativo, creo que lo más importante de la novela es el estudio filosófico que representa ante muchas de las lacras que nos corroen como seres humanos y que corroen la sociedad que, como seres humanos, formamos: el paso del tiempo tal y como ya ha sido mencionado, **el poder de las creencias**, **la importancia que le damos a la autoridad**, la formación (y la formulación) de nuestras identidades como un reflejo exacto de nuestra memoria (pues sin la última, las primeras se disuelven inexorablemente) y, sobre todo, esa necesidad que tendríamos que tener todos de vivir nuestra vida más allá de las expectativas —propias o ajenas— que existen sobre nosotros mismos y que condicionan —en muchos (¡demasiados!) casos— que nos apocopemos ante la posibilidad de vivir la vida que verdaderamente querríamos vivir en lugar de conformarnos con la vida «que nos ha tocado vivir».
+
+Creo también, finalmente, que los personajes merecen su mención de honor; por obvio, principalmente el protagonista —Arturo—, pero también todos los demás, quienes, por cortas que sean sus apariciones, no solo no representan típicos estereotipos, sino que cada uno aporta a ese cúmulo filosófico en el que la novela termina convirtiéndose perspectivas diversas y diferentes pero que harán que el lector se plantee algunos «lugares comunes» desde otros ángulos en los que quizás jamás antes había reparado.
+
+## ¿A quién va dirigido _Un final para su final_ ?
+
+Si bien responder «a todos» sería una respuesta definitivamente mala y hasta cierto punto descabellada, en este caso, precisamente por lo anteriormente comentado al respecto de ese «cúmulo filosófico» que la novela representa y que trata de hacer que el lector observe la realidad circundante desde ciertos puntos de vista a los que o bien no se nos tiene acostumbrados o bien desde los que no nos hemos atrevido a mirar con anterioridad, me lanzaría ese órdago de decir que es una novela que resultará inspiradora —en su sentido más amplio pero también más concreto— a cualquiera que la lea.
+
+Ahora bien, lo que está claro es que no es una novela para infantes o adolescentes —incluso por alguna de las escenas descritas en ella—; quizás sí una novela para jóvenes adultos, definitivamente. Y mucho más para adultos y adultos mayores, sobre todo aquellos que no se atrevieron a lanzarse a cumplir sus sueños. A estos últimos —me gustaría pensar—, _Un final para su final_ les resultará una profunda inspiración para advertir que nunca (¡nunca!) es tarde cuando de perseguir nuestros sueños se trata —y que no importa las vicisitudes que nos encontremos en el camino siempre que tengamos claros nuestros objetivos en relación a esos sueños—.
+
+## ¿Qué te ha inspirado para escribirlo?
+
+Pues a nivel de referentes culturales, si de eso se trata la pregunta, podría citar algunos referentes —uno de los cuales, de hecho y curiosamente, jamás he consumido—; a saber: en 2014 era un fan incesante del doctor televisivo [Gregory House](https://www.imdb.com/title/tt0412142/). La creación del generalísimo **Bryan Singer** con la interpretación de un siempre brutal **Hugh Laurie** que se encargaba, a partes iguales, de mezclar filosofía, crítica social y acción; en tal sentido, Arturo representa una versión más latina (o españolizada) de ese cascarrabias —pero no por ello menos acertado— que era el Dr. House.
+
+A nivel literario, la narrativa que más me ha inspirado siempre ha sido la de los autores estadounidenses más contemporáneos: **J. D. Salinger** a través del clásico _El guardián entre el centeno_, la crítica social siempre afilada de **Chuck Palahniuk** en obras como _El club de la lucha_ y _Choke_, por ejemplo, así como la narrativa ácida de **Bret Easton Ellis** —sobre todo en sus novelas iniciales: _Menos que cero_, _Las reglas de la atracción_, _American Psycho_…—, además de, por supuesto, toda la obra del increíble, increíble, increíble (y atemporal) **Charles Bukowski** —de cuya literatura, más que fan, soy un acérrimo creyente—.
+
+Finalmente, esa obra que nunca he consumido se trata de [_Una historia verdadera_](https://www.filmaffinity.com/es/film378700.html), de **David Lynch**. Una vez más, no la he consumido, pero estoy casi seguro que el día que lo haga encontraré ciertos paralelismos entre la historia de Arturo y la historia del protagonista del citado film.
+
+A nivel más profundo —si es que podemos decirlo así–, la inspiración que me llevó a escribir _Un final para su final_ fue, precisamente, la de —a través de una obra narrativa escrita de la forma más directa posible— dar mi opinión sobre temas tan fundamentales como los ya mencionados —el paso del tiempo, la importancia de las creencias, el miedo que nos han enseñado a tener a conservar una vida estable en lugar de usar el tiempo que tenemos en esta tierra para tratar de cumplir nuestros verdaderos sueños y tantos otros temas centrales que se dan cita en la novela— desde una óptica crítica y de algún modo amargada de alguien que, precisamente, llega demasiado tarde a darse cuenta de que la vida es una y de que lo único que verdaderamente merece la pena hacer con ella es vivirla en su máxima expresión, sentirla en su máxima extensión.
+
+## ¿Qué se va a encontrar el lector en tu obra?
+
+Pues citando algunas de las críticas que ya a estas alturas he recibido al respecto de mi novela, algo así como «la historia de un **Holden Caulfield** —_El guardián entre el centeno_— envejecido», «un **Ignatius J. Reilly** —_La conjura de los necios_— en su versión «menos psicótica”», una obra sobre una generación que no es la mía —la del autor— sino que, tratándose de una generación mucho anterior, refleja, sin embargo, las reflexiones, la visión y la perspectiva de alguien que —como me dijo el padre de un amigo de mi promoción escolar— «o bien ha vivido mucho o ha leído mucho». Un **Alonso Quijano** teleportado en el tiempo hacia el siglo XX (o XXI).
+
+Una obra que presenta una dualidad, una complicidad y una sinergia entre narrador omnisciente y personaje principal que se complementan de un modo que no ha sido usualmente explotado con anterioridad. 
+
+Y es que, apuesto, en cada lectura, cada uno de estos lectores se encontrará diseccionando pasajes, situaciones y contextos a los que, cada vez, tendrá algo más que extraerlo, algo más sobre lo que reflexionar.
+
+> \[_Un final para su final_ es\] una historia de rápido consumo, pero de lenta —y no por ello pesada— digestión de la que, estoy seguro, el lector que se aventure en ella tendrá ganas, quizás incluso al poco tiempo, de repetir.
+
+Y es que, apuesto, en cada lectura, cada uno de estos lectores se encontrará diseccionando pasajes, situaciones y contextos a los que, cada vez, tendrá algo más que extraerlo, algo más sobre lo que reflexionar.
+
+## ¿Qué tal tu experiencia con Editorial Círculo Rojo?
+
+Maravillosa, la verdad. Destaco, principalmente, el trabajo con los responsables de la corrección ortotipográfica —que me enseñó cosas que no sabía a nivel de ortografía, sobre lo cual (como buen obseso de ella) no podría estar más agradecido—, de maquetación —que pacientemente aguantó cada una de mis más de 7 (si no recuerdo mal) revisiones— de diseño —quien acertó transmitiendo a través de la portada mucho más de lo que el propio diseñador podría llegar a imaginarse— y, por supuesto, de mi editora —quien ha sido la que con más paciencia ha tenido que soportar (y responderme) las innumerables páginas de consultas que, a través del correo electrónico, le he ido haciendo a cada paso del camino. Gracias a todos ello. Muchísimas, muchísimas gracias.
+
+Todo al respecto del proceso editorial ha funcionado como la maquinaria de un reloj suizo: con perfección y puntualidad. Ahora, de hecho, que estamos en la fase de promoción, me siguen sorprendiendo con una diligencia, una adaptabilidad a los que son mis planes de mercadeo para la novela y una compatibilidad con las que son mis ideas al respecto dignas de mención.
+
+Cuando en el futuro publique de nuevo, ya sé con quién habré de hacerlo. Y en el caso de recibir una oferta de otra editorial, con que el proceso de esta sea, cuanto menos, la décima parte de dinámico y eficaz que el que he tenido con Círculo Rojo, bien podría conformarme.
+
+La muerte siempre hace clic. No importa lo viejo que seas.
+
+## ¿Has leído ya _Un final para su final_?
+
+¿Qué es lo peor que podría pasar si nos lanzamos a perseguir el último de nuestros buenos recuerdos?
+
+![Portada «Un final para su final» - boceto](https://ibaifernandez.com/wp-content/uploads/2021/07/Portada-Un-final-para-su-final.jpeg)
+
+Sinopsis
+
+¿Serías capaz de dejarlo todo por perseguir el último recuerdo feliz que tuviste? ¿Qué sería lo peor que podría pasarnos al ir en su búsqueda? Acompaña a Arturo en este viaje físico y metafórico que es **_Un final para su final_** para averiguarlo. Quizás, junto a él, decidas que este haya de ser el punto de partida de tu propio viaje, en el que comiences a ir tras tus sueños antes de que no sean más que pálidos recuerdos…
+
+Las claves
+
+*   **Autor**: Ibai Fernández​
+*   **Género**: novela contemporánea
+*   **Nº de páginas**: 154​​
+*   **Fecha de publicación**: agosto 2021​
+*   **Idioma origina**l: español​
+*   **Editorial**: [Editorial Círculo Rojo](https://editorialcirculorojo.com/)​
+*   **Ilustración de portada** por [Van Chacín](https://www.behance.net/vanchacinb827)
+*   **Diseño de portada:** [Editorial Círculo Rojo](https://editorialcirculorojo.com/)
+*   **Ilustraciones interiores** por [Van Chacín​](https://www.behance.net/vanchacinb827)
+*   **_Letterings_** por [Mónica Montúfar​](https://monicamontufar.com/)
+*   **Precio**: 14,99 €
+
+Sobre el autor
+
+**Ibai Fernández** es un soñador empedernido, un existencialista nato y un cínico con corazón.
+
+Es un niño jugando a ser grande, un adulto que no ha crecido, un filósofo obtuso, un explorador.
+
+Un ludópata con fobia al riesgo, un piloto con trazas de vértigo, un submarinista claustrofóbico encallado en su salón.
+
+Un bastardo en el Día del Padre, un bongosero sin ritmo, un lobo del que la Luna se esconde cada vez que se asoma a un balcón.
+
+Un antihéroe, un diletante, un paria, un energúmeno, un filisteo, un sibarita sin posibilidad de redención.
+
+[
+
+Descárgate el 1er episodio
+
+](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjcyNTAiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
+
+Y adquiérela en
+
+[![Botón-Amazon](https://ibaifernandez.com/wp-content/uploads/elementor/thumbs/Botón-Amazon-pdghfsi1oxspnvo2sji0fel8zpgjkf8swbqny38buk.png "Botón-Amazon")](https://www.amazon.com/dp/8411041468/)
+
+[![Botón-Libros-CC](https://ibaifernandez.com/wp-content/uploads/elementor/thumbs/Botón-Libros-CC-pdgkdn3rbap531wypank7ozx7rqkddgms8h3huab5o.png "Botón-Libros-CC")](https://www.amazon.com/dp/8411041468/)
+
+¿Te gustaría recibir contenidos como éste en tu correo?
+
+De ser así, suscríbete. No voy a _spammearte_, puedes tener esa seguridad. Sólo te haré partícipe por correo electrónico de los nuevos contenidos que vaya escribiendo por si te interesa leerlos. Haz clic en el siguiente enlace para ver más detalles sobre mi [política de privacidad](https://ibaifernandez.com/politica-de-privacidad/).
+
+   
+
+Nombre 
+
+Email 
+
+Aceptación
+
+ 
+
+Sí, me gustaría recibir más contenidos como éste que ando leyendo en estos momentos.
+
+Enviar
+
+¿Quieres ser escritor?
+
+![El oficio de escritor - Vol. 1 - Reflexiones de un escritor primerizo](https://ibaifernandez.com/wp-content/uploads/2021/07/Reflexiones-de-un-escritor-primerizo.png)
+
+Te propongo un viaje de ida y vuelta en paralelo entre la vida y la escritura, viendo qué de la una es aplicable en la otra y qué de la otra es aplicable en la una. Sé que las reflexiones que en este primer volumen de «**El oficio de escritor**» te comparto te van a ser más que útiles a la hora de enfrentarte al folio en blanco.
+
+Descárgatelo **gratis** rellenando el siguiente formulario. Haz clic en el siguiente enlace para ver más detalles sobre mi [política de privacidad](https://ibaifernandez.com/politica-de-privacidad/).
+
+   
+
+Nombre 
+
+Email 
+
+Aceptación
+
+ 
+
+Sí, me gustaría recibir contenidos por correo electrónico.
+
+DESCARGAR
+
+"I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur."
+
+![Dana Doe](https://ibaifernandez.com/wp-content/uploads/2021/07/Untitled-1-1.png)
+
+Dana Doe
+
+CEO
+
+"I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur."
+
+![John Doe](https://ibaifernandez.com/wp-content/uploads/2021/07/2324.png)
+
+John Doe
+
+CEO
+
+"I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur."
+
+![Brian Doe](https://ibaifernandez.com/wp-content/uploads/2021/07/brian.png)
+
+Brian Doe
+
+CEO
+
+"I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur."
+
+![Mary Doe](https://ibaifernandez.com/wp-content/uploads/2021/07/3424.png)
+
+Mary Doe
+
+CEO
