@@ -26,6 +26,12 @@ import heroImage from '../assets/images/ibai-hero.png';
       width: max-content;
       animation: marquee 30s linear infinite;
     }
+    /* Override global.css heading font — Coming Soon uses Space Grotesk */
+    .font-display h1,
+    .font-display h2,
+    h1, h2 {
+      font-family: 'Space Grotesk', sans-serif;
+    }
   </style>
 
   <div class="relative flex h-screen w-screen flex-col overflow-hidden text-slate-100 font-display selection:bg-primary selection:text-white">
