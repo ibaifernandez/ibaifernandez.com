@@ -2,6 +2,47 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const categories = [
+  {
+    num:   'I',
+    title: 'Ciudades & Destinos',
+    desc:  'El bullicio de las ciudades. La magia de los lugares que he tenido el privilegio de fotografiar a lo largo de los años.',
+    galleries: [
+      { href: '/malaga',                    label: 'Málaga',                   cover: '/images/galleries/malaga.jpg' },
+      { href: '/madrid',                    label: 'Madrid',                   cover: '/images/galleries/madrid.jpg' },
+      { href: '/cadiz',                     label: 'Cádiz',                    cover: '/images/galleries/cadiz.jpg' },
+      { href: '/barcelona',                 label: 'Barcelona',                cover: '/images/galleries/barcelona.jpg' },
+      { href: '/dublin',                    label: 'Dublín',                   cover: '/images/galleries/dublin.jpg' },
+      { href: '/new-york-city',             label: 'New York City',            cover: '/images/galleries/new-york.jpg' },
+      { href: '/new-hampshire-usa',         label: 'New Hampshire, USA',       cover: '/images/galleries/new-hampshire.jpg' },
+      { href: '/mid-west-south-south-east', label: 'Mid West, South & SE',    cover: '/images/galleries/mid-west.jpg' },
+      { href: '/salinas-ecuador-2022',      label: 'Salinas, Ecuador 2022',    cover: '/images/galleries/salinas.jpg' },
+    ],
+  },
+  {
+    num:   'II',
+    title: 'Retratos, personas y personajes',
+    desc:  'Retratos que capturan la esencia y la singularidad de las personas que han cruzado mi camino.',
+    galleries: [
+      { href: '/antonella-moreno',                    label: 'Antonella Moreno',       cover: '/images/galleries/antonella.jpg' },
+      { href: '/mr-soriver',                          label: 'Mr. Soriver',             cover: '/images/galleries/mr-soriver.jpg' },
+      { href: '/an-american-graduation',              label: 'An American Graduation',  cover: '/images/galleries/american-graduation.jpg' },
+      { href: '/leon-el-gato',                        label: 'León el gato',            cover: '/images/galleries/leon.jpg' },
+      { href: '/portafolio-modelo-ibai-fernandez-2023', label: 'Portafolio Modelo · 2023', cover: '/images/galleries/portafolio-modelo.jpg' },
+    ],
+  },
+  {
+    num:   'III',
+    title: 'Reportajes',
+    desc:  'Eventos, celebraciones y situaciones significativas documentadas con la cámara.',
+    galleries: [
+      { href: '/movimiento-15-m',      label: 'Movimiento 15-M',      cover: '/images/galleries/15m.jpg' },
+      { href: '/nobiemvre',            label: 'Nobiemvre',            cover: '/images/galleries/nobiemvre.jpg' },
+      { href: '/an-american-graduation', label: 'An American Graduation', cover: '/images/galleries/american-graduation.jpg' },
+    ],
+  },
+];
 ---
 
 <BaseLayout
@@ -34,74 +75,30 @@ import Footer from '../components/Footer.astro';
     <section class="foto-galleries">
       <div class="container">
 
-        <!-- Ciudades & Destinos -->
-        <div class="foto-category">
-          <div class="foto-category__header">
-            <span class="foto-category__num">I</span>
-            <div>
-              <h2 class="foto-category__title">Ciudades & Destinos</h2>
-              <p class="foto-category__desc">
-                El bullicio de las ciudades. La magia de los lugares que he tenido el privilegio
-                de fotografiar a lo largo de los años.
-              </p>
+        {categories.map((cat, ci) => (
+          <div class="foto-category">
+
+            <div class="foto-category__header">
+              <span class="foto-category__num">{cat.num}</span>
+              <div>
+                <h2 class="foto-category__title">{cat.title}</h2>
+                <p class="foto-category__desc">{cat.desc}</p>
+              </div>
             </div>
-          </div>
-          <ul class="foto-list">
-            <li><a href="/malaga" class="foto-list__link">Málaga</a></li>
-            <li><a href="/madrid" class="foto-list__link">Madrid</a></li>
-            <li><a href="/cadiz" class="foto-list__link">Cádiz</a></li>
-            <li><a href="/barcelona" class="foto-list__link">Barcelona</a></li>
-            <li><a href="/dublin" class="foto-list__link">Dublín</a></li>
-            <li><a href="/new-york-city" class="foto-list__link">New York City</a></li>
-            <li><a href="/new-hampshire-usa" class="foto-list__link">New Hampshire, USA</a></li>
-            <li><a href="/mid-west-south-south-east" class="foto-list__link">Mid West, South & South East</a></li>
-            <li><a href="/salinas-ecuador-2022" class="foto-list__link">Salinas, Ecuador 2022</a></li>
-          </ul>
-        </div>
 
-        <div class="foto-divider"></div>
-
-        <!-- Retratos -->
-        <div class="foto-category">
-          <div class="foto-category__header">
-            <span class="foto-category__num">II</span>
-            <div>
-              <h2 class="foto-category__title">Retratos, personas y personajes</h2>
-              <p class="foto-category__desc">
-                Retratos que capturan la esencia y la singularidad de las personas
-                que han cruzado mi camino.
-              </p>
+            <div class="foto-grid">
+              {cat.galleries.map(g => (
+                <a href={g.href} class="foto-card">
+                  <div class="foto-card__img" style={`background-image: url('${g.cover}')`}></div>
+                  <div class="foto-card__overlay"></div>
+                  <p class="foto-card__label">{g.label}</p>
+                </a>
+              ))}
             </div>
-          </div>
-          <ul class="foto-list">
-            <li><a href="/antonella-moreno" class="foto-list__link">Antonella Moreno</a></li>
-            <li><a href="/mr-soriver" class="foto-list__link">Mr. Soriver</a></li>
-            <li><a href="/an-american-graduation" class="foto-list__link">An American Graduation</a></li>
-            <li><a href="/leon-el-gato" class="foto-list__link">León el gato</a></li>
-            <li><a href="/portafolio-modelo-ibai-fernandez-2023" class="foto-list__link">Portafolio Modelo · 2023</a></li>
-          </ul>
-        </div>
 
-        <div class="foto-divider"></div>
-
-        <!-- Reportajes -->
-        <div class="foto-category">
-          <div class="foto-category__header">
-            <span class="foto-category__num">III</span>
-            <div>
-              <h2 class="foto-category__title">Reportajes</h2>
-              <p class="foto-category__desc">
-                Eventos, celebraciones y situaciones significativas documentadas
-                con la cámara.
-              </p>
-            </div>
+            {ci < categories.length - 1 && <div class="foto-divider"></div>}
           </div>
-          <ul class="foto-list">
-            <li><a href="/movimiento-15-m" class="foto-list__link">Movimiento 15-M</a></li>
-            <li><a href="/nobiemvre" class="foto-list__link">Nobiemvre</a></li>
-            <li><a href="/an-american-graduation" class="foto-list__link">An American Graduation</a></li>
-          </ul>
-        </div>
+        ))}
 
       </div>
     </section>
@@ -110,9 +107,7 @@ import Footer from '../components/Footer.astro';
     <section class="foto-cta">
       <div class="container container--narrow">
         <div class="foto-cta__inner">
-          <p class="foto-cta__text">
-            ¿Un proyecto fotográfico o de vídeo?
-          </p>
+          <p class="foto-cta__text">¿Un proyecto fotográfico o de vídeo?</p>
           <a href="/hablemos" class="foto-cta__link">Cuéntame →</a>
         </div>
       </div>
@@ -124,6 +119,7 @@ import Footer from '../components/Footer.astro';
 </BaseLayout>
 
 <style>
+  /* ---- Hero ---- */
   .foto-hero {
     position: relative;
     background-color: var(--ink);
@@ -137,11 +133,7 @@ import Footer from '../components/Footer.astro';
   .foto-hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(155, 32, 32, 0.08) 0%,
-      transparent 50%
-    );
+    background: linear-gradient(135deg, rgba(155,32,32,0.08) 0%, transparent 50%);
     pointer-events: none;
   }
 
@@ -178,7 +170,7 @@ import Footer from '../components/Footer.astro';
     margin: 0;
   }
 
-  /* Galleries */
+  /* ---- Galleries ---- */
   .foto-galleries {
     background-color: var(--cream);
     padding: var(--space-20) 0 var(--space-24);
@@ -192,7 +184,7 @@ import Footer from '../components/Footer.astro';
     display: flex;
     gap: var(--space-8);
     align-items: flex-start;
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-10);
   }
 
   .foto-category__num {
@@ -222,41 +214,67 @@ import Footer from '../components/Footer.astro';
     margin: 0;
   }
 
-  .foto-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-    padding-left: calc(4rem + var(--space-8));
+  /* ---- Card grid ---- */
+  .foto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
   }
 
-  .foto-list__link {
-    display: inline-block;
-    font-family: var(--font-body);
-    font-size: var(--text-sm);
-    font-weight: 500;
-    color: var(--ink);
+  .foto-card {
+    position: relative;
+    display: block;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
     text-decoration: none;
-    padding: var(--space-2) var(--space-4);
-    border: 1px solid var(--fog);
-    background-color: var(--paper);
-    transition: border-color var(--transition-fast), color var(--transition-fast), background-color var(--transition-fast);
   }
 
-  .foto-list__link:hover {
-    border-color: var(--blood);
-    color: var(--blood);
-    background-color: var(--cream);
+  .foto-card__img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.55s ease;
+    filter: brightness(0.75);
+  }
+
+  .foto-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(14,12,10,0.75) 0%, rgba(14,12,10,0.1) 60%);
+    transition: background var(--transition-base);
+  }
+
+  .foto-card__label {
+    position: absolute;
+    bottom: var(--space-4);
+    left: var(--space-5);
+    right: var(--space-5);
+    font-family: var(--font-display);
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--text-on-dark);
+    margin: 0;
+    line-height: 1.2;
+    transition: color var(--transition-fast);
+  }
+
+  .foto-card:hover .foto-card__img {
+    transform: scale(1.05);
+  }
+
+  .foto-card:hover .foto-card__overlay {
+    background: linear-gradient(to top, rgba(155,32,32,0.65) 0%, rgba(14,12,10,0.35) 100%);
   }
 
   .foto-divider {
     border: none;
     border-top: 1px solid var(--fog);
+    margin-top: var(--space-8);
   }
 
-  /* CTA */
+  /* ---- CTA ---- */
   .foto-cta {
     background-color: var(--ink);
     padding: var(--space-16) 0;
@@ -284,19 +302,29 @@ import Footer from '../components/Footer.astro';
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--blood-light);
+    color: var(--text-on-dark);
     text-decoration: none;
+    border-bottom: 1px solid rgba(240,235,227,0.3);
+    padding-bottom: 2px;
     white-space: nowrap;
-    transition: color var(--transition-fast);
+    transition: color var(--transition-fast), border-color var(--transition-fast);
   }
 
   .foto-cta__link:hover {
     color: var(--fog-light);
+    border-bottom-color: var(--fog-light);
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 900px) {
+    .foto-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   @media (max-width: 600px) {
-    .foto-list {
-      padding-left: 0;
+    .foto-grid {
+      grid-template-columns: 1fr;
     }
 
     .foto-category__header {
