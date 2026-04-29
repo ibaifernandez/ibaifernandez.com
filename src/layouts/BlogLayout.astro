@@ -114,15 +114,6 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
           )}
         </p>
 
-        <!-- Tags -->
-        {tags && tags.length > 0 && (
-          <div class="article-tags">
-            {tags.map((tag) => (
-              <span class="article-tag">#{tag}</span>
-            ))}
-          </div>
-        )}
-
         <!-- Share -->
         <div class="article-share">
           <ShareButtons title={title} url={articleUrl} />
@@ -179,7 +170,7 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
 
   .article-hero {
     position: relative;
-    min-height: 72vh;
+    min-height: 58vh;
     display: flex;
     align-items: flex-end;
     padding-top: var(--header-height);
@@ -226,13 +217,15 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--blood-light);
+    color: var(--cream);
+    background-color: var(--blood);
     text-decoration: none;
-    transition: color var(--transition-fast);
+    padding: 3px 8px;
+    transition: background-color var(--transition-fast);
   }
 
   .article-hero__series:hover {
-    color: var(--fog-light);
+    background-color: rgba(155, 32, 32, 0.75);
   }
 
   .article-hero__date,
@@ -457,10 +450,21 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
   }
 
   // ---- Inline newsletter injection ----
-  // Insert after the 2nd H2 in the article
+  // Insert after the first paragraph that follows the 2nd H2
+  // (never directly under a heading)
   if (articleContent) {
     const headings = articleContent.querySelectorAll('h2');
-    const target   = headings[1] ?? headings[0]; // 2nd H2, fallback to 1st
+    const heading  = headings[1] ?? headings[0]; // 2nd H2, fallback to 1st
+    // Walk forward from the heading to find the next <p>
+    let target: Element | null = null;
+    if (heading) {
+      let sib = heading.nextElementSibling;
+      while (sib) {
+        if (sib.tagName === 'P') { target = sib; break; }
+        sib = sib.nextElementSibling;
+      }
+      if (!target) target = heading; // fallback: after heading itself
+    }
     if (target) {
       const nl = document.createElement('div');
       nl.className = 'prose-newsletter';
