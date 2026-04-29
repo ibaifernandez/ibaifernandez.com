@@ -1,0 +1,426 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const channelUrl = 'https://www.youtube.com/@the-if-show';
+const liveEpisode = {
+  youtubeId: 's_yRyVUoTtc',
+  title: 'The IF Show ¡En vivo! — Ep. 4',
+  subtitle: '¿Por qué lo llaman amor cuando quieren decir sexo?',
+};
+
+const seasons = [
+  {
+    num: 'I',
+    episodes: [
+      {
+        code: 'T01E02',
+        title: 'Cómo capitalizar a un hater',
+        desc: 'Pareciera necesario que cuando uno se siente tan afortunado, le crezcan como setas estos personajes conocidos en la cultura digital como «haters» o «trolls». ¿Qué hacemos con ellos? Aprendemos a convertirlos en combustible.',
+      },
+    ],
+  },
+  {
+    num: 'II',
+    episodes: [
+      {
+        code: 'T02E02',
+        title: 'Teorías de la conspiración (I)',
+        desc: '¿Qué sería de nosotros, los humanos, si no pudiéramos echar mano de vez en cuando de una buena teoría de la conspiración para explicar este mundo que nos rodea?',
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="The IF Show — Ibai Fernández"
+  description="The IF Show: el programa de variedades de Ibai Fernández en YouTube. Humor con un toque gamberro pero inocente — y siempre algo que aprender."
+>
+  <Header />
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="ifs-hero">
+      <div class="ifs-hero__overlay"></div>
+      <div class="container">
+        <div class="ifs-hero__content">
+          <p class="ifs-hero__eyebrow animate-fade-in">YouTube · Temporadas I & II</p>
+          <h1 class="ifs-hero__title animate-fade-in-up animate-delay-1">The IF Show</h1>
+          <p class="ifs-hero__sub animate-fade-in-up animate-delay-2">
+            El programa de variedades donde ríes — de él o con él — mientras aprendes algo.
+            Humor con un toque gamberro pero inocente.
+          </p>
+          <a
+            href={channelUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ifs-hero__cta animate-fade-in-up animate-delay-3"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            Ver canal en YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE EPISODE -->
+    <section class="ifs-live">
+      <div class="container container--narrow">
+        <p class="ifs-section-eyebrow">En directo</p>
+        <h2 class="ifs-live__title">{liveEpisode.subtitle}</h2>
+        <p class="ifs-live__code">{liveEpisode.title}</p>
+        <div class="ifs-embed">
+          <iframe
+            src={`https://www.youtube.com/embed/${liveEpisode.youtubeId}`}
+            title={liveEpisode.title}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- EPISODES -->
+    <section class="ifs-episodes">
+      <div class="container">
+        <p class="ifs-section-eyebrow">Episodios</p>
+
+        {seasons.map(season => (
+          <div class="ifs-season">
+            <h2 class="ifs-season__title">
+              <span class="ifs-season__t">Temporada</span>
+              <span class="ifs-season__num">{season.num}</span>
+            </h2>
+            <div class="ifs-season__episodes">
+              {season.episodes.map(ep => (
+                <article class="ifs-ep">
+                  <span class="ifs-ep__code">{ep.code}</span>
+                  <h3 class="ifs-ep__title">{ep.title}</h3>
+                  <p class="ifs-ep__desc">{ep.desc}</p>
+                  <a
+                    href={channelUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="ifs-ep__link"
+                  >
+                    Ver en YouTube →
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="ifs-cta">
+      <div class="container container--narrow">
+        <div class="ifs-cta__inner">
+          <p class="ifs-cta__text">¿Quieres que vuelva The IF Show?</p>
+          <a href={channelUrl} target="_blank" rel="noopener noreferrer" class="ifs-cta__link">
+            Suscríbete al canal →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ---- Hero ---- */
+  .ifs-hero {
+    position: relative;
+    background-color: var(--ink);
+    padding-top: var(--header-height);
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .ifs-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 60%, rgba(155,32,32,0.12) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .ifs-hero__content {
+    position: relative;
+    padding-bottom: var(--space-20);
+    padding-top: var(--space-16);
+  }
+
+  .ifs-hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    margin-bottom: var(--space-5);
+  }
+
+  .ifs-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--text-on-dark);
+    line-height: 1;
+    margin-bottom: var(--space-6);
+    letter-spacing: -0.02em;
+  }
+
+  .ifs-hero__sub {
+    font-family: var(--font-display);
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    font-style: italic;
+    color: var(--text-on-dark-muted);
+    max-width: 560px;
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-10);
+  }
+
+  .ifs-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+    text-decoration: none;
+    background-color: var(--blood);
+    border: 1px solid var(--blood);
+    padding: var(--space-3) var(--space-6);
+    transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .ifs-hero__cta:hover {
+    background-color: var(--blood-hover);
+    border-color: var(--blood-hover);
+  }
+
+  /* ---- Section eyebrow ---- */
+  .ifs-section-eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: var(--space-6);
+  }
+
+  /* ---- Live episode ---- */
+  .ifs-live {
+    background-color: var(--cream);
+    padding: var(--space-20) 0;
+  }
+
+  .ifs-live__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink);
+    margin-bottom: var(--space-2);
+    line-height: 1.2;
+  }
+
+  .ifs-live__code {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: var(--space-8);
+  }
+
+  .ifs-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--ink);
+  }
+
+  .ifs-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ---- Episodes ---- */
+  .ifs-episodes {
+    background-color: var(--cream);
+    padding: var(--space-4) 0 var(--space-24);
+    border-top: 1px solid var(--fog);
+  }
+
+  .ifs-season {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-12);
+    align-items: start;
+    padding: var(--space-12) 0;
+    border-top: 1px solid var(--fog);
+  }
+
+  .ifs-season__title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .ifs-season__t {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+
+  .ifs-season__num {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 300;
+    color: var(--fog);
+    line-height: 1;
+  }
+
+  .ifs-ep {
+    padding: var(--space-6);
+    border: 1px solid var(--fog);
+    background-color: rgba(255,255,255,0.5);
+  }
+
+  .ifs-ep__code {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blood);
+    display: block;
+    margin-bottom: var(--space-3);
+  }
+
+  .ifs-ep__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink);
+    margin-bottom: var(--space-4);
+    line-height: 1.2;
+  }
+
+  .ifs-ep__desc {
+    font-size: var(--text-base);
+    color: var(--stone);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+  }
+
+  .ifs-ep__link {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--fog);
+    padding-bottom: 2px;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .ifs-ep__link:hover {
+    color: var(--blood);
+    border-color: var(--blood);
+  }
+
+  /* ---- CTA ---- */
+  .ifs-cta {
+    background-color: var(--ink);
+    padding: var(--space-16) 0;
+  }
+
+  .ifs-cta__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .ifs-cta__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-style: italic;
+    color: var(--text-on-dark-muted);
+    margin: 0;
+  }
+
+  .ifs-cta__link {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-on-dark);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(240,235,227,0.3);
+    padding-bottom: 2px;
+    white-space: nowrap;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .ifs-cta__link:hover {
+    color: var(--fog-light);
+    border-bottom-color: var(--fog-light);
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 768px) {
+    .ifs-season {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+
+    .ifs-season__title {
+      flex-direction: row;
+      align-items: baseline;
+      gap: var(--space-4);
+    }
+
+    .ifs-season__num {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .ifs-cta__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
