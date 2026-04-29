@@ -5,6 +5,28 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# ── Legacy WP page redirects ──────────────────────────────────────────────────
+[[redirects]]
+  from = "/preguntame"
+  to   = "/hablemos"
+  status = 301
+
+[[redirects]]
+  from = "/conoceme"
+  to   = "/quien-soy"
+  status = 301
+
+[[redirects]]
+  from = "/contacto"
+  to   = "/hablemos"
+  status = 301
+
+[[redirects]]
+  from = "/ibai-fernandez"
+  to   = "/quien-soy"
+  status = 301
+
+# ── Astro SSR catch-all (must stay last) ──────────────────────────────────────
 [[redirects]]
   from = "/*"
   to = "/index.html"
