@@ -442,6 +442,8 @@ p {
   margin-left: calc(-1 * var(--space-6));
   margin-top: var(--space-10);
   margin-bottom: var(--space-10);
+  border-top: 3px solid var(--blood);
+  display: block;
 }
 
 .prose hr {

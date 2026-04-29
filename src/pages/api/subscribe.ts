@@ -8,12 +8,16 @@ export const POST: APIRoute = async ({ request }) => {
     const contentType = request.headers.get('content-type') ?? '';
     let email: string | null = null;
 
+    let name: string | null = null;
+
     if (contentType.includes('application/json')) {
       const body = await request.json();
       email = body?.email ?? null;
+      name  = body?.name  ?? null;
     } else {
       const data = await request.formData();
       email = data.get('email') as string | null;
+      name  = data.get('name')  as string | null;
     }
 
     if (!email || typeof email !== 'string' || !email.includes('@')) {
@@ -30,7 +34,10 @@ export const POST: APIRoute = async ({ request }) => {
         Accept: 'application/json',
         Authorization: `Bearer ${import.meta.env.MAILERLITE_API_KEY}`,
       },
-      body: JSON.stringify({ email: email.toLowerCase().trim() }),
+      body: JSON.stringify({
+        email: email.toLowerCase().trim(),
+        ...(name ? { fields: { name: name.trim() } } : {}),
+      }),
     });
 
     if (!res.ok) {
