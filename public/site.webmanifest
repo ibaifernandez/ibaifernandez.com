@@ -1,0 +1,32 @@
+{
+  "name": "Ibai Fernández",
+  "short_name": "Ibai",
+  "description": "Escritor, cineasta, fotógrafo y filósofo.",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#0e0c0a",
+  "background_color": "#0e0c0a",
+  "icons": [
+    {
+      "src": "/images/branding/isotipo-oscuro-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/branding/isotipo-oscuro-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/branding/isotipo-oscuro-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/branding/isotipo-oscuro-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
