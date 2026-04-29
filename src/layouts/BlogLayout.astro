@@ -234,6 +234,7 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
   .article-hero__reading-time {
     font-size: var(--text-sm);
     color: var(--text-on-dark-muted);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85);
   }
 
   .article-hero__title {
@@ -440,10 +441,7 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
       attribution.className = 'pullquote-card__attribution';
       attribution.innerHTML = `
         <img src="${img.getAttribute('src')}" alt="${altText}" class="pullquote-card__avatar">
-        <div>
-          ${name ? `<p class="pullquote-card__name">${name}</p>` : ''}
-          ${role ? `<p class="pullquote-card__role">${role}</p>` : ''}
-        </div>
+        ${name ? `<p class="pullquote-card__name">${name}</p>` : ''}
       `;
 
       // Wrap blockquote + attribution

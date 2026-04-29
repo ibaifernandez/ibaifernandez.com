@@ -607,19 +607,6 @@ p {
   border-left: 3px solid var(--blood);
 }
 
-/* Decorative opening guillemet */
-.pullquote-card::before {
-  content: '\AB';
-  font-family: var(--font-display);
-  font-size: 6rem;
-  line-height: 1;
-  color: var(--blood);
-  opacity: 0.15;
-  position: absolute;
-  top: var(--space-3);
-  left: var(--space-3);
-  pointer-events: none;
-}
 
 .pullquote-card blockquote {
   background: none;
@@ -662,7 +649,8 @@ p {
   display: inline-block !important;
 }
 
-.pullquote-card__name {
+/* Override .prose p specificity (0,1,1) with a higher-specificity rule */
+.pullquote-card p.pullquote-card__name {
   font-family: var(--font-body);
   font-size: var(--text-sm);
   font-weight: 600;
@@ -670,7 +658,7 @@ p {
   margin: 0;
 }
 
-.pullquote-card__role {
+.pullquote-card p.pullquote-card__role {
   font-family: var(--font-body);
   font-size: var(--text-xs);
   letter-spacing: 0.07em;
@@ -690,7 +678,7 @@ p {
    ============================================ */
 
 .prose-newsletter {
-  margin: var(--space-10) calc(-1 * var(--space-6)) var(--space-16);
+  margin: var(--space-10) calc(-1 * var(--space-6)) var(--space-12);
   background-color: var(--paper);
   border-top: 3px solid var(--blood);
   padding: var(--space-8) var(--space-10);
