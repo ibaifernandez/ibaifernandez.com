@@ -1,0 +1,301 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const allPosts = await getCollection('blog', (p) => !p.data.draft);
+const posts = allPosts
+  .filter((p) => (p.data as any).series === 'No Somos Héroes')
+  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title="No Somos Héroes — Ibai Fernández"
+  description="El manual de anti-ayuda de Ibai Fernández: una guía episódica para antihéroes que no necesitan serlo todo, pero tampoco piensan conformarse con nada."
+>
+  <Header />
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="nsh-hero">
+      <div class="container">
+        <div class="nsh-hero__content">
+          <p class="nsh-hero__eyebrow animate-fade-in">Serie · Manual de anti-ayuda</p>
+          <h1 class="nsh-hero__title animate-fade-in-up animate-delay-1">
+            No somos<br />
+            <em>héroes</em>
+          </h1>
+          <p class="nsh-hero__sub animate-fade-in-up animate-delay-2">
+            Una guía episódica para antihéroes. Porque no necesitamos serlo todo,
+            pero tampoco pensamos conformarnos con nada.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO PULL -->
+    <section class="nsh-manifesto">
+      <div class="container container--narrow">
+        <blockquote class="nsh-manifesto__quote">
+          «No somos héroes. Somos antihéroes.<br />
+          Y eso es exactamente lo que necesitamos ser.»
+        </blockquote>
+        <p class="nsh-manifesto__attr">— Ibai Fernández</p>
+      </div>
+    </section>
+
+    <!-- EPISODE LIST -->
+    <section class="nsh-episodes">
+      <div class="container">
+        <p class="nsh-episodes__eyebrow">Episodios de la serie · {posts.length} entregas</p>
+        <ol class="nsh-list">
+          {posts.map((post, i) => (
+            <li class="nsh-item">
+              <span class="nsh-item__num">{String(i + 1).padStart(2, '0')}</span>
+              <div class="nsh-item__body">
+                <a href={`/blog/${post.id}`} class="nsh-item__title">
+                  {post.data.title}
+                </a>
+                <p class="nsh-item__desc">{post.data.description}</p>
+              </div>
+              <a href={`/blog/${post.id}`} class="nsh-item__arrow" aria-hidden="true">→</a>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="nsh-cta">
+      <div class="container container--narrow">
+        <div class="nsh-cta__inner">
+          <p class="nsh-cta__text">
+            ¿Resonó contigo?
+          </p>
+          <a href="/hablemos" class="nsh-cta__link">Cuéntame →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ── Hero ──────────────────────────────────────────────────── */
+  .nsh-hero {
+    background-color: var(--ink);
+    padding-top: var(--header-height);
+    min-height: 65vh;
+    display: flex;
+    align-items: flex-end;
+    /* Diagonal texture hint */
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 40px,
+      rgba(155,32,32,0.03) 40px,
+      rgba(155,32,32,0.03) 41px
+    );
+  }
+
+  .nsh-hero__content {
+    padding-bottom: var(--space-20);
+    padding-top: var(--space-16);
+  }
+
+  .nsh-hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    margin-bottom: var(--space-4);
+  }
+
+  .nsh-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 9vw, 7.5rem);
+    font-weight: 300;
+    line-height: 0.92;
+    color: var(--text-on-dark);
+    margin-bottom: var(--space-8);
+    letter-spacing: -0.01em;
+  }
+
+  .nsh-hero__title em {
+    color: var(--blood-light);
+  }
+
+  .nsh-hero__sub {
+    font-size: var(--text-lg);
+    color: var(--text-on-dark-muted);
+    max-width: 540px;
+    line-height: var(--leading-relaxed);
+    margin: 0;
+  }
+
+  /* ── Manifesto ─────────────────────────────────────────────── */
+  .nsh-manifesto {
+    background-color: var(--blood);
+    padding: var(--space-14) 0;
+  }
+
+  .nsh-manifesto__quote {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 3vw, 1.9rem);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.45;
+    color: rgba(255,255,255,0.95);
+    border: none;
+    margin: 0 0 var(--space-4);
+    padding: 0;
+    background: none;
+  }
+
+  .nsh-manifesto__attr {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin: 0;
+  }
+
+  /* ── Episode list ──────────────────────────────────────────── */
+  .nsh-episodes {
+    background-color: var(--cream);
+    padding: var(--space-16) 0 var(--space-20);
+  }
+
+  .nsh-episodes__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: var(--space-10);
+  }
+
+  .nsh-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--fog);
+  }
+
+  .nsh-item {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-6);
+    padding: var(--space-6) 0;
+    border-bottom: 1px solid var(--fog);
+    transition: background-color var(--transition-fast);
+  }
+
+  .nsh-item:hover {
+    background-color: var(--paper);
+    margin: 0 calc(-1 * var(--space-4));
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .nsh-item__num {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 300;
+    color: var(--fog);
+    line-height: 1;
+    min-width: 2.5rem;
+    flex-shrink: 0;
+  }
+
+  .nsh-item__body {
+    flex: 1;
+  }
+
+  .nsh-item__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 500;
+    font-style: italic;
+    color: var(--ink);
+    text-decoration: none;
+    display: block;
+    margin-bottom: var(--space-1);
+    transition: color var(--transition-fast);
+  }
+
+  .nsh-item__title:hover {
+    color: var(--blood);
+  }
+
+  .nsh-item__desc {
+    font-size: var(--text-sm);
+    color: var(--stone);
+    margin: 0;
+    line-height: var(--leading-relaxed);
+  }
+
+  .nsh-item__arrow {
+    font-size: var(--text-base);
+    color: var(--fog);
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: color var(--transition-fast);
+  }
+
+  .nsh-item:hover .nsh-item__arrow {
+    color: var(--blood);
+  }
+
+  /* ── CTA ───────────────────────────────────────────────────── */
+  .nsh-cta {
+    background-color: var(--ink);
+    padding: var(--space-16) 0;
+  }
+
+  .nsh-cta__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .nsh-cta__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    font-style: italic;
+    color: var(--text-on-dark-muted);
+    margin: 0;
+  }
+
+  .nsh-cta__link {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--transition-fast);
+  }
+
+  .nsh-cta__link:hover { color: var(--fog-light); }
+
+  @media (max-width: 700px) {
+    .nsh-cta__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
