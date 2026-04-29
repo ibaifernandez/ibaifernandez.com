@@ -46,7 +46,15 @@ const currentYear = new Date().getFullYear();
 
       <!-- Brand -->
       <div class="footer__brand">
-        <a href="/" class="footer__logo">Ibai Fernández</a>
+        <a href="/" class="footer__logo" aria-label="Ibai Fernández — Inicio">
+          <img
+            src="/images/branding/260213-ibai-fernandez-visual-id-2026-03.svg"
+            alt="Ibai Fernández"
+            class="footer__logo-img"
+            width="140"
+            height="59"
+          />
+        </a>
         <p class="footer__tagline">Escritor · Nómada digital · Filosofía Rebelde</p>
         <div class="footer__social">
           {socialLinks.map((link) => (
@@ -128,19 +136,20 @@ const currentYear = new Date().getFullYear();
 
   /* Brand col */
   .footer__logo {
-    font-family: var(--font-display);
-    font-size: var(--text-2xl);
-    font-style: italic;
-    font-weight: 400;
-    color: var(--text-on-dark);
+    display: inline-block;
+    margin-bottom: var(--space-4);
     text-decoration: none;
-    display: block;
-    margin-bottom: var(--space-2);
-    transition: color var(--transition-fast);
+    transition: opacity var(--transition-fast);
   }
 
   .footer__logo:hover {
-    color: var(--fog-light);
+    opacity: 0.75;
+  }
+
+  .footer__logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
   }
 
   .footer__tagline {

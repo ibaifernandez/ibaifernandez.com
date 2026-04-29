@@ -193,6 +193,8 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
       rgba(14, 12, 10, 0.55) 50%,
       rgba(14, 12, 10, 0.92) 100%
     );
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
   }
 
   .article-hero__content {
@@ -338,14 +340,17 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--blood-light);
+    color: var(--text-on-dark);
     text-decoration: none;
     white-space: nowrap;
-    transition: color var(--transition-fast);
+    border-bottom: 1px solid rgba(240, 235, 227, 0.3);
+    padding-bottom: 2px;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
   }
 
   .article-contact__link:hover {
     color: var(--fog-light);
+    border-bottom-color: var(--fog-light);
   }
 
   @media (max-width: 600px) {

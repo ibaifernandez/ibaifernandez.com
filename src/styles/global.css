@@ -614,10 +614,10 @@ p {
   font-size: 6rem;
   line-height: 1;
   color: var(--blood);
-  opacity: 0.12;
+  opacity: 0.15;
   position: absolute;
-  top: var(--space-2);
-  left: -0.1em;
+  top: var(--space-3);
+  left: var(--space-3);
   pointer-events: none;
 }
 
@@ -690,7 +690,7 @@ p {
    ============================================ */
 
 .prose-newsletter {
-  margin: var(--space-6) calc(-1 * var(--space-6)) var(--space-14);
+  margin: var(--space-10) calc(-1 * var(--space-6)) var(--space-16);
   background-color: var(--paper);
   border-top: 3px solid var(--blood);
   padding: var(--space-8) var(--space-10);
