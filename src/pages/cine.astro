@@ -2,11 +2,32 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const films = [
+  {
+    slug:      'noche-sin-manana',
+    title:     'Noche sin mañana',
+    year:      '<!-- AÑO -->',
+    format:    'Cortometraje',
+    synopsis:  '<!-- SINOPSIS -->',
+    youtube:   'https://www.youtube.com/watch?v=m_G2yF4-5wQ',
+    thumbnail: 'https://img.youtube.com/vi/m_G2yF4-5wQ/maxresdefault.jpg',
+  },
+  {
+    slug:      '2x2',
+    title:     '2×2',
+    year:      '2014',
+    format:    'Cortometraje',
+    synopsis:  'Dos parejas. Un día. Cuatro personas que intentan entenderse mientras el tiempo se les escapa de las manos.',
+    youtube:   'https://www.youtube.com/watch?v=aN9rRLCpRBs',
+    thumbnail: 'https://img.youtube.com/vi/aN9rRLCpRBs/maxresdefault.jpg',
+  },
+];
 ---
 
 <BaseLayout
   title="Cine — Ibai Fernández"
-  description="Proyectos audiovisuales de Ibai Fernández. Cine que se mueve en los bordes entre el documental y la ficción."
+  description="Cortometrajes de Ibai Fernández. Cine que se mueve en los bordes entre el documental y la ficción."
 >
   <Header />
 
@@ -22,68 +43,68 @@ import Footer from '../components/Footer.astro';
             El modo más completo<br />
             <em>de mentir sobre la verdad.</em>
           </h1>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATEMENT -->
-    <section class="cine-statement">
-      <div class="container container--narrow">
-        <div class="cine-prose animate-fade-in-up">
-          <p class="cine-lead">
-            Dirijo y produzco proyectos audiovisuales que se mueven en los bordes
-            entre el documental y la ficción.
-          </p>
-          <p>
+          <p class="cine-hero__sub animate-fade-in-up animate-delay-2">
             No creo en la objetividad de la cámara. Creo en el punto de vista.
-            En la elección de qué encuadrar y qué dejar fuera.
             En que cada corte es una interpretación del mundo.
           </p>
-          <p>
-            El cine que me interesa hacer —y ver— no pretende responder preguntas.
-            Pretende que la pregunta se haga inevitable.
-          </p>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS — coming soon / existing -->
-    <section class="cine-projects">
+    <!-- FILMS -->
+    <section class="cine-films">
       <div class="container">
-        <p class="cine-section__eyebrow">Proyectos</p>
+        <p class="cine-eyebrow">Filmografía</p>
 
-        <div class="cine-project-grid">
+        {films.map((film, i) => (
+          <article class:list={['cine-film', { 'cine-film--reverse': i % 2 !== 0 }]}>
 
-          <article class="cine-project">
-            <div class="cine-project__meta">
-              <span class="cine-project__year">2023</span>
-              <span class="cine-project__type">Documental</span>
-            </div>
-            <h2 class="cine-project__title">No somos héroes</h2>
-            <p class="cine-project__desc">
-              Un manual de anti-terapia. Un viaje a través del mito del héroe
-              y lo que queda cuando se desmorona.
-            </p>
-            <a href="/blog/no-somos-heroes-prologo" class="cine-project__link">
-              Leer el prólogo →
+            <!-- Thumbnail / play -->
+            <a
+              href={film.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cine-film__thumb"
+              aria-label={`Ver ${film.title} en YouTube`}
+            >
+              <img
+                src={film.thumbnail}
+                alt={film.title}
+                class="cine-film__img"
+                loading="lazy"
+              />
+              <div class="cine-film__play">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
             </a>
-          </article>
 
-          <article class="cine-project cine-project--upcoming">
-            <div class="cine-project__meta">
-              <span class="cine-project__type cine-project__type--soon">En desarrollo</span>
+            <!-- Info -->
+            <div class="cine-film__info">
+              <div class="cine-film__meta">
+                <span class="cine-film__year">{film.year}</span>
+                <span class="cine-film__format">{film.format}</span>
+              </div>
+              <h2 class="cine-film__title">{film.title}</h2>
+              <p class="cine-film__synopsis">{film.synopsis}</p>
+              <div class="cine-film__actions">
+                <a
+                  href={film.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cine-film__btn cine-film__btn--primary"
+                >
+                  ▶ Ver cortometraje
+                </a>
+                <a href={`/${film.slug}`} class="cine-film__btn cine-film__btn--ghost">
+                  Ficha técnica →
+                </a>
+              </div>
             </div>
-            <h2 class="cine-project__title">Próximos proyectos</h2>
-            <p class="cine-project__desc">
-              Si tienes una propuesta o quieres hablar sobre una colaboración audiovisual,
-              escríbeme directamente.
-            </p>
-            <a href="/hablemos" class="cine-project__link">
-              Contactar →
-            </a>
-          </article>
 
-        </div>
+          </article>
+        ))}
       </div>
     </section>
 
@@ -91,9 +112,7 @@ import Footer from '../components/Footer.astro';
     <section class="cine-cta">
       <div class="container container--narrow">
         <div class="cine-cta__inner">
-          <p class="cine-cta__text">
-            ¿Una idea, una propuesta, una colaboración?
-          </p>
+          <p class="cine-cta__text">¿Una idea, una propuesta, una colaboración?</p>
           <a href="/hablemos" class="cine-cta__link">Hablemos →</a>
         </div>
       </div>
@@ -105,6 +124,7 @@ import Footer from '../components/Footer.astro';
 </BaseLayout>
 
 <style>
+  /* ---- Hero ---- */
   .cine-hero {
     position: relative;
     background-color: var(--ink);
@@ -120,8 +140,8 @@ import Footer from '../components/Footer.astro';
     inset: 0;
     background: linear-gradient(
       to bottom right,
-      rgba(14, 12, 10, 0.0) 0%,
-      rgba(155, 32, 32, 0.06) 100%
+      rgba(155, 32, 32, 0.07) 0%,
+      transparent 60%
     );
     pointer-events: none;
   }
@@ -149,78 +169,109 @@ import Footer from '../components/Footer.astro';
     line-height: 1.15;
     color: var(--text-on-dark);
     max-width: 700px;
-    margin: 0;
-  }
-
-  /* Statement */
-  .cine-statement {
-    background-color: var(--cream);
-    padding: var(--space-20) 0;
-  }
-
-  .cine-prose {
-    font-family: var(--font-display);
-    font-size: clamp(1.05rem, 2vw, 1.2rem);
-    line-height: 1.8;
-    color: var(--ink);
-  }
-
-  .cine-prose p {
     margin-bottom: var(--space-6);
   }
 
-  .cine-prose p:last-child {
-    margin-bottom: 0;
+  .cine-hero__sub {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-style: italic;
+    color: var(--text-on-dark-muted);
+    max-width: 520px;
+    line-height: var(--leading-relaxed);
+    margin: 0;
   }
 
-  .cine-lead {
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem) !important;
-    font-weight: 500;
+  /* ---- Films ---- */
+  .cine-films {
+    background-color: var(--cream);
+    padding: var(--space-20) 0 var(--space-24);
   }
 
-  /* Projects */
-  .cine-projects {
-    background-color: var(--paper);
-    padding: var(--space-16) 0 var(--space-20);
-    border-top: 1px solid var(--fog);
-  }
-
-  .cine-section__eyebrow {
+  .cine-eyebrow {
     font-family: var(--font-body);
     font-size: var(--text-xs);
     font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--stone);
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-16);
   }
 
-  .cine-project-grid {
+  .cine-film {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    gap: var(--space-16);
+    align-items: center;
+    padding: var(--space-16) 0;
     border-top: 1px solid var(--fog);
-    border-left: 1px solid var(--fog);
   }
 
-  .cine-project {
-    padding: var(--space-10) var(--space-8);
-    border-right: 1px solid var(--fog);
+  .cine-film:last-child {
     border-bottom: 1px solid var(--fog);
   }
 
-  .cine-project--upcoming {
-    background-color: var(--cream);
+  .cine-film--reverse {
+    direction: rtl;
   }
 
-  .cine-project__meta {
+  .cine-film--reverse > * {
+    direction: ltr;
+  }
+
+  /* Thumbnail */
+  .cine-film__thumb {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background-color: var(--ink);
+  }
+
+  .cine-film__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+    filter: brightness(0.85);
+  }
+
+  .cine-film__thumb:hover .cine-film__img {
+    transform: scale(1.04);
+    filter: brightness(0.7);
+  }
+
+  .cine-film__play {
+    position: absolute;
+    inset: 0;
     display: flex;
-    gap: var(--space-3);
     align-items: center;
+    justify-content: center;
+    color: var(--cream);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+  }
+
+  .cine-film__play svg {
+    width: 56px;
+    height: 56px;
+    filter: drop-shadow(0 2px 12px rgba(0,0,0,0.6));
+  }
+
+  .cine-film__thumb:hover .cine-film__play {
+    opacity: 1;
+  }
+
+  /* Info */
+  .cine-film__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
     margin-bottom: var(--space-4);
   }
 
-  .cine-project__year {
+  .cine-film__year {
     font-family: var(--font-body);
     font-size: var(--text-xs);
     font-weight: 600;
@@ -228,7 +279,7 @@ import Footer from '../components/Footer.astro';
     color: var(--stone);
   }
 
-  .cine-project__type {
+  .cine-film__format {
     font-family: var(--font-body);
     font-size: var(--text-xs);
     font-weight: 600;
@@ -239,43 +290,63 @@ import Footer from '../components/Footer.astro';
     border: 1px solid rgba(155, 32, 32, 0.3);
   }
 
-  .cine-project__type--soon {
-    color: var(--stone);
-    border-color: var(--fog);
-  }
-
-  .cine-project__title {
+  .cine-film__title {
     font-family: var(--font-display);
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-    font-weight: 500;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 400;
     font-style: italic;
     color: var(--ink);
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-5);
+    line-height: 1.1;
   }
 
-  .cine-project__desc {
+  .cine-film__synopsis {
     font-size: var(--text-base);
     color: var(--stone);
     line-height: var(--leading-relaxed);
-    margin-bottom: var(--space-5);
+    margin-bottom: var(--space-8);
   }
 
-  .cine-project__link {
+  .cine-film__actions {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .cine-film__btn {
     font-family: var(--font-body);
     font-size: var(--text-xs);
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--blood);
     text-decoration: none;
-    transition: color var(--transition-fast);
+    padding: var(--space-3) var(--space-6);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
   }
 
-  .cine-project__link:hover {
-    color: var(--blood-light);
+  .cine-film__btn--primary {
+    background-color: var(--blood);
+    color: var(--cream);
+    border: 1px solid var(--blood);
   }
 
-  /* CTA */
+  .cine-film__btn--primary:hover {
+    background-color: var(--blood-hover);
+    border-color: var(--blood-hover);
+  }
+
+  .cine-film__btn--ghost {
+    background-color: transparent;
+    color: var(--ink);
+    border: 1px solid var(--fog);
+  }
+
+  .cine-film__btn--ghost:hover {
+    border-color: var(--ink);
+  }
+
+  /* ---- CTA ---- */
   .cine-cta {
     background-color: var(--ink);
     padding: var(--space-16) 0;
@@ -303,21 +374,32 @@ import Footer from '../components/Footer.astro';
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--blood-light);
+    color: var(--text-on-dark);
     text-decoration: none;
+    border-bottom: 1px solid rgba(240, 235, 227, 0.3);
+    padding-bottom: 2px;
     white-space: nowrap;
-    transition: color var(--transition-fast);
+    transition: color var(--transition-fast), border-color var(--transition-fast);
   }
 
   .cine-cta__link:hover {
     color: var(--fog-light);
+    border-bottom-color: var(--fog-light);
   }
 
-  @media (max-width: 700px) {
-    .cine-project-grid {
+  /* ---- Responsive ---- */
+  @media (max-width: 900px) {
+    .cine-film {
       grid-template-columns: 1fr;
+      gap: var(--space-8);
     }
 
+    .cine-film--reverse {
+      direction: ltr;
+    }
+  }
+
+  @media (max-width: 600px) {
     .cine-cta__inner {
       flex-direction: column;
       align-items: flex-start;
