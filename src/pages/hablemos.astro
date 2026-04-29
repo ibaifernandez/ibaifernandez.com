@@ -1,0 +1,467 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Hablemos — Ibai Fernández"
+  description="Si tienes algo que contarme, una propuesta, una pregunta o simplemente ganas de conversar, escríbeme."
+>
+  <Header />
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hablemos-hero">
+      <div class="hablemos-hero__overlay"></div>
+      <div class="container">
+        <div class="hablemos-hero__content">
+          <p class="hablemos-hero__eyebrow animate-fade-in">Contacto</p>
+          <h1 class="hablemos-hero__title animate-fade-in-up animate-delay-1">
+            Hablemos.
+          </h1>
+          <p class="hablemos-hero__sub animate-fade-in-up animate-delay-2">
+            Si tienes algo que contarme, adelante.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM + SIDEBAR -->
+    <section class="hablemos-body">
+      <div class="container">
+        <div class="hablemos-grid">
+
+          <!-- Sidebar -->
+          <aside class="hablemos-aside">
+            <div class="hablemos-aside__block">
+              <p class="hablemos-aside__label">Correo directo</p>
+              <a href="mailto:info@ibaifernandez.com" class="hablemos-aside__link">
+                info@ibaifernandez.com
+              </a>
+            </div>
+
+            <div class="hablemos-aside__block">
+              <p class="hablemos-aside__label">Tiempo de respuesta</p>
+              <p class="hablemos-aside__text">Suelo responder en 24–48 horas.</p>
+            </div>
+
+            <div class="hablemos-aside__block">
+              <p class="hablemos-aside__label">¿Una propuesta?</p>
+              <p class="hablemos-aside__text">
+                Colaboraciones, fotografía, vídeo, conferencias, escritura por encargo —
+                cuéntame de qué se trata.
+              </p>
+            </div>
+
+            <div class="hablemos-aside__block">
+              <p class="hablemos-aside__label">¿Un lector?</p>
+              <p class="hablemos-aside__text">
+                También me alegra saber lo que opinas de lo que escribo.
+                Sin presión, sin agenda.
+              </p>
+            </div>
+          </aside>
+
+          <!-- Form -->
+          <div class="hablemos-form-wrap">
+            <form
+              class="hablemos-form"
+              name="hablemos"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              id="hablemos-form"
+            >
+              <input type="hidden" name="form-name" value="hablemos" />
+              <p class="sr-only">
+                <label>No rellenar si eres humano: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-row form-row--two">
+                <div class="form-group">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    class="form-input"
+                    placeholder="Tu nombre"
+                    autocomplete="given-name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="form-input"
+                    placeholder="tu@correo.com"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input
+                  type="text"
+                  id="asunto"
+                  name="asunto"
+                  class="form-input"
+                  placeholder="¿De qué quieres hablar?"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  required
+                  rows="7"
+                  class="form-input form-textarea"
+                  placeholder="Escribe aquí..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="hablemos-submit" id="submit-btn">
+                Enviar mensaje
+              </button>
+
+              <div class="form-success" id="form-success" aria-live="polite">
+                Mensaje enviado. Te respondo pronto.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* =====================
+     HERO
+     ===================== */
+
+  .hablemos-hero {
+    position: relative;
+    background-color: var(--ink);
+    padding-top: var(--header-height);
+    padding-bottom: var(--space-20);
+    overflow: hidden;
+  }
+
+  .hablemos-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at 30% 60%,
+      rgba(155, 32, 32, 0.12) 0%,
+      transparent 65%
+    );
+    pointer-events: none;
+  }
+
+  .hablemos-hero__content {
+    position: relative;
+    padding-top: var(--space-20);
+  }
+
+  .hablemos-hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    margin-bottom: var(--space-4);
+  }
+
+  .hablemos-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-on-dark);
+    line-height: 1;
+    margin-bottom: var(--space-6);
+  }
+
+  .hablemos-hero__sub {
+    font-size: var(--text-xl);
+    color: var(--text-on-dark-muted);
+    max-width: 400px;
+    margin: 0;
+  }
+
+  /* =====================
+     BODY
+     ===================== */
+
+  .hablemos-body {
+    background-color: var(--cream);
+    padding: var(--space-20) 0 var(--space-24);
+  }
+
+  .hablemos-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-16);
+    align-items: start;
+  }
+
+  /* =====================
+     ASIDE
+     ===================== */
+
+  .hablemos-aside {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-8));
+  }
+
+  .hablemos-aside__block {
+    padding-bottom: var(--space-8);
+    margin-bottom: var(--space-8);
+    border-bottom: 1px solid var(--fog);
+  }
+
+  .hablemos-aside__block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .hablemos-aside__label {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: var(--space-2);
+  }
+
+  .hablemos-aside__link {
+    font-size: var(--text-base);
+    color: var(--blood);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+    word-break: break-all;
+  }
+
+  .hablemos-aside__link:hover {
+    color: var(--blood-light);
+  }
+
+  .hablemos-aside__text {
+    font-size: var(--text-sm);
+    color: var(--stone);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+  }
+
+  /* =====================
+     FORM
+     ===================== */
+
+  .hablemos-form-wrap {
+    background-color: var(--paper);
+    padding: var(--space-12);
+    border: 1px solid var(--fog);
+  }
+
+  .form-row--two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-6);
+  }
+
+  .form-label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: var(--space-2);
+  }
+
+  .form-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--cream);
+    border: 1px solid var(--fog);
+    border-radius: 0;
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--ink);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .form-input::placeholder {
+    color: var(--stone);
+    opacity: 0.6;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--blood);
+    box-shadow: 0 0 0 2px rgba(155, 32, 32, 0.1);
+    background-color: var(--cream);
+  }
+
+  .form-textarea {
+    resize: vertical;
+    min-height: 160px;
+    line-height: var(--leading-relaxed);
+  }
+
+  .hablemos-submit {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cream);
+    background-color: var(--blood);
+    border: none;
+    padding: var(--space-4) var(--space-10);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+    margin-top: var(--space-2);
+  }
+
+  .hablemos-submit:hover {
+    background-color: var(--blood-hover);
+  }
+
+  .hablemos-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .form-success {
+    display: none;
+    margin-top: var(--space-6);
+    padding: var(--space-4) var(--space-6);
+    background-color: rgba(155, 32, 32, 0.06);
+    border-left: 3px solid var(--blood);
+    font-size: var(--text-sm);
+    color: var(--ink);
+    font-style: italic;
+  }
+
+  .form-success.is-visible {
+    display: block;
+  }
+
+  /* =====================
+     RESPONSIVE
+     ===================== */
+
+  @media (max-width: 900px) {
+    .hablemos-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+
+    .hablemos-aside {
+      position: static;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6);
+    }
+
+    .hablemos-aside__block {
+      border-bottom: none;
+      border-right: 1px solid var(--fog);
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-right: var(--space-6);
+    }
+
+    .hablemos-aside__block:nth-child(even) {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hablemos-aside {
+      grid-template-columns: 1fr;
+    }
+
+    .hablemos-aside__block {
+      border-right: none;
+      padding-right: 0;
+      border-bottom: 1px solid var(--fog);
+      margin-bottom: var(--space-6);
+      padding-bottom: var(--space-6);
+    }
+
+    .form-row--two {
+      grid-template-columns: 1fr;
+    }
+
+    .hablemos-form-wrap {
+      padding: var(--space-8) var(--space-6);
+    }
+
+    .hablemos-submit {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('hablemos-form') as HTMLFormElement | null;
+  const btn  = document.getElementById('submit-btn') as HTMLButtonElement | null;
+  const msg  = document.getElementById('form-success');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!btn) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    try {
+      const data = new FormData(form);
+      const res  = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data as any).toString(),
+      });
+
+      if (res.ok) {
+        form.reset();
+        msg?.classList.add('is-visible');
+        btn.textContent = 'Enviado';
+      } else {
+        throw new Error('Network error');
+      }
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Error — inténtalo de nuevo';
+    }
+  });
+</script>

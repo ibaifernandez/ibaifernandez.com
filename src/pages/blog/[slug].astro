@@ -3,15 +3,36 @@ import { getCollection, render } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map((post) => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
+  const posts = (await getCollection('blog'))
+    .filter((p) => !p.data.draft)
+    .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+  return posts.map((post, index) => {
+    const series = (post.data as any).series as string | undefined;
+
+    // Build prev/next within the same series (or globally if no series)
+    const siblings = series
+      ? posts.filter((p) => (p.data as any).series === series)
+      : posts;
+
+    const siblingIndex = siblings.findIndex((p) => p.id === post.id);
+    const prevPost = siblingIndex > 0
+      ? { slug: siblings[siblingIndex - 1].id, title: siblings[siblingIndex - 1].data.title }
+      : null;
+    const nextPost = siblingIndex < siblings.length - 1
+      ? { slug: siblings[siblingIndex + 1].id, title: siblings[siblingIndex + 1].data.title }
+      : null;
+
+    return {
+      params: { slug: post.id },
+      props: { post, prevPost, nextPost },
+    };
+  });
 }
 
-const { post } = Astro.props;
+const { post, prevPost, nextPost } = Astro.props;
 const { Content } = await render(post);
+const series = (post.data as any).series as string | undefined;
 ---
 
 <BlogLayout
@@ -21,7 +42,10 @@ const { Content } = await render(post);
   updatedDate={post.data.updatedDate}
   heroImage={post.data.heroImage}
   category={post.data.category}
+  series={series}
   tags={post.data.tags}
+  prevPost={prevPost}
+  nextPost={nextPost}
 >
   <Content />
 </BlogLayout>

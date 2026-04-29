@@ -1,0 +1,406 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Libros — Ibai Fernández"
+  description="Los libros de Ibai Fernández. Novela, ensayo y reflexiones sobre el oficio de escribir."
+>
+  <Header />
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="libros-hero">
+      <div class="container">
+        <div class="libros-hero__content">
+          <p class="libros-hero__eyebrow animate-fade-in">Libros</p>
+          <h1 class="libros-hero__title animate-fade-in-up animate-delay-1">
+            Lo que quedó<br />
+            <em>por escrito.</em>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKS -->
+    <section class="libros-body">
+      <div class="container">
+
+        <!-- Un final para su final -->
+        <article class="libro">
+          <div class="libro__cover-wrap">
+            <div class="libro__cover libro__cover--placeholder">
+              <span class="libro__cover-title">Un final<br />para su final</span>
+            </div>
+          </div>
+          <div class="libro__info">
+            <p class="libro__eyebrow">Novela · 2021</p>
+            <h2 class="libro__title">Un final para su final</h2>
+            <p class="libro__tagline">
+              <em>La muerte siempre hace clic. No importa lo viejo que seas.</em>
+            </p>
+            <p class="libro__synopsis">
+              ¿Serías capaz de dejarlo todo por perseguir el último recuerdo feliz que tuviste?
+              ¿Qué sería lo peor que podría pasarnos al ir en su búsqueda? Acompaña a Arturo
+              en este viaje físico y metafórico para averiguarlo.
+            </p>
+            <dl class="libro__data">
+              <div class="libro__data-row">
+                <dt>Páginas</dt>
+                <dd>154</dd>
+              </div>
+              <div class="libro__data-row">
+                <dt>Editorial</dt>
+                <dd>Círculo Rojo</dd>
+              </div>
+              <div class="libro__data-row">
+                <dt>Precio</dt>
+                <dd>14,99 €</dd>
+              </div>
+              <div class="libro__data-row">
+                <dt>Portada</dt>
+                <dd>Van Chacín</dd>
+              </div>
+            </dl>
+            <div class="libro__actions">
+              <a href="/un-final-para-su-final" class="libro__btn libro__btn--primary">
+                Más información
+              </a>
+              <a href="/blog/entrevista-sobre-un-final-para-su-final" class="libro__btn libro__btn--ghost">
+                Leer la entrevista
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <div class="libro-divider"></div>
+
+        <!-- El oficio de escritor Vol. 1 -->
+        <article class="libro libro--reverse">
+          <div class="libro__cover-wrap">
+            <div class="libro__cover libro__cover--placeholder libro__cover--light">
+              <span class="libro__cover-title">El oficio<br />de escritor<br /><em>Vol. I</em></span>
+            </div>
+          </div>
+          <div class="libro__info">
+            <p class="libro__eyebrow">Ensayo · 2021 · Descarga gratuita</p>
+            <h2 class="libro__title">El oficio de escritor</h2>
+            <p class="libro__tagline">
+              <em>Vol. I — Reflexiones de un escritor primerizo</em>
+            </p>
+            <p class="libro__synopsis">
+              Un viaje de ida y vuelta en paralelo entre la vida y la escritura.
+              Qué de la una es aplicable en la otra y qué de la otra es aplicable
+              en la una. Reflexiones para enfrentarse al folio en blanco.
+            </p>
+            <div class="libro__actions">
+              <a href="/el-oficio-de-escritor-vol-1" class="libro__btn libro__btn--primary">
+                Descargar gratis
+              </a>
+              <a href="/blog/el-oficio-de-escritor-introduccion" class="libro__btn libro__btn--ghost">
+                Leer la serie →
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA newsletter -->
+    <section class="libros-newsletter">
+      <div class="container container--narrow">
+        <div class="libros-newsletter__inner">
+          <p class="libros-newsletter__text">
+            Entérate de los próximos proyectos<br />antes que nadie.
+          </p>
+          <a href="/#newsletter" class="libros-newsletter__link">Suscribirse →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* =====================
+     HERO
+     ===================== */
+
+  .libros-hero {
+    background-color: var(--ink);
+    padding-top: var(--header-height);
+    padding-bottom: var(--space-20);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .libros-hero__content {
+    padding-top: var(--space-16);
+  }
+
+  .libros-hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    margin-bottom: var(--space-5);
+  }
+
+  .libros-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text-on-dark);
+    margin: 0;
+  }
+
+  /* =====================
+     BODY
+     ===================== */
+
+  .libros-body {
+    background-color: var(--cream);
+    padding: var(--space-20) 0 var(--space-24);
+  }
+
+  /* =====================
+     LIBRO
+     ===================== */
+
+  .libro {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-16);
+    align-items: center;
+    padding: var(--space-12) 0;
+  }
+
+  .libro--reverse {
+    direction: rtl;
+  }
+
+  .libro--reverse > * {
+    direction: ltr;
+  }
+
+  .libro__cover-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .libro__cover {
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 2/3;
+    background-color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6);
+    box-shadow: 8px 8px 0 var(--fog);
+  }
+
+  .libro__cover--light {
+    background-color: var(--paper);
+    border: 2px solid var(--fog);
+    box-shadow: 8px 8px 0 var(--ink);
+  }
+
+  .libro__cover-title {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    color: var(--cream);
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .libro__cover--light .libro__cover-title {
+    color: var(--ink);
+  }
+
+  .libro__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blood);
+    margin-bottom: var(--space-3);
+  }
+
+  .libro__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: var(--space-3);
+    line-height: 1.1;
+  }
+
+  .libro__tagline {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    color: var(--stone);
+    margin-bottom: var(--space-5);
+  }
+
+  .libro__synopsis {
+    font-size: var(--text-base);
+    color: var(--stone);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-8);
+    max-width: 520px;
+  }
+
+  .libro__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3) var(--space-8);
+    margin-bottom: var(--space-8);
+    padding: var(--space-6);
+    background-color: var(--paper);
+    border: 1px solid var(--fog);
+    max-width: 400px;
+  }
+
+  .libro__data-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .libro__data dt {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+
+  .libro__data dd {
+    font-size: var(--text-sm);
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .libro__actions {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .libro__btn {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    padding: var(--space-3) var(--space-8);
+    transition: all var(--transition-fast);
+  }
+
+  .libro__btn--primary {
+    background-color: var(--blood);
+    color: var(--cream);
+  }
+
+  .libro__btn--primary:hover {
+    background-color: var(--blood-hover);
+  }
+
+  .libro__btn--ghost {
+    background-color: transparent;
+    color: var(--blood);
+    border: 1px solid var(--blood);
+  }
+
+  .libro__btn--ghost:hover {
+    background-color: var(--blood);
+    color: var(--cream);
+  }
+
+  .libro-divider {
+    border: none;
+    border-top: 1px solid var(--fog);
+  }
+
+  /* =====================
+     NEWSLETTER CTA
+     ===================== */
+
+  .libros-newsletter {
+    background-color: var(--ink);
+    padding: var(--space-16) 0;
+  }
+
+  .libros-newsletter__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .libros-newsletter__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    font-style: italic;
+    color: var(--text-on-dark-muted);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .libros-newsletter__link {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--transition-fast);
+  }
+
+  .libros-newsletter__link:hover {
+    color: var(--fog-light);
+  }
+
+  /* =====================
+     RESPONSIVE
+     ===================== */
+
+  @media (max-width: 800px) {
+    .libro {
+      grid-template-columns: 1fr;
+    }
+
+    .libro--reverse {
+      direction: ltr;
+    }
+
+    .libro__cover-wrap {
+      justify-content: flex-start;
+    }
+
+    .libro__cover {
+      max-width: 160px;
+    }
+
+    .libros-newsletter__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

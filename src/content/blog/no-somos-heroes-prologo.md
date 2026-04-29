@@ -1,9 +1,11 @@
 ---
 title: "No somos héroes: prólogo"
-description: "No somos héroes: prólogo"
+description: "Ibai Fernández arranca la serie 'No somos héroes' presentándose a sí mismo y planteando la tesis central: no somos héroes ni tenemos por qué serlo; somos antihéroes, y eso es exactamente lo que necesitamos ser."
 pubDate: "2021-03-22"
-heroImage: "https://ibaifernandez.com/wp-content/uploads/2021/03/No-somos-héroes-prólogo.jpg"
+heroImage: "/images/wp-archive/No-somos-héroes-prólogo.jpg"
 category: "Artículos"
+series: "No Somos Héroes"
+tags: ["antihéroe", "autoconocimiento", "filosofía-de-vida", "identidad", "mejora-personal"]
 ---
 
 18 de marzo de 2021, 10:41 h.
@@ -14,20 +16,20 @@ Quito, 5.51 am de un jueves cualquiera de un marzo del siglo XXI.
 
 Llueve incesantemente (como durante los últimos 90 días) y la perra de mi madre (su chucho, literalmente, sin peyorativos) me observa como esfinge dos metros más allá de la mesa de mi despacho, a la que me siento para escribir estas líneas. Está nerviosa porque quiere salir al patio a hacer sus necesidades, pero llueve demasiado y cuando le he abierto la puerta no ha querido salir. Supongo que, además, el perpetuo sonido de la lluvia sobre nuestro tejado no la hace sino tener cada vez más ganas y la pobre, de educada, se está aguantando las ganas.
 
-Antes de llegar aquí soñaba con lucidez con cómo el proceso de un tatuaje sobre mi espalda era interrumpido porque el azul del _stencil_ del tatuaje anterior — el que en la narrativa del sueño me había hecho con anterioridad al que me estaba haciendo en ese momento — no se me había ido. Mi tatuador — el de siempre, el que me ha hecho todo lo que adorna mi piel hasta día presente a excepción de uno de ellos —, que lucía una increíble melena de rizos negros que jamás ha tenido, se detenía y no me explicaba por qué hasta un rato después de haberlo hecho. Me insistía en que no se había ido el azul de Jackie. «Jackie» resultó ser un tatuaje horrible que me había hecho en uno de mis gemelos a todo color. Mis tatuajes, todos también salvo uno, son monocromáticos. Tinta negra sobre más tinta negra con diferentes diluciones.
+Antes de llegar aquí soñaba con lucidez con cómo el proceso de un tatuaje sobre mi espalda era interrumpido porque el azul del _stencil_ del tatuaje anterior — el que en la narrativa del sueño me había hecho con anterioridad al que me estaba haciendo en ese momento — no se me había ido. Mi tatuador — el de siempre, el que me ha hecho todo lo que adorna mi piel hasta día presente a excepción de uno de ellos —, que lucía una increíble melena de rizos negros que jamás ha tenido, se detenía y no me explicaba por qué hasta un rato después de haberlo hecho. Me insistía en que no se había ido el azul de Jackie. «Jackie» resultó ser un tatuaje horrible que me había hecho en uno de mis gemelos a todo color. Mis tatuajes, todos también salvo uno, son monocromáticos. Tinta negra sobre más tinta negra con diferentes diluciones.
 
 Un hombre más cansado que viejo hablaba a mi espalda, por mi derecha, sacándome de quicio al proferir unas pocas palabras en cada respiración y haciendo de cada una de dichas respiraciones un ronquido. No hablaba nada con sentido; sólo me desesperaba tanto como ahora lo hace el nerviosismo de mi perra (que es de mi madre, pero también la siento en parte mía).
 
-El sueño ha acabado conmigo mintiendo al respecto de cuánto fumo últimamente, diciéndole a mi tatuador — y a algo así como un asistente suyo — que lo hacía cada vez menos… cuando cualquiera que me conozca (y mucho más que conviva conmigo) sabe que eso no es cierto.
+El sueño ha acabado conmigo mintiendo al respecto de cuánto fumo últimamente, diciéndole a mi tatuador — y a algo así como un asistente suyo — que lo hacía cada vez menos… cuando cualquiera que me conozca (y mucho más que conviva conmigo) sabe que eso no es cierto.
 
-Hablando de nerviosismos, es la primera mañana que no me levanto presa de un **indecible pánico**. Ayer por la noche me acosté respondiendo una carta y creo que el intercambio de impresiones que se produjo en ella me hizo sentirme mucho más relajado que lo he estado desde el último Día de los Inocentes, día en el que — por alguna razón que aún no consigo entender — mi signo cambió como si de una componente matemática se tratara: estaba todo bien y positivo y, a partir de ahí, todo se ha ido al traste durante los últimos 90 días (algo menos, considerando la fecha).
+Hablando de nerviosismos, es la primera mañana que no me levanto presa de un **indecible pánico**. Ayer por la noche me acosté respondiendo una carta y creo que el intercambio de impresiones que se produjo en ella me hizo sentirme mucho más relajado que lo he estado desde el último Día de los Inocentes, día en el que — por alguna razón que aún no consigo entender — mi signo cambió como si de una componente matemática se tratara: estaba todo bien y positivo y, a partir de ahí, todo se ha ido al traste durante los últimos 90 días (algo menos, considerando la fecha).
 
-Aunque mentiría si dijera que la carta ha sido todo el bálsamo que necesitaba para levantarme una buena mañana de marzo como ésta y decidir que todo (de repente) ya iba (a ir) bien. Las cosas siguen igual que ayer y que anteayer. Las cosas siguen bastante parecidas a como lo estaba aquel día 28 de diciembre cuando me acosté, porque no recuerdo haberme levantado con mal ánimo aquel día. Al contrario, me levanté con el ánimo propio de lo que serían unos días que, hasta después del Día de Año Nuevo había decidido — por fin y después de muchos meses de incesante trabajo — regalarme al margen de los quehaceres diarios de alguien que es **su propio jefe** (una idea que debatiremos en algún momento). Pero no creas que me voy a detener a preguntarme qué ha cambiado en este momento y en este lugar. Voy a aprovechar la viada (que, por cierto, por si no lo sabíais es un término náutico) para comenzar hablando un poco sobre mí. Sólo un poco.
+Aunque mentiría si dijera que la carta ha sido todo el bálsamo que necesitaba para levantarme una buena mañana de marzo como ésta y decidir que todo (de repente) ya iba (a ir) bien. Las cosas siguen igual que ayer y que anteayer. Las cosas siguen bastante parecidas a como lo estaba aquel día 28 de diciembre cuando me acosté, porque no recuerdo haberme levantado con mal ánimo aquel día. Al contrario, me levanté con el ánimo propio de lo que serían unos días que, hasta después del Día de Año Nuevo había decidido — por fin y después de muchos meses de incesante trabajo — regalarme al margen de los quehaceres diarios de alguien que es **su propio jefe** (una idea que debatiremos en algún momento). Pero no creas que me voy a detener a preguntarme qué ha cambiado en este momento y en este lugar. Voy a aprovechar la viada (que, por cierto, por si no lo sabíais es un término náutico) para comenzar hablando un poco sobre mí. Sólo un poco.
 
-> viada  
->   
-> nombre femenino  
->   
+> viada
+>
+> nombre femenino
+>
 > Movimiento brusco que hace un barco al empezar a andar o al aumentar de forma repentina su velocidad. Sinónimos: arrancada.
 
 ## Sobre el título y su autor
@@ -45,12 +47,8 @@ Ahora bien, estructuralmente, he dicho más sobre la ciudad en la que nací que 
 Hace no mucho, en ese perenne itinerario de «encontrarse a uno mismo» me vi tomando parte en unas jornadas budistas de auto-conocimiento. Llegué a molestarme mucho con el instructor (monje, _lama_ o lo que fuera) cuando dijo algo que, no obstante, a todas luces se antojaba verdad. Algo así como un aforismo o axioma budista que reza:
 
 > «El poseedor y la cosa poseída no pueden ser la misma cosa.»
-> 
-> .- Aforismo budista [
-> 
-> Tuitéame
-> 
-> ](https://twitter.com/intent/tweet?text=%C2%ABEl+poseedor+y+la+cosa+pose%C3%ADda+no+pueden+ser+la+misma+cosa.%C2%BB+%E2%80%94+.-+Aforismo+budista&url=https%3A%2F%2Fibaifernandez.com%2Fno-somos-heroes-prologo%2F&via=ibaifernandezec)
+>
+> — Aforismo budista
 
 Y, por obvio, que conste que parafraseo. Quizás cualquier budista salga de su estado de profundo trance y se lleve las manos a la cabeza si me lee tratar de decir algo que él (o cualquier compañero de creencias) podría decir de una manera cien veces más bella (y quizás hasta acertada). Pero lo cierto es que, por mal que me haya salido, es la reflexión que más me ha hecho pensar en los últimos tiempos — que supongo que es de todo lo que se trata el ejercicio.
 
@@ -65,22 +63,12 @@ Es, en definitiva, me atrevería a decir, una invitación perenne a observarnos,
 Si has nacido en una sociedad occidental entre este siglo (el XXI) y la mitad del pasado, más que probablemente has sido objeto (que no víctima, ya analizaremos esto en algún otro momento) de una corriente macrocultural que de una forma u otra ha metido en tu cabeza la necesidad de «**mejora continua**». Si has nacido en ese período de tiempo es más que probable que hayas leído aquello de:
 
 > «No es signo de buena salud estar bien adaptado a una sociedad profundamente enferma.»
-> 
-> .- Jiddu Krishnamurti [
-> 
-> Tuitéame
-> 
-> ](https://twitter.com/intent/tweet?text=%C2%ABNo+es+signo+de+buena+salud+estar+bien+adaptado+a+una+sociedad+profundamente+enferma.%C2%BB+%E2%80%94+.-+Jiddu+Krishnamurti&url=https%3A%2F%2Fibaifernandez.com%2Fno-somos-heroes-prologo%2F&via=ibaifernandezec)
+>
+> — Jiddu Krishnamurti
 
 O incluso habrás asistido a esa discusión tan en boga sobre cómo se ha convertido en una constante que el ser humano adulto necesite un promedio de media docena de píldoras para sobrevivir a esa enfermedad que él mismo ha creado bajo el nombre de «sociedad moderna». Quizás te hayas encontrado con ese meme que dice:
 
 > ¿Estás listo para que tu totalmente normal reacción a una sociedad de mierda sea diagnosticada como enfermedad mental de modo que te convierta en un adicto a drogas que alterarán constantemente tu estado mental para el resto de tu vida?
-> 
-> [
-> 
-> Tuitéame
-> 
-> ](https://twitter.com/intent/tweet?text=%C2%BFEst%C3%A1s+listo+para+que+tu+totalmente+normal+reacci%C3%B3n+a+una+sociedad+de+mierda+sea+diagnosticada+como+enfermedad+mental+de+modo+que+te+convierta+en+un+adicto+a+drogas+que+alterar%C3%A1n+constantemente+tu+estado+mental+para+el+resto+de+tu+vida%3F+%E2%80%94++&url=https%3A%2F%2Fibaifernandez.com%2Fno-somos-heroes-prologo%2F&via=ibaiferandezec)
 
 La que lo dice (en el _meme_ — al menos el que me llegó a mí y que guardé para quizás algún día como justo en este momento poder compartirlo con vosotros — es una psiquiatra (se entiende) con tres títulos universitarios a sus espaldas y con cara de sociópata.
 
@@ -93,12 +81,8 @@ Bueno, exactamente al mismo quizás no. Y es que nuestras circunstancias cambian
 Puesto de forma sencilla, dice un tópico que:
 
 > «La vida siempre te devuelve las mismas pruebas hasta que por fin eres capaz de superarlas.»
-> 
-> .- Tópico popular [
-> 
-> Tuitéame
-> 
-> ](https://twitter.com/intent/tweet?text=%C2%ABLa+vida+siempre+te+devuelve+las+mismas+pruebas+hasta+que+por+fin+eres+capaz+de+superarlas.%C2%BB+%E2%80%94+.-+T%C3%B3pico+popular&url=https%3A%2F%2Fibaifernandez.com%2Fno-somos-heroes-prologo%2F&via=ibaifernandez.com)
+>
+> — Tópico popular
 
 Que si no las superas del todo se te seguirán apareciendo para darte otro intento a ponerles solución.
 
@@ -106,15 +90,11 @@ La verdad, cada día creo confío menos en **aforismos** y axiomas, pero sí que
 
 Ahora bien, aquí viene la buena noticia: no tendríamos que sentirnos mal al respecto, porque **no somos héroes**. Y, aún mejor, no estamos obligados a serlo. Sólo un **verdadero héroe** puede enfrentarse al villano y acabar con él de una vez por todas. Eso pasa en las novelas, en las series y en las películas para devolvernos a casa o dejarnos dormir o entretenernos un ratito y hacerlo — en cualquiera de esos casos — con el mejor sabor de boca posible. Entre otras cosas porque probablemente hayamos invertido un dinero en consumir esa historia y el refuerzo positivo que ese algo nos aporta no es más que una promesa de valor que nos invita a que volvamos a consumirlo en algún momento. Esa buena sensación, ese placer, esa tranquilidad que se nos instala en el cuerpo — en la mente o en el espíritu, tanto me da — y que nos permite regresar a un lugar de calma esporádico además de tener que algo que **socializar en comunidad** — que, por cierto, es otra componente de aquello que nos aporta calma y de lo que en su momento también hablaremos.
 
-A fin de cuentas, ¿quién no tiene una película, una serie o un libro favorito que, cuanto menos, le permite un período de calma equivalente a lo que dicha película, dicha serie o dicho libro tarde en ser consumido (e incluso, quizás, que le devuelva cierta alegría cuando la alegría se nos antoja un bien de algún modo difícil de alcanzar)? O, quizás, el mismo hecho de hacerlo sin necesidad de tener que tener un favorito. A fin de cuentas, como decíamos antes: 
+A fin de cuentas, ¿quién no tiene una película, una serie o un libro favorito que, cuanto menos, le permite un período de calma equivalente a lo que dicha película, dicha serie o dicho libro tarde en ser consumido (e incluso, quizás, que le devuelva cierta alegría cuando la alegría se nos antoja un bien de algún modo difícil de alcanzar)? O, quizás, el mismo hecho de hacerlo sin necesidad de tener que tener un favorito. A fin de cuentas, como decíamos antes:
 
 > «Cada uno toma la droga de elección que más conveniente le resulte» (incluso, podríamos añadir, «en cada momento dado»).
-> 
-> .- Ibai Fernández («_No somos héroes_») [
-> 
-> Tuitéame
-> 
-> ](https://twitter.com/intent/tweet?text=%C2%ABCada+uno+toma+la+droga+de+elecci%C3%B3n+que+m%C3%A1s+conveniente+le+resulte%C2%BB+%28incluso%2C+podr%C3%ADamos+a%C3%B1adir%2C+%C2%ABen+cada+momento+dado%C2%BB%29.+%E2%80%94+.-+Ibai+Fern%C3%A1ndez+%28%C2%AB%3Ci%3ENo+somos+h%C3%A9roes%3C%2Fi%3E%C2%BB%29&url=https%3A%2F%2Fibaifernandez.com%2Fno-somos-heroes-prologo%2F&via=ibaifernandezec)
+>
+> — Ibai Fernández («_No somos héroes_»)
 
 Así que lo que en esta ocasión os propongo — lo que os voy a proponer en el transcurso en el que consumáis el momento narcótico que leer este blog os suponga — es que **dejéis de haceros los héroes**. Que asumáis que ninguno de nosotros lo somos ni lo seremos jamás — salvo en momentos puntuales en los que decidamos meternos en una casa en llamas o saltar al mar desde el muelle para salvar a alguien en peligro, por ejemplo —, porque los héroes existen (salvo en contadas excepciones como las ahora mismo descritas y otras situaciones análogas) en las películas, en las series y en las novelas.
 
@@ -128,10 +108,10 @@ Pero, sobre todo, en no tener que estar batallando continuamente (mucho menos co
 
 ## ¿Qué es un antihéroe?
 
-> antihéroe, antiheroína  
->   
+> antihéroe, antiheroína
+>
 > Personaje de una obra de ficción que desempeña el mismo papel de importancia y protagonismo que el héroe tradicional, pero que carece de sus características de perfección por tener las virtudes y defectos de una persona normal.
 
 Id anotando las primeras claves en vuestro cuaderno (sí, mejor que uséis un cuaderno porque el usar lápiz — o bolígrafo — y papel ayuda a la concentración y a la creatividad, que lo sepáis): «**obra de ficción**», «**papel**», «**protagonismo**», «**tradicional**», «**perfección**», «**virtudes y defectos**» y «**persona normal**». Ya tendremos tiempo — y lugar(es) — de ir diseccionando cada una de esas claves a lo largo de lo que se viene, que no es más que un viaje — como el que la vida es en sí mismo — desde — como todo viaje — un punto A a un punto B. Puntos que, idealmente, serán, de hecho, el mismo. Porque como ya hemos comentado, la vida, sus circunstancias y lo que ambas — que son una misma cosa en lo que a cada individuo (cada uno de nosotros) se refiere — puedan traer consigo son un **uróboro**: ese animal mitológico que se muerde su propio cola, que se encuentra a sí mismo al final de un ciclo que siempre es el mismo porque él es, en sí mismo, dicho ciclo, así como todos somos nuestro propio ciclo, del que además formamos parte indisoluble.
 
-Si ya os encontráis confundidos, ¡mucho mejor! Si aún no lo estáis, dadme la oportunidad de seguir dándoos en qué pensar… y con lo que confundiros. En realidad, cuanto más confusos estéis más libres estaréis de poder pensar en lo que queráis pensar sin que os importe un pimiento qué es lo que estáis pensando en cada momento. Y ése, queridos lectores, sería para mí un éxito sin paliativos que habría conseguido con todo esto de lo que ya os estoy haciendo partícipes. Así que, sin más, demos por comenzado el viaje que habrá de llevarnos — si lo hacemos bien — justo a donde nos encontramos ahora mismo.
+Si ya os encontráis confundidos, ¡mucho mejor! Si aún no lo estáis, dadme la oportunidad de seguir dándoos en qué pensar… y con lo que confundiros. En realidad, cuanto más confusos estéis más libres estaréis de poder pensar en lo que queráis pensar sin que os importe un pimiento qué es lo que estáis pensando en cada momento. Y ése, queridos lectores, sería para mí un éxito sin paliativos que habría conseguido con todo esto de lo que ya os estoy haciendo partícipes. Así que, sin más, demos por comenzado el viaje que habrá de llevarnos — si lo hacemos bien — justo a donde nos encontramos ahora mismo.

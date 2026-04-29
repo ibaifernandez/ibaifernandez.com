@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ibaifernandez",
+      "runtimeExecutable": "node_modules/.bin/astro",
+      "runtimeArgs": ["dev", "--port", "8080"],
+      "port": 8080,
+      "autoPort": false
+    }
+  ]
+}

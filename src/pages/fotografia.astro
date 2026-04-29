@@ -1,0 +1,312 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Fotografía — Ibai Fernández"
+  description="Ciudades, retratos, reportajes. Una mirada que busca la tensión antes del instante perfecto."
+>
+  <Header />
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="foto-hero">
+      <div class="foto-hero__overlay"></div>
+      <div class="container">
+        <div class="foto-hero__content">
+          <p class="foto-hero__eyebrow animate-fade-in">Fotografía</p>
+          <h1 class="foto-hero__title animate-fade-in-up animate-delay-1">
+            Lo que la cámara<br />
+            <em>no</em> decide.
+          </h1>
+          <p class="foto-hero__sub animate-fade-in-up animate-delay-2">
+            Fotografío personas, ciudades y los momentos que suceden justo antes
+            o después de que pase algo importante.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERIES -->
+    <section class="foto-galleries">
+      <div class="container">
+
+        <!-- Ciudades & Destinos -->
+        <div class="foto-category">
+          <div class="foto-category__header">
+            <span class="foto-category__num">I</span>
+            <div>
+              <h2 class="foto-category__title">Ciudades & Destinos</h2>
+              <p class="foto-category__desc">
+                El bullicio de las ciudades. La magia de los lugares que he tenido el privilegio
+                de fotografiar a lo largo de los años.
+              </p>
+            </div>
+          </div>
+          <ul class="foto-list">
+            <li><a href="/malaga" class="foto-list__link">Málaga</a></li>
+            <li><a href="/madrid" class="foto-list__link">Madrid</a></li>
+            <li><a href="/cadiz" class="foto-list__link">Cádiz</a></li>
+            <li><a href="/barcelona" class="foto-list__link">Barcelona</a></li>
+            <li><a href="/dublin" class="foto-list__link">Dublín</a></li>
+            <li><a href="/new-york-city" class="foto-list__link">New York City</a></li>
+            <li><a href="/new-hampshire-usa" class="foto-list__link">New Hampshire, USA</a></li>
+            <li><a href="/mid-west-south-south-east" class="foto-list__link">Mid West, South & South East</a></li>
+            <li><a href="/salinas-ecuador-2022" class="foto-list__link">Salinas, Ecuador 2022</a></li>
+          </ul>
+        </div>
+
+        <div class="foto-divider"></div>
+
+        <!-- Retratos -->
+        <div class="foto-category">
+          <div class="foto-category__header">
+            <span class="foto-category__num">II</span>
+            <div>
+              <h2 class="foto-category__title">Retratos, personas y personajes</h2>
+              <p class="foto-category__desc">
+                Retratos que capturan la esencia y la singularidad de las personas
+                que han cruzado mi camino.
+              </p>
+            </div>
+          </div>
+          <ul class="foto-list">
+            <li><a href="/antonella-moreno" class="foto-list__link">Antonella Moreno</a></li>
+            <li><a href="/mr-soriver" class="foto-list__link">Mr. Soriver</a></li>
+            <li><a href="/an-american-graduation" class="foto-list__link">An American Graduation</a></li>
+            <li><a href="/leon-el-gato" class="foto-list__link">León el gato</a></li>
+            <li><a href="/portafolio-modelo-ibai-fernandez-2023" class="foto-list__link">Portafolio Modelo · 2023</a></li>
+          </ul>
+        </div>
+
+        <div class="foto-divider"></div>
+
+        <!-- Reportajes -->
+        <div class="foto-category">
+          <div class="foto-category__header">
+            <span class="foto-category__num">III</span>
+            <div>
+              <h2 class="foto-category__title">Reportajes</h2>
+              <p class="foto-category__desc">
+                Eventos, celebraciones y situaciones significativas documentadas
+                con la cámara.
+              </p>
+            </div>
+          </div>
+          <ul class="foto-list">
+            <li><a href="/movimiento-15-m" class="foto-list__link">Movimiento 15-M</a></li>
+            <li><a href="/nobiemvre" class="foto-list__link">Nobiemvre</a></li>
+            <li><a href="/an-american-graduation" class="foto-list__link">An American Graduation</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="foto-cta">
+      <div class="container container--narrow">
+        <div class="foto-cta__inner">
+          <p class="foto-cta__text">
+            ¿Un proyecto fotográfico o de vídeo?
+          </p>
+          <a href="/hablemos" class="foto-cta__link">Cuéntame →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .foto-hero {
+    position: relative;
+    background-color: var(--ink);
+    padding-top: var(--header-height);
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .foto-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(155, 32, 32, 0.08) 0%,
+      transparent 50%
+    );
+    pointer-events: none;
+  }
+
+  .foto-hero__content {
+    position: relative;
+    padding-bottom: var(--space-20);
+    padding-top: var(--space-16);
+  }
+
+  .foto-hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    margin-bottom: var(--space-5);
+  }
+
+  .foto-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text-on-dark);
+    margin-bottom: var(--space-8);
+  }
+
+  .foto-hero__sub {
+    font-size: var(--text-lg);
+    color: var(--text-on-dark-muted);
+    max-width: 520px;
+    line-height: var(--leading-relaxed);
+    margin: 0;
+  }
+
+  /* Galleries */
+  .foto-galleries {
+    background-color: var(--cream);
+    padding: var(--space-20) 0 var(--space-24);
+  }
+
+  .foto-category {
+    padding: var(--space-12) 0;
+  }
+
+  .foto-category__header {
+    display: flex;
+    gap: var(--space-8);
+    align-items: flex-start;
+    margin-bottom: var(--space-8);
+  }
+
+  .foto-category__num {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 300;
+    color: var(--fog);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 4rem;
+  }
+
+  .foto-category__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 500;
+    font-style: italic;
+    color: var(--ink);
+    margin-bottom: var(--space-3);
+  }
+
+  .foto-category__desc {
+    font-size: var(--text-base);
+    color: var(--stone);
+    line-height: var(--leading-relaxed);
+    max-width: 520px;
+    margin: 0;
+  }
+
+  .foto-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding-left: calc(4rem + var(--space-8));
+  }
+
+  .foto-list__link {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--fog);
+    background-color: var(--paper);
+    transition: border-color var(--transition-fast), color var(--transition-fast), background-color var(--transition-fast);
+  }
+
+  .foto-list__link:hover {
+    border-color: var(--blood);
+    color: var(--blood);
+    background-color: var(--cream);
+  }
+
+  .foto-divider {
+    border: none;
+    border-top: 1px solid var(--fog);
+  }
+
+  /* CTA */
+  .foto-cta {
+    background-color: var(--ink);
+    padding: var(--space-16) 0;
+  }
+
+  .foto-cta__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .foto-cta__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-style: italic;
+    color: var(--text-on-dark-muted);
+    margin: 0;
+  }
+
+  .foto-cta__link {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--transition-fast);
+  }
+
+  .foto-cta__link:hover {
+    color: var(--fog-light);
+  }
+
+  @media (max-width: 600px) {
+    .foto-list {
+      padding-left: 0;
+    }
+
+    .foto-category__header {
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .foto-cta__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

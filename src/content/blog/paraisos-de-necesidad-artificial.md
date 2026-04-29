@@ -1,16 +1,18 @@
 ---
 title: "Paraísos de necesidad artificial"
-description: "Paraísos de necesidad artificial"
+description: "Un experimento de SEO que se convierte en ensayo filosófico: qué son los paraísos de necesidad artificial y cómo el sistema económico y la publicidad fabrican necesidades que nunca fueron nuestras."
 pubDate: "2022-09-27"
-heroImage: "https://ibaifernandez.com/wp-content/uploads/2022/09/Paraísos-de-necesidad-artificial.jpeg"
+heroImage: "/images/wp-archive/Paraísos-de-necesidad-artificial.jpeg"
 category: "Artículos"
+series: "Filosofía Rebelde"
+tags: ["consumismo", "necesidades-artificiales", "economía", "filosofía-crítica", "sociedad"]
 ---
 
 ¿Os ha pasado esto que os muestro en la ilustración aledaña alguna vez? A mí es la primera. Que **Google**, entre sus, «chiquicientos» millones de entradas no tengas ni un registro estricto de una cadena de palabras tal y como puede ser esta («**paraísos de necesidad artificial**») que estuve buscando yo creo que, a día de hoy, es algo así como un milagro… pero a la inversa.
 
-O no. Un milagro en toda su plenitud. Quiero decir, un término del que, a nivel estricto, Google no guarda ningún registro es un término que merece la pena investigar. 
+O no. Un milagro en toda su plenitud. Quiero decir, un término del que, a nivel estricto, Google no guarda ningún registro es un término que merece la pena investigar. 
 
-![Paraísos de necesidad artificial según Google](https://ibaifernandez.com/wp-content/uploads/2022/09/Paraísos-de-necesidad-artificial-según-Google.jpg)
+![Paraísos de necesidad artificial según Google](/images/wp-archive/Paraísos-de-necesidad-artificial-según-Google.jpg)
 
 ## Google en términos estrictos
 
@@ -26,15 +28,15 @@ Y, de hecho, en este caso el término «**paraísos de necesidad artificial**»,
 
 ## ¿Cuáles son los operadores booleanos de Google?
 
-Los operadores _booleanos_  son las comillas anglosajonas (“ ”) y los términos AND (que significa «y»), OR (que significa «o»), XOR (que no tiene ningún significado literal en castellano), WITH (que significa «con») y NOT, que significa «no». ¿Y qué hace cada operador _booleano_? Pues si queréis saberlo, nada mejor que buscar en Google.
+Los operadores _booleanos_  son las comillas anglosajonas (" ") y los términos AND (que significa «y»), OR (que significa «o»), XOR (que no tiene ningún significado literal en castellano), WITH (que significa «con») y NOT, que significa «no». ¿Y qué hace cada operador _booleano_? Pues si queréis saberlo, nada mejor que buscar en Google.
 
 Lo que a este artículo es pertinente es el uso de las comillas anglosajonas, que sirven para «buscar una palabra o grupo de palabras de forma exacta, en el mismo orden en el que han sido escritas».
 
 Por tanto, si busco «**paraísos de necesidad artificial**» y Google me devuelve esa _bonita_ gráfica de un diablo esquimal pescando en el hielo, significa que en toda internet no hay una sola vez, una sola página web, un artículo, nada en absoluto… en el que hayan escrito «**paraísos de necesidad artificial**» en ese mismo orden.
 
-De hecho, si buscáremos «**paraísos de necesidad artificial**» sin comillas, encontraríamos algo parecido a esto que a continuación os muestro. Tengamos, no osbtante, en cuenta que Google utiliza —entre otros muchísimos factores— mi geoposicionamiento —a través, por ejemplo, de la lectura de mi dirección IP— para darme lo que él supone que son los resultados más relevantes para mi zona geográfica —y, por tanto, Google entiende, los resultados más relevantes para mí—.  
+De hecho, si buscáremos «**paraísos de necesidad artificial**» sin comillas, encontraríamos algo parecido a esto que a continuación os muestro. Tengamos, no osbtante, en cuenta que Google utiliza —entre otros muchísimos factores— mi geoposicionamiento —a través, por ejemplo, de la lectura de mi dirección IP— para darme lo que él supone que son los resultados más relevantes para mi zona geográfica —y, por tanto, Google entiende, los resultados más relevantes para mí—.  
 
-![Paraísos de necesidad artificial en Google](https://ibaifernandez.com/wp-content/uploads/2022/09/Captura-de-Pantalla-2022-10-04-a-las-08.54.39.jpg)
+![Paraísos de necesidad artificial en Google](/images/wp-archive/Captura-de-Pantalla-2022-10-04-a-las-08.54.39.jpg)
 
 Los resultados de búsqueda, por obvio, se aproximan a mi término de búsqueda pero, por otro lado, de entre estos tres que os muestro (y si hacéis la búsqueda, de entre cualesquiera otros) no existe ningún resultado en el que las palabras «**paraísos de necesidad artificial**» se den exactamente en ese mismo orden.
 
@@ -46,7 +48,7 @@ Antes de aventurarnos en definir qué son los **paraísos de necesidad artificia
 
 El hecho de que Google no muestre ni un solo resultado en función de una cadena de palabras buscada de forma estricta implica una oportunidad para generar un contenido que apele a dicho término y que, por obvio, habría de ser indexado en el primer puesto de la primera página de Google en función de dicho término; a priori, buscado de forma estricta —esto es, con comillas anglosajonas— y, a posteriori, siendo optimistas, buscado también de forma laxa.
 
-De hecho, este artículo no es más que un experimento en todo lo relativo a lo que hasta aquí he explicado. Es decir, una vez este artículo quede publicado y después de que pasen —pongamos— unos días para que los _robots_ de Google se den cuenta de que esta nueva entrada de [mi sitio web](https://ibaifernandez.com) existe y, con ello, la indexen en sus bases de datos, cabría suponer que, punto uno, la búsqueda estricta de los términos «**paraísos de necesidad artificial**» arrojará esta página como único resultado, así como que, punto dos, cabría pensar que la búsqueda laxa (esto es, sin comillas anglosajonas) de dichos términos, con el tiempo y en función de otros elementos tales que el tráfico que dicha página (esta página) genere, también habría de hacerla aparecer en las primeras posiciones de las SERPs de Google — «SERPs», por cierto, es una forma aniñada y medio tonta de decir «páginas de resultados de un motor de búsqueda» (porque es lo que significa, en inglés, el acrónimo: _Search Engine Result Pages_)—.
+De hecho, este artículo no es más que un experimento en todo lo relativo a lo que hasta aquí he explicado. Es decir, una vez este artículo quede publicado y después de que pasen —pongamos— unos días para que los _robots_ de Google se den cuenta de que esta nueva entrada de mi sitio web existe y, con ello, la indexen en sus bases de datos, cabría suponer que, punto uno, la búsqueda estricta de los términos «**paraísos de necesidad artificial**» arrojará esta página como único resultado, así como que, punto dos, cabría pensar que la búsqueda laxa (esto es, sin comillas anglosajonas) de dichos términos, con el tiempo y en función de otros elementos tales que el tráfico que dicha página (esta página) genere, también habría de hacerla aparecer en las primeras posiciones de las SERPs de Google — «SERPs», por cierto, es una forma aniñada y medio tonta de decir «páginas de resultados de un motor de búsqueda» (porque es lo que significa, en inglés, el acrónimo: _Search Engine Result Pages_)—.
 
 Entonces, experimento en marcha, definamos qué es un paraíso de necesidad artificial.
 
@@ -58,9 +60,9 @@ Tal y como yo lo veo, cuando se habla de **paraísos de necesidad artificial** p
 
 En primer lugar, con **paraíso de necesidad artificial** nos podríamos estar refiriendo a un escenario en el que nuestras necesidades no son las necesidades que pensamos tener, sino un amplio abanico de ellas que, de alguna forma, nos han sido inculcadas por factores externos.
 
-![Pirámide de necesidades de Maslow](https://ibaifernandez.com/wp-content/uploads/2022/09/Pirámide-de-necesidades-de-Maslow.jpeg)
+![Pirámide de necesidades de Maslow](/images/wp-archive/Pirámide-de-necesidades-de-Maslow.jpeg)
 
-De acuerdo a la universalmente aceptada **pirámide de necesidades de Maslow**,  el ser humano tiene unas necesidades básicas y unas no tan básicas.
+De acuerdo a la universalmente aceptada **pirámide de necesidades de Maslow**,  el ser humano tiene unas necesidades básicas y unas no tan básicas.
 
 Entre las primeras —como podéis ver por la gráfica que acompaña a este texto—, se encuentran las necesidades físicas: el agua, la comida (¡el oxígeno!) e incluso todo lo que tenga que ver con nuestra seguridad como individuos.
 
@@ -70,7 +72,7 @@ Sin hacer un análisis más profundo de lo debido, podemos convenir —o convend
 
 Es imposible anhelar convertirse en algo que cuya existencia se desconoce.
 
-![](https://ibaifernandez.com/wp-content/uploads/2022/09/Ying-Yang-150x150.png)
+![](/images/wp-archive/Ying-Yang-150x150.png)
 
 \* \* \*
 
@@ -84,7 +86,7 @@ Sea como fuere, pues, podemos acordar que una definición de paraíso de necesid
 
 Paraíso de abundancia en el que vivimos con nuestras necesidades básicas cubiertas, pero en el que siempre estamos _necesitados_ de más y mejor, siendo dichas necesidades generadas por factores externos a nosotros mismos y, por tanto, de manera artificial.
 
-![](https://ibaifernandez.com/wp-content/uploads/2022/09/Ying-Yang-150x150.png)
+![](/images/wp-archive/Ying-Yang-150x150.png)
 
 \* \* \*
 
@@ -100,84 +102,10 @@ Esto que aquí digo y que puede sonar (un poquito al menos) a teoría de la cons
 
 Paraíso en el que se desperdicia una cantidad concreta de materia prima, recursos —e incluso de productos generados a partir de los primeros— para que sus precios se mantengan siempre a un determinado nivel, de modo tal que se hace de la necesidad de dichos elementos una perenne, perpetua y recurrente de manera artificial; esto es, descartando una cantidad concreta de dichos elementos para garantizar que la demanda sea siempre superior a la oferta.
 
-![](https://ibaifernandez.com/wp-content/uploads/2022/09/Ying-Yang-150x150.png)
+![](/images/wp-archive/Ying-Yang-150x150.png)
 
 \* \* \*
 
 ¿No tiene sentido? Si de algo como pueda ser el trigo —del que se obtiene la harina para hacer pan— hay mucho, mucho, muchísimo a lo largo y ancho del planeta, mucho más del que los seres humanos podemos consumir, pongamos, en todo un año… ¿qué tendría más sentido a nivel macroeconómico: regalarlo para erradicar el hambre en el mundo o descartar una buena proporción para que no haya trigo que regalar —sino que el que quieras hayas de comprarlo—?
 
-Abramos el debate. [Escríbeme a través de mi página de contacto](https://ibaifernandez.com/preguntame/) y conversemos al respecto de lo que sea que pienses sobre estos paraísos de necesidad artificial en los que a día de hoy vivimos.
-
-¡Nos vemos por las redes!
-
-¿Te gustaría recibir contenidos como éste en tu correo?
-
-De ser así, suscríbete. No voy a _spammearte_, puedes tener esa seguridad. Sólo te haré partícipe por correo electrónico de los nuevos contenidos que vaya escribiendo por si te interesa leerlos. Haz clic en el siguiente enlace para ver más detalles sobre mi [política de privacidad](https://ibaifernandez.com/politica-de-privacidad/).
-
-  
-
-Nombre 
-
-Email 
-
-Aceptación
-
- 
-
-Sí, me gustaría recibir más contenidos como éste que ando leyendo en estos momentos.
-
-Enviar
-
-¿Quieres ser escritor?
-
-![El oficio de escritor - Vol. 1 - Reflexiones de un escritor primerizo](https://ibaifernandez.com/wp-content/uploads/2021/07/Reflexiones-de-un-escritor-primerizo.png)
-
-Te propongo un viaje de ida y vuelta en paralelo entre la vida y la escritura, viendo qué de la una es aplicable en la otra y qué de la otra es aplicable en la una. Sé que las reflexiones que en este primer volumen de «**El oficio de escritor**» te comparto te van a ser más que útiles a la hora de enfrentarte al folio en blanco.
-
-Descárgatelo **gratis** rellenando el siguiente formulario. Haz clic en el siguiente enlace para ver más detalles sobre mi [política de privacidad](https://ibaifernandez.com/politica-de-privacidad/).
-
-  
-
-Nombre 
-
-Email 
-
-Aceptación
-
- 
-
-Sí, me gustaría recibir contenidos por correo electrónico.
-
-DESCARGAR
-
-"I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur."
-
-![Dana Doe](https://ibaifernandez.com/wp-content/uploads/2021/07/Untitled-1-1.png)
-
-Dana Doe
-
-CEO
-
-"I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur."
-
-![John Doe](https://ibaifernandez.com/wp-content/uploads/2021/07/2324.png)
-
-John Doe
-
-CEO
-
-"I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur."
-
-![Brian Doe](https://ibaifernandez.com/wp-content/uploads/2021/07/brian.png)
-
-Brian Doe
-
-CEO
-
-"I am slide content. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur."
-
-![Mary Doe](https://ibaifernandez.com/wp-content/uploads/2021/07/3424.png)
-
-Mary Doe
-
-CEO
+El debate está abierto: si tienes una opinión sobre estos paraísos de necesidad artificial en los que hoy vivimos, me encantará leerla.

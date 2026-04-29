@@ -9,8 +9,8 @@ interface Props {
 
 const {
   title,
-  description = 'Full-Stack engineer, AI automation specialist, and digital strategist.',
-  ogImage = '/images/og-default.jpg',
+  description = 'Escritor, cineasta, fotógrafo y filósofo. El mundo de Ibai Fernández.',
+  ogImage = '/images/wp-archive/ibai-fernandez-hero-site-2026.png',
   ogType = 'website',
   htmlClass = '',
 } = Astro.props;
@@ -19,11 +19,11 @@ import '../styles/global.css';
 import CookieBanner from '../components/CookieBanner.astro';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const fullTitle = title === 'Ibai Fernández' ? title : `${title} — Ibai Fernández`;
+const fullTitle = title === 'Ibai Fernández' ? title : `${title} · Ibai Fernández`;
 ---
 
 <!doctype html>
-<html lang="en" class={htmlClass}>
+<html lang="es" class={htmlClass}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,11 +52,13 @@ const fullTitle = title === 'Ibai Fernández' ? title : `${title} — Ibai Fern�
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-    <!-- Google Fonts -->
+    <!-- Fonts: Cormorant Garamond + Instrument Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <slot />

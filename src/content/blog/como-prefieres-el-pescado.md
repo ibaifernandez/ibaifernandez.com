@@ -1,30 +1,11 @@
 ---
 title: "¿Cómo prefieres el pescado?"
-description: "¿Cómo prefieres el pescado?"
+description: "Una reflexión sobre el miedo a escribir como metáfora del miedo a enfrentarse a uno mismo, con Bukowski, Yoda y la paradoja del sobreanálisis como guías."
 pubDate: "2021-04-21"
-heroImage: "https://ibaifernandez.com/wp-content/uploads/2021/05/Como-prefieres-el-pescado.jpg"
+heroImage: "/images/wp-archive/Como-prefieres-el-pescado.jpg"
 category: "Artículos"
+tags: ["escritura", "miedo", "creatividad", "proceso-creativo", "bukowski"]
 ---
-
-Anterior
-
-6.
-
-[
-
-« Nuestra voz es nuestra
-
-](https://ibaifernandez.com/nuestra-voz-es-nuestra/)
-
-Siguiente
-
-8.
-
-[
-
-La originalidad no existe »
-
-](https://ibaifernandez.com/la-originalidad-no-existe/)
 
 Digamos que te ofrezco pescado. Pero te lo ofrezco de tres formas diferentes:
 
@@ -34,67 +15,53 @@ Digamos que te ofrezco pescado. Pero te lo ofrezco de tres formas diferentes:
 
 Si eres de los primeros, quizás no debas estar aquí. Ponte Netflix y disfruta una historia sin ni siquiera tener que hacer el esfuerzo de seguir las letras y de pasar las páginas —o de «hacer _scroll_».
 
-Si eres de los segundos —ya sea una cuestión de pragmatismo o de urgencia—, en un ratito pasamos a esos «[**consejos de libro de recetas (para escritores)**](http://box5791.temp.domains/~aglayabi/ibaifernandez/consejos-de-libro-de-recetas-para-escritores/)» para que puedas tratar de cocinar algo rápido pero decente con lo que que puedas quitarte el hambre.  
+Si eres de los segundos —ya sea una cuestión de pragmatismo o de urgencia—, en un ratito pasamos a esos «consejos de libro de recetas (para escritores)» para que puedas tratar de cocinar algo rápido pero decente con lo que que puedas quitarte el hambre.
 
-Si eres del tercero (¡eres de los míos!), creo que habrás disfrutado [hasta aquí](http://box5791.temp.domains/~aglayabi/ibaifernandez/category/articulos/el-oficio-del-escritor/) y, con todo, quizás te parezcan buenos algunos de esos «[**consejos de libro de recetas (para escritores)**](http://box5791.temp.domains/~aglayabi/ibaifernandez/consejos-de-libro-de-recetas-para-escritores/)» que se vienen a continuación, una pequeña lista de actividades que al menos a mí me funcionan cuando de arrancarme a escribir se trata.
+Si eres del tercero (¡eres de los míos!), creo que habrás disfrutado hasta aquí y, con todo, quizás te parezcan buenos algunos de esos «consejos de libro de recetas (para escritores)» que se vienen a continuación, una pequeña lista de actividades que al menos a mí me funcionan cuando de arrancarme a escribir se trata.
 
 Pero para ti, lector del tercer grupo, te traigo un poco más de sedal para tu caña (de pescar) antes de entrar en la cocina. Helo aquí:
 
-Hemos hablado antes de pintura, pero podemos llevarlo a cualquier otra expresión artística. La de la música, por ejemplo, funciona igual: una vez sabes cómo funcionan las notas, los ritmos y las armonías (por decir tres componentes de la música de la forma más aleatoria posible y, espero, útil a la sazón de este ejemplo), la música disco, la clásica y la punk acaba resumiéndose en una alteración de ciertos patrones que desembocan en resultados distintos que, de un modo u otro, acaban no obstante siendo _música_. Se podría decir, por tanto, que Mozart, Sid Vicious y Gloria Gaynor —por ejemplo— [**encontraron su voz**](http://box5791.temp.domains/~aglayabi/ibaifernandez/encuentra-tu-voz/) y que la persiguieron con ahínco (bueno, quizás Sid Vicious con menos ahínco que otros exponentes del mundo de la música) para hacer creaciones musicales (bueno, no creo que pudiéremos decir Sid Vicious que _creó_ mucho tampoco, en realidad, pero creo que entendéis por dónde voy con todo esto) que, al final, son —y no dejan de ser— _música_. Y así con todo lo que implique crear, lo que nos llevaría indefectiblemente a un debate sobre _qué es crear_, _qué es creatividad_ y, final y horriblemente, al debate que uno nunca quiere tener una vez acaba la etapa universitaria: «_¿Qué es arte?_»
+Hemos hablado antes de pintura, pero podemos llevarlo a cualquier otra expresión artística. La de la música, por ejemplo, funciona igual: una vez sabes cómo funcionan las notas, los ritmos y las armonías (por decir tres componentes de la música de la forma más aleatoria posible y, espero, útil a la sazón de este ejemplo), la música disco, la clásica y la punk acaba resumiéndose en una alteración de ciertos patrones que desembocan en resultados distintos que, de un modo u otro, acaban no obstante siendo _música_. Se podría decir, por tanto, que Mozart, Sid Vicious y Gloria Gaynor —por ejemplo— encontraron su voz y que la persiguieron con ahínco (bueno, quizás Sid Vicious con menos ahínco que otros exponentes del mundo de la música) para hacer creaciones musicales (bueno, no creo que pudiéremos decir Sid Vicious que _creó_ mucho tampoco, en realidad, pero creo que entendéis por dónde voy con todo esto) que, al final, son —y no dejan de ser— _música_. Y así con todo lo que implique crear, lo que nos llevaría indefectiblemente a un debate sobre _qué es crear_, _qué es creatividad_ y, final y horriblemente, al debate que uno nunca quiere tener una vez acaba la etapa universitaria: «_¿Qué es arte?_»
 
 La escritura por supuesto que puede ser elevada a la categoría de arte, pero no tiene por qué serlo para seguir siendo buena escritura. Además, el arte —y con esto abro y cierro el debate — está más «en los ojos del que mira que en los cuerpos —y las mentes— de quienes lo crean». Tanto así que, en cualquier caso y sea como fuere, lo que unos percibirán como arte (música punk, por ejemplo) otros lo concebirán como «ese horrible ruido que mi hijo escuchaba durante la secundaria»; y para los que ese horrible ruido es una forma _suprema_ de arte quizás encuentren en Mozart —arte supremo… o no— la forma más fácil de morirse de aburrimiento (aunque esto, la verdad —abro y cierro debate— es tener poca —¡ninguna!— sensibilidad).
 
-Estaréis pensando a estas alturas que divago. Me asombraría, de hecho, que no fuere así —incluso si sois del tercer grupo— porque sin duda alguna lo estoy haciendo. Trataba de probar con ello —no obstante y espero que con éxito— puntos importantes en relación al [**miedo a escribir**](http://box5791.temp.domains/~aglayabi/ibaifernandez/el-miedo-a-escribir/) —y, más esencialmente aún, a cómo perderlo. Puntos que, en resumen, son los que siguen:
+Estaréis pensando a estas alturas que divago. Me asombraría, de hecho, que no fuere así —incluso si sois del tercer grupo— porque sin duda alguna lo estoy haciendo. Trataba de probar con ello —no obstante y espero que con éxito— puntos importantes en relación al miedo a escribir —y, más esencialmente aún, a cómo perderlo. Puntos que, en resumen, son los que siguen:
 
 ### El miedo siempre es la parte visible de otro miedo subyacente
 
-Generalmente, todo miedo está relacionado con la puesta en riesgo de la propia (y confortable) identidad que ya tenemos asumida que implica una serie de consecuencias posteriores: en primer lugar, la de un **esfuerzo**: el de hacer algo cuando estamos más cómodos no haciéndolo; en segundo, la de una **exposición**: la de ponernos a nosotros mismos como objeto principal de nuestro propio —y más probablemente negativo— juicio; en tercero, la de una **exploración** y su posterior **descubrimiento** (o la falta del mismo, que nos podría parecer en un principio igualmente preocupante): un descubrimiento que puede ir bien, pero que también puede ir muy mal si lo que descubrimos no nos parece suficiente o suficientemente bueno (una vez más, de acuerdo al que sea ese juicio que nos hacemos a nosotros mismos); si sentimos no tener qué decir (un vacío) o no asumimos nuestra propia forma de hacerlo, [**nuestra propia voz**](http://box5791.temp.domains/~aglayabi/ibaifernandez/nuestra-voz-es-nuestra/) (otro vacío).
+Generalmente, todo miedo está relacionado con la puesta en riesgo de la propia (y confortable) identidad que ya tenemos asumida que implica una serie de consecuencias posteriores: en primer lugar, la de un **esfuerzo**: el de hacer algo cuando estamos más cómodos no haciéndolo; en segundo, la de una **exposición**: la de ponernos a nosotros mismos como objeto principal de nuestro propio —y más probablemente negativo— juicio; en tercero, la de una **exploración** y su posterior **descubrimiento** (o la falta del mismo, que nos podría parecer en un principio igualmente preocupante): un descubrimiento que puede ir bien, pero que también puede ir muy mal si lo que descubrimos no nos parece suficiente o suficientemente bueno (una vez más, de acuerdo al que sea ese juicio que nos hacemos a nosotros mismos); si sentimos no tener qué decir (un vacío) o no asumimos nuestra propia forma de hacerlo, nuestra propia voz (otro vacío).
 
 En resumen, una última vez:
 
 > El miedo a escribir es el miedo a enfrentarnos a nosotros mismos, a no ser capaces de preservarnos debidamente, de preservar nuestra identidad, la que tenemos aceptada desde el punto de vista de la incapacidad a su respecto.
-> 
-> .- Ibai Fernández [
-> 
-> Tuitéame
-> 
-> ](https://twitter.com/intent/tweet?text=El+miedo+a+escribir+es+el+miedo+a+enfrentarnos+a+nosotros+mismos%2C+a+no+ser+capaces+de+preservarnos+debidamente%2C+de+preservar+nuestra+identidad%2C+la+que+tenemos+aceptada+desde+el+punto+de+vista+de+la+incapacidad+a+su+respecto.+%E2%80%94+.-+Ibai+Fern%C3%A1ndez&url=https%3A%2F%2Fibaifernandez.com%2Fcomo-prefieres-el-pescado%2F&via=ibaifernandezec)
 
 ### No lo intentes... ¡Hazlo!
 
 Lo dijo Yoda…
 
-![Yoda](https://ibaifernandez.com/wp-content/uploads/2021/05/Yoda-1024x576.jpeg)
+![Yoda](/images/wp-archive/Yoda-1024x576.jpeg)
 
-![Morpheus](https://ibaifernandez.com/wp-content/uploads/2021/05/Morpheus.jpeg "Morpheus")
+![Morpheus](/images/wp-archive/Morpheus.jpeg)
 
 Lo dijo Morfeo…
 
-Y [para quien haya llegado aquí sin _googlearlo_](http://box5791.temp.domains/~aglayabi/ibaifernandez/no-lo-intentes/), el que lo dijo y lo dejo por escrito en su epitafio fue [**Bukowski**](http://box5791.temp.domains/~aglayabi/ibaifernandez/no-lo-intentes/), uno de los escritores más celebrados del siglo XX —y sin lugar a dudas uno de mis favoritos. «¡No lo intentes, hazlo!»
+Y el que lo dijo y lo dejó por escrito en su epitafio fue **Bukowski**, uno de los escritores más celebrados del siglo XX —y sin lugar a dudas uno de mis favoritos. «¡No lo intentes, hazlo!»
 
 Si te pones a darle muchas vueltas a algo corres el riesgo de entrar en **la paradoja del sobreanálisis**.
 
-![Bukowski Tombstone](https://ibaifernandez.com/wp-content/uploads/2021/05/Bukowski-Tombstone.jpeg)
+![Bukowski Tombstone](/images/wp-archive/Bukowski-Tombstone.jpeg)
 
 ### La paradoja del sobreanálisis
 
-Dicha paradoja consiste en que a la hora de hacer un análisis o, dicho de otro modo, «un examen detallado de una cosa que se realiza separando o considerando por separado las partes que la constituyen y a través del cual poder conocer las características, cualidades o el estado de dicha cosa así como para poder extraer conclusiones a su respecto», nos quedamos tan encallados en dichas partes constituyentes, en dichas características o cualidades, en dicho estado y en cada uno de los detalles y de las posibles conclusiones a lo que todo ello nos da opción de extraer que nunca verdaderamente acabamos concluyendo nada a su respecto.
+Dicha paradoja consiste en que a la hora de hacer un análisis o, dicho de otro modo, «un examen detallado de una cosa que se realiza separando o considerando por separado las partes que la constituyen y a través del cual poder conocer las características, cualidades o el estado de dicha cosa así como para poder extraer conclusiones a su respecto», nos quedamos tan encallados en dichas partes constituyentes, en dichas características o cualidades, en dicho estado y en cada uno de los detalles y de las posibles conclusiones a lo que todo ello nos da opción de extraer que nunca verdaderamente acabamos concluyendo nada a su respecto.
 
-Así que deja de darle vueltas: abre un folio y escribe. No tiene que ser bonito, no tiene que ser efectivo. Sólo tienen que ser letras. Hay por ahí una historia de un autor —de éste no me sé el nombre— que escribió más de 70 novelas en toda su vida. Cuando le preguntaron, en su vejez, cómo había podido llegar a ser tan prolífico, comunicó la receta de su éxito al mundo; y lo hizo de la siguiente manera:
+Así que deja de darle vueltas: abre un folio y escribe. No tiene que ser bonito, no tiene que ser efectivo. Sólo tienen que ser letras. Hay por ahí una historia de un autor —de éste no me sé el nombre— que escribió más de 70 novelas en toda su vida. Cuando le preguntaron, en su vejez, cómo había podido llegar a ser tan prolífico, comunicó la receta de su éxito al mundo; y lo hizo de la siguiente manera:
 
 > Doscientas palabras malas al día. Si eres capaz de escribir doscientas palabras malas al día, estás en el buen camino.
-> 
-> [
-> 
-> Tuitéame
-> 
-> ](https://twitter.com/intent/tweet?text=Doscientas+palabras+malas+al+d%C3%ADa.+Si+eres+capaz+de+escribir+doscientas+palabras+malas+al+d%C3%ADa%2C+est%C3%A1s+en+el+buen+camino.+%E2%80%94++&url=https%3A%2F%2Fibaifernandez.com%2Fcomo-prefieres-el-pescado%2F&via=ibaifernandezec)
 
 Bueno, la línea de diálogo tal cual la acabáis de leer me la he inventado yo, pero lo de las «200 palabras malas al día», al parecer, sí que lo dijo.
 
-Así que, moraleja: «[No lo intentes](http://box5791.temp.domains/~aglayabi/ibaifernandez/no-lo-intentes/), sólo hazlo». Deja de darle vueltas a la cabeza sobre si serás capaz, sobre si serás _lo suficientemente bueno_, sobre si serás [lo suficientemente original](http://box5791.temp.domains/~aglayabi/ibaifernandez/la-originalidad-no-existe/). Deja de darle vueltas y hazlo. Si te paras a pensar en las _infinitas posibilidades_, las _infinitas posibilidades_ siempre ganan; porque, de numerosas, son infinitas; y nadie en su sano juicio puede tratar de vencer el infinito.
-
-¿Quizás ya estés preparado para hacer [el ejercicio propuesto](http://box5791.temp.domains/~aglayabi/ibaifernandez/el-miedo-a-escribir/#ejercicio-1) sin tener que «detenerte a intentarlo» antes? ¿No? Bueno, podemos intentarlo más tarde. Toca, pues, seguir leyendo.
+Así que, moraleja: «No lo intentes, sólo hazlo». Deja de darle vueltas a la cabeza sobre si serás capaz, sobre si serás _lo suficientemente bueno_, sobre si serás lo suficientemente original. Deja de darle vueltas y hazlo. Si te paras a pensar en las _infinitas posibilidades_, las _infinitas posibilidades_ siempre ganan; porque, de numerosas, son infinitas; y nadie en su sano juicio puede tratar de vencer el infinito.
 
 ### Escribe como si nadie te estuviera leyendo
 
@@ -104,7 +71,7 @@ Ahora bien, un día, pongamos, una mañana de domingo, suena esa canción que so
 
 Pues bien, no sólo la misma dinámica aplica a la hora de escribir sino que quizás la mejor noticia al respecto sea que, de hecho, a la hora de escribir, ése es un gran —cuando no, incluso, el mejor— enfoque. El de hacerlo para ti, el de hacerlo no como si nadie te estuviera viendo, sino como si nadie te fuere a ver —a leer, en este caso.
 
-A tal respecto, el citado con anterioridad autor —[Charles Bukowski](http://box5791.temp.domains/~aglayabi/ibaifernandez/no-lo-intentes/)— tiene un poema que, lindo o no, quizás te haga falta leer antes de decidirte a pensar si verdaderamente quieres o no quieres escribir. Es más, te servirá para decidirte a hacer cualquier cosa que quieras hacer en esta vida, en realidad. El poema dice así:
+A tal respecto, el citado con anterioridad autor —Charles Bukowski— tiene un poema que, lindo o no, quizás te haga falta leer antes de decidirte a pensar si verdaderamente quieres o no quieres escribir. Es más, te servirá para decidirte a hacer cualquier cosa que quieras hacer en esta vida, en realidad. El poema dice así:
 
 Si no te sale ardiendo de dentro,  
 a pesar de todo,  
@@ -165,9 +132,9 @@ o hasta que muera en ti.
 No hay otro camino.  
 Y nunca lo hubo.
 
-.- [_So you want to be a writer?_](https://poets.org/poem/so-you-want-be-writer), by Charles Bukoswki.
+.- [_So you want to be a writer?_](https://poets.org/poem/so-you-want-be-writer), by Charles Bukoswki.
 
-De lo que [Bukoswki](http://box5791.temp.domains/~aglayabi/ibaifernandez/no-lo-intentes/) habla —a expensas de lo más obvio—, es que no hagas aquello cuyo proceso de realización no te enamore. Así de sencillo. **Si quieres escribir, tiene que enamorarte el _proceso_ de escribir**. Plantéatelo como un salto en paracaídas. Si lo vas a hacer, vas a vivir todo el descenso. Y al final da igual que puedas contárselo a papá, a mamá, a tus novios, novias o amigos; da igual, incluso, lo que te paguen por ello, los patrocinios o las apariciones en los medios o en los libros de historia (de la aviación o de la literatura, tanto da). Quien se ha comido los muchos metros de descenso en caída libre has sido tú y no va a haber forma plausible de que nadie sienta eso a través de una **experiencia vicaria** por muy bien que sepas describir ese mismo proceso, ya seas paracaidista o escritor (o ambos). Y no sólo a esas disciplinas es que se aplica este concepto, sino que tiene su reverberación en todas las facetas de la vida.
+De lo que Bukoswki habla —a expensas de lo más obvio—, es que no hagas aquello cuyo proceso de realización no te enamore. Así de sencillo. **Si quieres escribir, tiene que enamorarte el _proceso_ de escribir**. Plantéatelo como un salto en paracaídas. Si lo vas a hacer, vas a vivir todo el descenso. Y al final da igual que puedas contárselo a papá, a mamá, a tus novios, novias o amigos; da igual, incluso, lo que te paguen por ello, los patrocinios o las apariciones en los medios o en los libros de historia (de la aviación o de la literatura, tanto da). Quien se ha comido los muchos metros de descenso en caída libre has sido tú y no va a haber forma plausible de que nadie sienta eso a través de una **experiencia vicaria** por muy bien que sepas describir ese mismo proceso, ya seas paracaidista o escritor (o ambos). Y no sólo a esas disciplinas es que se aplica este concepto, sino que tiene su reverberación en todas las facetas de la vida.
 
 Si volvemos a nuestro ejemplo basado en el baile, la gente que es buena bailando, profesionales, artistas o simplemente aquellos que queman la pista de baile un sábado por la noche en su discoteca favorita, son personas que están enamoradas del proceso que implica poner el cuerpo al servicio de la música. Les gusta sudar cuando lo hacen, les gusta acabar cansados de tanto mover el esqueleto, les encanta llevar el ritmo con diferentes partes del cuerpo y seguir todo tipo de patrones corporales y cinéticos que es a lo que, al final, llamamos bailar. Puede incluso que les guste que les vean haciéndolo, pero no es más que otra faceta de su gusto por el baile en sí, no de su gusto por que «les vean bailando» (¿realmente puede existir tal cosa?). Muchos de nosotros —de los que no sabemos, decimos nos saber o, simplemente, nos avergüenza bailar— vemos a las personas que sí saben —o que lo disfrutan soberanamente aún no tengan ni idea de cómo hacerlo— y consideramos que tienen que haber entrado en alguna suerte de _trance_ para conseguir hacer todo lo que hacen; ya sea porque sean muy buenos en ello o porque les dé igual lo que piensen de ellos mientras lo hacen.
 
@@ -178,57 +145,5 @@ Moraleja: si pensamos en cualquier otra cuestión que queramos pensar, la gente 
 Y es que, precisamente:
 
 > La clave (de la vida) está en disfrutar lo que se hace cuando se hace.
-> 
-> .- Cualquier persona en su sano juicio. [
-> 
-> Tuitéame
-> 
-> ](https://twitter.com/intent/tweet?text=La+clave+%28de+la+vida%29+est%C3%A1+en+disfrutar+lo+que+se+hace+cuando+se+hace.+%E2%80%94+.-+Cualquier+persona+en+su+sano+juicio.&url=https%3A%2F%2Fibaifernandez.com%2Fcomo-prefieres-el-pescado%2F&via=ibaifernandezec)
 
 Sin más.
-
-¿Te gustaría recibir contenidos como éste en tu correo?
-
-De ser así, suscríbete. No voy a _spammearte_, puedes tener esa seguridad. Sólo te haré partícipe por correo electrónico de los nuevos contenidos que vaya escribiendo por si te interesa leerlos. Haz clic en el siguiente enlace para ver más detalles sobre mi [política de privacidad](https://ibaifernandez.com/politica-de-privacidad/).
-
-   
-
-Nombre 
-
-Email 
-
-Aceptación
-
- 
-
-Sí, me gustaría recibir más contenidos como éste que ando leyendo en estos momentos.
-
-Enviar
-
-Sigue el hilo
-
-Lo que lees es parte de la serie «[**El oficio de escritor**](https://ibaifernandez.com/el-oficio-de-escritor/)», dedicada a hablar del proceso de escritura y todo lo que él atañe: miedos, bloqueos, procesos, métodos y, en general, un puñado de no muy malos consejos sobre cómo afrontar ciertas partes de la vida. Puedes seguir el hilo de la serie continuando al siguiente artículo o visitando el anterior si aún no lo leíste.
-
-Anterior
-
-6.
-
-[
-
-« Nuestra voz es nuestra
-
-](https://ibaifernandez.com/nuestra-voz-es-nuestra/)
-
-Nuestra voz no es buena ni mala ni mejor ni peor. Es una voz y, como todas las voces (como todas las verdades) merece ser tenida en cuenta.
-
-Siguiente
-
-8.
-
-[
-
-La originalidad no existe »
-
-](https://ibaifernandez.com/la-originalidad-no-existe/)
-
-¿Mala noticia? ¡Para nada! Es más, es una maravillosa: puedes quitarte ese peso de encima: la originalidad no existe.

@@ -1,9 +1,10 @@
 ---
 title: "Casa Tomasa: ¡Terror en el AirBnB!"
-description: "Casa Tomasa: ¡Terror en el AirBnB!"
+description: "Testimonio detallado de la peor experiencia vivida en AirBnB: Casa Tomasa en Bogotá, un alojamiento lleno de engaños, obras, caos, falta de higiene y anfitriones fantasmales."
 pubDate: "2025-04-21"
-heroImage: "https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb.jpg"
+heroImage: "/images/wp-archive/casa-tomasa-terror-en-el-airbnb.jpg"
 category: "Artículos"
+tags: ["airbnb", "bogotá", "nómada-digital", "viajes", "reseña"]
 ---
 
 ¿Pensando en reservar **Casa Tomasa** —_aka **El Refugio de Verona**_— en Bogotá? ¡Corre! Pero corre bien lejos.
@@ -20,7 +21,7 @@ Léelo antes de que termines compartiendo techo con desconocidos, escuchando mar
 
 La experiencia que hemos tenido —o más bien, **el monumental disgusto** que hemos sufrido— en _Casa Tomasa_ (alias _El Refugio de Verona_) ha sido, sin exagerar, **una de las más flagrantes y frustrantes que se pueden vivir en AirBnB**.
 
-Todo comenzó con una propiedad listada en la mencionada plataforma, anunciada en ella como **vivienda completa (_full house_) con cinco habitaciones y dos baños privados**, ideal para quienes buscamos privacidad, comodidad y un espacio donde, como los nómadas digitales que somos **[Món Mont](http://monicamontufar.com/)** y yo, trabajar y descansar sin sobresaltos.
+Todo comenzó con una propiedad listada en la mencionada plataforma, anunciada en ella como **vivienda completa (_full house_) con cinco habitaciones y dos baños privados**, ideal para quienes buscamos privacidad, comodidad y un espacio donde, como los nómadas digitales que somos **[Món Mont](http://monicamontufar.com/)** y yo, trabajar y descansar sin sobresaltos.
 
 Pero lo que encontramos fue **una casa compartida mal distribuida en tres niveles**, donde tuvimos que pelear por, cuanto menos, tres de las cinco habitaciones que, en principio, teníamos la confianza de haber arrendado a través de AirBnB, **en una negociación con la hija de la propietaria del inmueble que no solo fue incómoda sino también, incluso, llegó a ser violenta.**
 
@@ -65,15 +66,13 @@ Pero eso no fue lo peor, no.
 
 Trastos por todas partes, barras metálicas apiladas, maderas colgando amenazantes desde estanterías improvisadas a la altura de la cabeza… y ninguna señal de orden o higiene.
 
-![Casa Tomasa Bogotá Terror en el AirBnB](https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb-2.jpg)
-
-Los peligros estructurales que nos recibieron el primer día
+![Casa Tomasa Bogotá Terror en el AirBnB](/images/wp-archive/casa-tomasa-terror-en-el-airbnb-2.jpg)
 
 La persona que nos recibió, que no era ni la propietaria ni la anfitriona virtual con la que habíamos hablado, soltó una explicación digna del más puro realismo mágico:
 
 > —Es que tuvimos que hacer una mudanza «hace poquito».
 
-Ajá. Claro. Pero «hace poquito» no era «hace poquito». «Hace poquito» en realidad significaba que **la mudanza seguía en curso**. Y más aún: **que esa planta baja funcionaba como bodega improvisada, trastero de paso y quién sabe si como centro logístico de una PYME de transportes**.
+Ajá. Claro. Pero «hace poquito» no era «hace poquito». «Hace poquito» en realidad significaba que **la mudanza seguía en curso**. Y más aún: **que esa planta baja funcionaba como bodega improvisada, trastero de paso y quién sabe si como centro logístico de una PYME de transportes**.
 
 *   👉 En vez de una bienvenida cálida, nos topamos con un campo minado de objetos.
 *   👉 En vez de una casa funcional, un espacio que parecía **más un set de demolición que un lugar para alojarse**.
@@ -82,43 +81,31 @@ Ajá. Claro. Pero «hace poquito» no era «hace poquito». «Hace poquito» en 
 
 Lo que en AirBnB se promocionaba como una «casa completa», resultó ser poco más que una «bodega con camas».
 
-![Ibai Fernández 2023](https://ibaifernandez.com/wp-content/uploads/2023/10/ibai-fernandez-2023.jpeg)
-
-Ibai Fernández
-
-Filosofía Rebelde
-
 ## Obras en curso, motos en la entrada y... ¿una mesa de póquer?
 
 Así pues y como si el caos inicial no fuera suficiente, _Casa Tomasa_ decidió superarse a sí misma.
 
 **No una, ni dos… sino al menos cinco veces** fuimos testigos de cómo la **planta baja se transformaba en almacén improvisado**, espacio logístico o, incluso, lo que podría haber sido el set de filmación de un cortometraje sobre una distopía post-apocalíptica.
 
-Entre los _tesoros_ almacenados, el más surrealista fue, sin duda, una **mesa de casino** digna de Las Vegas que pasó días y días y más días apoyada contra una pared.
+Entre los _tesoros_ almacenados, el más surrealista fue, sin duda, una **mesa de casino** digna de Las Vegas que pasó días y días y más días apoyada contra una pared.
 
 Cada semana aparecían nuevos bultos, **como si estuviéramos en una versión distorsionada y surrealista de «El Precio Justo»…** pero con más polvo, más caos y ninguna posibilidad de ganar un premio que no fuera en forma de golpe o magulladura.
 
-![Casa Tomasa Bogotá Terror en el AirBnB](https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb-3.jpg)
-
-Andamios dificultando (cuando no «imposibilitando») el acceso a las plantas superiores.
+![Casa Tomasa Bogotá Terror en el AirBnB](/images/wp-archive/casa-tomasa-terror-en-el-airbnb-3.jpg)
 
 Pero cuando ya pensamos que la cosa no podía ir a peor… **empezaron las obras**.
 
 Martillos, taladros, gritos, ruidos mecánicos de proporciones industriales. Todo, **mientras intentábamos trabajar desde casa**, como hacen miles de nómadas digitales que confían —ilusos— en las descripciones de AirBnB
 
-![Casa Tomasa Bogotá Terror en el AirBnB](https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb-4.jpg)
-
-Trabajadores sobre el techo al que daba mi habitación
+![Casa Tomasa Bogotá Terror en el AirBnB](/images/wp-archive/casa-tomasa-terror-en-el-airbnb-4.jpg)
 
 Lo mejor sobrevino cuando, como resultado de tanta reforma, taparon con paredes falsas la única fuente de luz que iluminaba las cerraduras de acceso al inmueble. Sí, eso también pasó. La arquitectura, nunca mejor dicho, del absurdo en todo su esplendor (o su oscuridad, qué sé yo).
 
 Y como si todo eso no bastara, la **planta baja no solo era trastero, también era parqueadero**. Motos y bicicletas bloqueando la entrada día y noche, **el timbre de la puerta sonando cada vez y cuando**, gente entrando y saliendo y mi perro alarmándose cada vez que esto ocurría o que Verona, la perrita que daba nombre al ínfame _refugio_ ladraba por cualquier motivo…
 
-Ah, y **la banda sonora** de los trabajadores, lo mejor; porque, claro está, pa’ trabajar _a gusto_ nada mejor que **música a todo volumen**, desde reguetón hasta la peor electrónica posible pasando por todos los géneros existentes de música latina, eso sí, a volúmenes demenciales, de modo que mientras vibraban las paredes, nuestros tímpanos se rendían a partes iguales entre la frustración y la resignación.
+Ah, y **la banda sonora** de los trabajadores, lo mejor; porque, claro está, pa' trabajar _a gusto_ nada mejor que **música a todo volumen**, desde reguetón hasta la peor electrónica posible pasando por todos los géneros existentes de música latina, eso sí, a volúmenes demenciales, de modo que mientras vibraban las paredes, nuestros tímpanos se rendían a partes iguales entre la frustración y la resignación.
 
-![Casa Tomasa Bogotá Terror en el AirBnB](https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb-5.jpg)
-
-Paredes falsas producto de tanta obra que acabaron tapando el único punto de luz que iluminaba la entrada
+![Casa Tomasa Bogotá Terror en el AirBnB](/images/wp-archive/casa-tomasa-terror-en-el-airbnb-5.jpg)
 
 *   👉 Lo que contratamos: un alojamiento privado, tranquilo y equipado para teletrabajo.
 *   👉 Lo que recibimos: **una casa compartida, en obras, caótica, y llena de ruido, polvo y extraños**.
@@ -133,19 +120,13 @@ Privacidad: cero.
 Tranquilidad: en números rojos.  
 Dignidad: en cuidados intensivos.
 
-![Ibai Fernández 2023](https://ibaifernandez.com/wp-content/uploads/2023/10/ibai-fernandez-2023.jpeg)
-
-Ibai Fernández
-
-Filosofía Rebelde
-
 Pero la historia no se detuvo ahí. No. Porque en medio del desmadre estructural y acústico, llegó **otra joya del surrealismo doméstico: la lavadora compartida**.
 
 Durante una de las (incómodas) negociaciones que mencioné antes, **nos solicitaron dejar abierta la puerta del apartamento de la primera planta**, nuestro único refugio _real_, para que **los demás huéspedes** —sí, esos desconocidos con los que compartíamos casa sin haberlo querido— **pudieran usar la lavadora**.
 
 ¿¡Perdón!?
 
-Una lavadora que, por cierto, **centrifugaba como si fuera accionada por la fuerza del pensamiento positivo** y que —para coronar— estaba acompañada de **un área de secado más pequeña que una caja de zapatos**. ¿De verdad pensaban que podíamos compartir ese espacio —que acabamos ni siquiera usando a título personal— con media docena de personas más? ¿¡En serio!?
+Una lavadora que, por cierto, **centrifugaba como si fuera accionada por la fuerza del pensamiento positivo** y que —para coronar— estaba acompañada de **un área de secado más pequeña que una caja de zapatos**. ¿De verdad pensaban que podíamos compartir ese espacio —que acabamos ni siquiera usando a título personal— con media docena de personas más? ¿¡En serio!?
 
 *   👉 Resultado: ropa mojada que tardaba siglos en secarse y, cuando lo hacía, **olía a humedad rancia y frustración acumulada**.
 *   👉 Solución: **usar lavanderías externas**, con el correspondiente gasto adicional que contradice toda lógica de «alojamiento completamente equipado».
@@ -167,11 +148,7 @@ Y en medio de esa absurda sucesión de encierros y frustraciones, **buscar ayuda
 
 La comunicación con la hija de la propietaria —nuestra «anfitriona» en la plataforma— fue **cien por ciento telemática**, y cien por ciento desesperante.
 
-Aunque los propietarios vivían literalmente
-
- _en la misma casa_
-
-, la comunicación estaba imposibilitada por una ausencia casi que fantasmagórica, pues aunque residían allí, subir al primer piso al grito de «¿Hola?» era una actividad del todo fútil.
+Aunque los propietarios vivían literalmente _en la misma casa_, la comunicación estaba imposibilitada por una ausencia casi que fantasmagórica, pues aunque residían allí, subir al primer piso al grito de «¿Hola?» era una actividad del todo fútil.
 
 En su lugar, tratabamos de consultar las dudas que nos iban surgiendo por WhatsApp, pero sin mucha esperanza tampoco de que nadie respondiera.
 
@@ -202,9 +179,7 @@ Y por si creías que ahí acababa el sabotaje doméstico, espera a oír esto:
 *   El **fregadero y el lavabo**: **filtraciones constantes** cada vez que se usaban con un mínimo de intensidad.
     
 
-![Casa Tomasa Bogotá Terror en el AirBnB](https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb-8.jpg)
-
-El polvo, omnipresente a niveles industriales
+![Casa Tomasa Bogotá Terror en el AirBnB](/images/wp-archive/casa-tomasa-terror-en-el-airbnb-8.jpg)
 
 *   El **polvo**: omnipresente. El ambiente tenía la textura de un almacén abandonado.
 *   El **bestialario doméstico**: insectos, restos biológicos, y basura vieja en los tachos, cortesía de inquilinos anteriores.
@@ -214,17 +189,11 @@ El polvo, omnipresente a niveles industriales
 *   Los **utensilios de cocina**: reliquias arqueológicas no aptas ni para una exposición retro, y claramente **sin limpieza desde hace generaciones**.
     
 
-![Casa Tomasa Bogotá Terror en el AirBnB](https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb-9.jpg)
+![Casa Tomasa Bogotá Terror en el AirBnB](/images/wp-archive/casa-tomasa-terror-en-el-airbnb-9.jpg)
 
-Agujero en la pared con cables saliendo de él
+![Casa Tomasa Bogotá Terror en el AirBnB](/images/wp-archive/casa-tomasa-terror-en-el-airbnb-6.jpg)
 
-![Casa Tomasa Bogotá Terror en el AirBnB](https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb-6.jpg)
-
-La puerta de la nevera, con cinta adhesiva sujeta.
-
-![Casa Tomasa Bogotá Terror en el AirBnB](https://ibaifernandez.com/wp-content/uploads/2025/04/casa-tomasa-terror-en-el-airbnb-7.jpg)
-
-Pernos oxidados saliendo del riel de la puerta corredera del «lavadero»
+![Casa Tomasa Bogotá Terror en el AirBnB](/images/wp-archive/casa-tomasa-terror-en-el-airbnb-7.jpg)
 
 Y por si fuera poco…
 
@@ -279,30 +248,6 @@ Si las miradas mataran, esto sería una carta póstuma y tú estarías leyendo l
 
 La experiencia en _Casa Tomasa_ ha sido —sin adornos ni ironías— **la peor vivida en años de uso frecuente de AirBnB**. Un cúmulo de mentiras, desinterés, ruina estructural, ruido, polvo, basura, incomodidad y gestos hostiles.
 
-**Si valoras tu dinero, tu tiempo, tus horas de sueño y tu salud mental**, aléjate de este lugar.  
-Y si alguna vez dudas de tu instinto al leer un anuncio demasiado bonito para ser verdad… **recuerda esta historia y haz _scroll_. No reserves. No te expongas.**
+**Si valoras tu dinero, tu tiempo, tus horas de sueño y tu salud mental**, aléjate de este lugar. Y si alguna vez dudas de tu instinto al leer un anuncio demasiado bonito para ser verdad… **recuerda esta historia y haz _scroll_. No reserves. No te expongas.**
 
 Ya me lo agradecerás después.
-
-**Abrazo,  
-~Ibai Fernández**
-
-¿Te gustaría recibir contenidos como éste en tu correo?
-
-De ser así, suscríbete. No voy a _spammearte_, puedes tener esa seguridad. Sólo te haré partícipe por correo electrónico de los nuevos contenidos que vaya escribiendo por si te interesa leerlos. Haz clic en el siguiente enlace para ver más detalles sobre mi [política de privacidad](https://ibaifernandez.com/politica-de-privacidad/).
-
-   
-
-Nombre 
-
-Email 
-
-Aceptación
-
- 
-
-Sí, me gustaría recibir más contenidos como éste que ando leyendo en estos momentos.
-
-Enviar
-
-¡Comparte este contenido!

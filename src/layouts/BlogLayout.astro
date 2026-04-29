@@ -6,7 +6,10 @@ interface Props {
   updatedDate?: Date;
   heroImage?: string;
   category: string;
+  series?: string;
   tags?: string[];
+  prevPost?: { slug: string; title: string } | null;
+  nextPost?: { slug: string; title: string } | null;
 }
 
 import BaseLayout from './BaseLayout.astro';
@@ -15,7 +18,19 @@ import Footer from '../components/Footer.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import HighlightShare from '../components/HighlightShare.astro';
 
-const { title, description, pubDate, updatedDate, heroImage, category, tags } = Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  category,
+  series,
+  tags,
+  prevPost,
+  nextPost,
+} = Astro.props;
+
 const articleUrl = Astro.url.href;
 
 const formattedDate = pubDate.toLocaleDateString('es-ES', {
@@ -29,184 +44,379 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString('es-ES', {
   month: 'long',
   day: 'numeric',
 });
+
+// Reading time estimate (avg 200 words/min)
+// We can't count words server-side from slot content, so we use a placeholder
+// that gets updated client-side via JS
 ---
 
 <BaseLayout title={title} description={description} ogImage={heroImage} ogType="article">
+
+  <!-- Reading progress bar -->
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+
   <Header />
 
-  <main class="blog-post" style={`padding-top: var(--header-height);`}>
-    <!-- Hero -->
-    <div class="blog-post__hero section--dark">
+  <main id="main-content">
+
+    <!-- =====================
+         HERO — full-bleed
+         ===================== -->
+    <section
+      class="article-hero"
+      class:list={[{ 'article-hero--with-image': !!heroImage }]}
+      style={heroImage ? `--hero-image: url('${heroImage}')` : ''}
+    >
+      <div class="article-hero__overlay"></div>
+      <div class="article-hero__content container container--blog">
+        <div class="article-hero__meta animate-fade-in">
+          {series && (
+            <a href={`/articulos?serie=${series}`} class="article-hero__series">{series}</a>
+          )}
+          {!series && (
+            <span class="article-hero__category">{category}</span>
+          )}
+          <time datetime={pubDate.toISOString()} class="article-hero__date">
+            {formattedDate}
+          </time>
+          <span class="article-hero__reading-time" id="reading-time">· leyendo...</span>
+        </div>
+
+        <h1 class="article-hero__title animate-fade-in-up animate-delay-1">
+          {title}
+        </h1>
+
+        {description !== title && (
+          <p class="article-hero__excerpt animate-fade-in-up animate-delay-2">
+            {description}
+          </p>
+        )}
+      </div>
+    </section>
+
+    <!-- =====================
+         ARTICLE BODY
+         ===================== -->
+    <article class="article-body" id="article-body">
       <div class="container container--blog">
-        <div class="blog-post__meta animate-fade-in-up">
-          <a href={`/articulos?cat=${category}`} class="blog-post__category">{category}</a>
-          <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+
+        <div class="prose" id="article-content">
+          <slot />
+        </div>
+
+        <!-- Signature -->
+        <p class="article-signature">
+          Con entusiasmo, <em>~Ibai Fernández</em>
           {updatedDate && (
-            <span class="blog-post__updated">
-              · Actualizado: <time datetime={updatedDate.toISOString()}>{formattedUpdatedDate}</time>
+            <span class="article-updated">
+              · Actualizado el <time datetime={updatedDate.toISOString()}>{formattedUpdatedDate}</time>
             </span>
           )}
+        </p>
+
+        <!-- Tags -->
+        {tags && tags.length > 0 && (
+          <div class="article-tags">
+            {tags.map((tag) => (
+              <span class="article-tag">#{tag}</span>
+            ))}
+          </div>
+        )}
+
+        <!-- Share -->
+        <div class="article-share">
+          <span class="article-share__label">Compartir</span>
+          <ShareButtons title={title} url={articleUrl} />
         </div>
-        <h1 class="blog-post__title animate-fade-in-up animate-delay-1">{title}</h1>
-        <p class="blog-post__excerpt animate-fade-in-up animate-delay-2">{description}</p>
+
+        <!-- Series navigation -->
+        {(prevPost || nextPost) && (
+          <nav class="series-nav" aria-label="Artículos de la serie">
+            {prevPost ? (
+              <a href={`/blog/${prevPost.slug}`} class="series-nav__link series-nav__link--prev">
+                <span class="series-nav__label">← Anterior</span>
+                <span class="series-nav__title">{prevPost.title}</span>
+              </a>
+            ) : <span></span>}
+            {nextPost ? (
+              <a href={`/blog/${nextPost.slug}`} class="series-nav__link series-nav__link--next">
+                <span class="series-nav__label">Siguiente →</span>
+                <span class="series-nav__title">{nextPost.title}</span>
+              </a>
+            ) : <span></span>}
+          </nav>
+        )}
+
       </div>
-    </div>
-
-    {heroImage && (
-      <div class="blog-post__hero-image container container--blog">
-        <img src={heroImage} alt={title} loading="eager" />
-      </div>
-    )}
-
-    <!-- Content -->
-    <article class="blog-post__content container container--blog">
-      <div class="prose" id="article-content">
-        <slot />
-      </div>
-
-      {tags && tags.length > 0 && (
-        <div class="blog-post__tags">
-          {tags.map((tag) => (
-            <span class="blog-post__tag">#{tag}</span>
-          ))}
-        </div>
-      )}
-
-      <ShareButtons title={title} url={articleUrl} />
     </article>
 
-    <!-- Comments -->
-    <section class="blog-post__comments container container--blog" id="comments">
-      <h2>Comentarios</h2>
-      <div id="giscus-container">
-        <script
-          src="https://giscus.app/client.js"
-          data-repo="ibaifernandez/ibaifernandez.com"
-          data-repo-id=""
-          data-category="Comments"
-          data-category-id=""
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="top"
-          data-theme="preferred_color_scheme"
-          data-lang="es"
-          crossorigin="anonymous"
-          async
-        ></script>
+    <!-- =====================
+         WRITE ME CTA
+         ===================== -->
+    <section class="article-contact">
+      <div class="container container--blog">
+        <div class="article-contact__inner">
+          <p class="article-contact__text">
+            ¿Algo que añadir?
+          </p>
+          <a href="/hablemos" class="article-contact__link">
+            Escríbeme directamente →
+          </a>
+        </div>
       </div>
-      <p class="blog-post__comments-note">
-        Los comentarios requieren una cuenta de GitHub. Si no tienes una, puedes
-        <a href="/contacto">escribirme directamente</a>.
-      </p>
     </section>
+
   </main>
 
   <HighlightShare />
   <Footer />
+
 </BaseLayout>
 
 <style>
-  .blog-post__hero {
-    padding: var(--space-20) 0 var(--space-12);
+  /* =====================
+     HERO
+     ===================== */
+
+  .article-hero {
+    position: relative;
+    min-height: 72vh;
+    display: flex;
+    align-items: flex-end;
+    padding-top: var(--header-height);
+    background-color: var(--ink);
+    overflow: hidden;
   }
 
-  .blog-post__meta {
+  .article-hero--with-image {
+    background-image: var(--hero-image);
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .article-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(14, 12, 10, 0.2) 0%,
+      rgba(14, 12, 10, 0.55) 50%,
+      rgba(14, 12, 10, 0.92) 100%
+    );
+  }
+
+  .article-hero__content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: var(--space-16);
+    padding-top: var(--space-16);
+  }
+
+  .article-hero__meta {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: var(--space-3);
-    font-size: var(--text-sm);
-    color: var(--color-text-on-dark-muted);
     margin-bottom: var(--space-6);
   }
 
-  .blog-post__category {
-    background-color: var(--color-accent-secondary);
-    color: var(--color-bg-white);
-    padding: var(--space-1) var(--space-3);
-    border-radius: var(--radius-full);
+  .article-hero__series,
+  .article-hero__category {
+    font-family: var(--font-body);
     font-size: var(--text-xs);
     font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: var(--blood-light);
     text-decoration: none;
+    transition: color var(--transition-fast);
   }
 
-  .blog-post__category:hover {
-    background-color: var(--color-accent-secondary-hover);
-    color: var(--color-bg-white);
+  .article-hero__series:hover {
+    color: var(--fog-light);
   }
 
-  .blog-post__title {
-    font-size: var(--text-5xl);
-    color: var(--color-text-on-dark);
-    margin-bottom: var(--space-4);
+  .article-hero__date,
+  .article-hero__reading-time {
+    font-size: var(--text-sm);
+    color: var(--text-on-dark-muted);
   }
 
-  .blog-post__excerpt {
+  .article-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--text-on-dark);
+    margin-bottom: var(--space-6);
+    max-width: 800px;
+  }
+
+  .article-hero__excerpt {
     font-size: var(--text-xl);
-    color: var(--color-text-on-dark-muted);
+    color: var(--text-on-dark-muted);
     line-height: var(--leading-relaxed);
     max-width: 600px;
+    margin: 0;
   }
 
-  .blog-post__hero-image {
-    margin-top: calc(-1 * var(--space-8));
-    margin-bottom: var(--space-12);
+  /* =====================
+     BODY
+     ===================== */
+
+  .article-body {
+    background-color: var(--cream);
+    padding: var(--space-16) 0 var(--space-20);
   }
 
-  .blog-post__hero-image img {
-    width: 100%;
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-xl);
+  .article-updated {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-style: normal;
+    color: var(--text-muted);
   }
 
-  .blog-post__content {
-    padding: var(--space-12) var(--space-6);
-  }
-
-  .blog-post__tags {
+  /* Tags */
+  .article-tags {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2);
     margin-top: var(--space-8);
     padding-top: var(--space-8);
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid var(--fog);
   }
 
-  .blog-post__tag {
+  .article-tag {
     font-size: var(--text-sm);
-    color: var(--color-accent-secondary);
-    background-color: rgba(14, 165, 233, 0.08);
+    color: var(--stone);
+    background-color: var(--fog-light);
     padding: var(--space-1) var(--space-3);
-    border-radius: var(--radius-full);
     font-weight: 500;
+    letter-spacing: 0.02em;
   }
 
-  .blog-post__comments {
-    padding: var(--space-12) var(--space-6);
-    border-top: 1px solid var(--color-border);
+  /* Share row */
+  .article-share {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
     margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--fog);
   }
 
-  .blog-post__comments h2 {
-    margin-bottom: var(--space-6);
+  .article-share__label {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stone);
   }
 
-  .blog-post__comments-note {
-    margin-top: var(--space-6);
+  /* =====================
+     CONTACT CTA
+     ===================== */
+
+  .article-contact {
+    background-color: var(--ink);
+    padding: var(--space-16) 0;
+  }
+
+  .article-contact__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .article-contact__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-on-dark-muted);
+    margin: 0;
+  }
+
+  .article-contact__link {
+    font-family: var(--font-body);
     font-size: var(--text-sm);
-    color: var(--color-text-muted);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blood-light);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--transition-fast);
   }
+
+  .article-contact__link:hover {
+    color: var(--fog-light);
+  }
+
+  @media (max-width: 600px) {
+    .article-contact__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  /* =====================
+     RESPONSIVE
+     ===================== */
 
   @media (max-width: 768px) {
-    .blog-post__title {
-      font-size: var(--text-3xl);
+    .article-hero {
+      min-height: 60vh;
     }
 
-    .blog-post__hero {
-      padding: var(--space-12) 0 var(--space-8);
+    .article-hero__title {
+      font-size: var(--text-4xl);
+    }
+
+    .article-hero__excerpt {
+      font-size: var(--text-lg);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .article-hero__title {
+      font-size: var(--text-3xl);
     }
   }
 </style>
+
+<script>
+  // ---- Reading progress bar ----
+  const progressBar = document.getElementById('reading-progress');
+  const articleBody = document.getElementById('article-body');
+
+  if (progressBar && articleBody) {
+    const updateProgress = () => {
+      const bodyTop    = articleBody.offsetTop;
+      const bodyHeight = articleBody.offsetHeight;
+      const winHeight  = window.innerHeight;
+      const scrollTop  = window.scrollY;
+      const progress   = Math.min(
+        100,
+        Math.max(0, ((scrollTop + winHeight - bodyTop) / bodyHeight) * 100)
+      );
+      progressBar.style.width = `${progress}%`;
+    };
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
+
+  // ---- Estimated reading time ----
+  const articleContent = document.getElementById('article-content');
+  const readingTimeEl  = document.getElementById('reading-time');
+
+  if (articleContent && readingTimeEl) {
+    const words   = articleContent.innerText.trim().split(/\s+/).length;
+    const minutes = Math.max(1, Math.ceil(words / 200));
+    readingTimeEl.textContent = `· ${minutes} min de lectura`;
+  }
+</script>
