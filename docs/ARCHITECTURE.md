@@ -7,7 +7,7 @@
 │                    ibaifernandez.com                    │
 │                                                        │
 │  ┌──────────────────────────────────────────────────┐  │
-│  │              Astro 5 (SSG + SSR)                 │  │
+│  │                 Astro 5 (SSG)                    │  │
 │  │                                                  │  │
 │  │  ┌─────────┐  ┌──────────┐  ┌────────────────┐  │  │
 │  │  │  Pages  │  │  Layouts │  │  Components    │  │  │
@@ -53,6 +53,9 @@ ibaifernandez.com-astro/
 │   ├── BACKLOG.md                   # Tareas pendientes por prioridad
 │   ├── ARCHITECTURE.md              # Este archivo
 │   └── CHANGELOG.md                 # Historial de cambios
+│
+├── 📁 netlify/functions/            # Funciones de Netlify
+│   └── subscribe.mts                # POST /api/subscribe (MailerLite)
 │
 ├── 📁 public/                       # Assets estáticos (copiados tal cual)
 │   ├── favicon.svg
@@ -198,7 +201,10 @@ Ibai's inbox
 
 ```
 <form> (NewsletterForm.astro)
-    │ POST via client-side fetch
+    │ POST via client-side fetch a /api/subscribe
+    ▼
+netlify/functions/subscribe.mts
+    │ MAILERLITE_API_KEY (variable de entorno en Netlify)
     ▼
 MailerLite API
     │ Subscriber added
@@ -213,7 +219,6 @@ Automated welcome email
 | Paquete            | Versión | Propósito                        |
 | ------------------ | ------- | -------------------------------- |
 | `astro`            | ^5.17.1 | Framework principal              |
-| `@astrojs/netlify` | ^6.6.4  | Adapter para Netlify             |
 | `@astrojs/sitemap` | ^3.7.0  | Generación automática de sitemap |
 
 > **Filosofía**: Mínimas dependencias. Vanilla CSS, vanilla JS. No añadir paquetes sin aprobación.

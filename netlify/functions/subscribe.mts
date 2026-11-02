@@ -1,8 +1,6 @@
-import type { APIRoute } from 'astro';
+export const config = { path: '/api/subscribe', method: 'POST' };
 
-export const prerender = false;
-
-export const POST: APIRoute = async ({ request }) => {
+export default async (request: Request) => {
   try {
     // Accept both JSON and FormData
     const contentType = request.headers.get('content-type') ?? '';
@@ -32,7 +30,7 @@ export const POST: APIRoute = async ({ request }) => {
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
-        Authorization: `Bearer ${import.meta.env.MAILERLITE_API_KEY}`,
+        Authorization: `Bearer ${process.env.MAILERLITE_API_KEY}`,
       },
       body: JSON.stringify({
         email: email.toLowerCase().trim(),

@@ -5,6 +5,18 @@
 
 ---
 
+## [Unreleased] — 2026-11-02
+
+### Bug fixes
+
+- 🐛 `fix(netlify):` Sitio 100 % estático y función propia para la newsletter
+  - **Causa**: la regla `/* -> /index.html` hacía que las rutas inexistentes respondieran 200 con la portada y que `POST /api/subscribe` respondiera 404 sin ejecutar la función
+  - **Fix**: eliminados esa regla y el adapter `@astrojs/netlify`; `src/pages/api/subscribe.ts` pasa a `netlify/functions/subscribe.mts`, limitada a `POST /api/subscribe`
+  - **Impacto**: las rutas inexistentes responden 404 sin ejecutar funciones
+  - **Redirecciones**: añadidas 301 de 26 artículos del WordPress antiguo a `/blog/<slug>` y de `/blog` a `/articulos`
+
+---
+
 ## [0.2.0] — 2024-03-09
 
 ### Documentación

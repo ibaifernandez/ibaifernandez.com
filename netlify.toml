@@ -26,9 +26,138 @@
   to   = "/quien-soy"
   status = 301
 
-# ── Astro SSR catch-all (must stay last) ──────────────────────────────────────
+# ── Legacy WP blog URLs ───────────────────────────────────────────────────────
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
+  from = "/blog"
+  to   = "/articulos"
+  status = 301
+
+[[redirects]]
+  from = "/alan-arkin-y-el-mar"
+  to   = "/blog/alan-arkin-y-el-mar"
+  status = 301
+
+[[redirects]]
+  from = "/anticonsejos-para-2023"
+  to   = "/blog/anticonsejos-para-2023"
+  status = 301
+
+[[redirects]]
+  from = "/como-prefieres-el-pescado"
+  to   = "/blog/como-prefieres-el-pescado"
+  status = 301
+
+[[redirects]]
+  from = "/consejos-de-libro-de-recetas-para-escritores"
+  to   = "/blog/consejos-de-libro-de-recetas-para-escritores"
+  status = 301
+
+[[redirects]]
+  from = "/el-lado-oscuro-de-la-fuerza"
+  to   = "/blog/el-lado-oscuro-de-la-fuerza"
+  status = 301
+
+[[redirects]]
+  from = "/el-miedo-a-escribir"
+  to   = "/blog/el-miedo-a-escribir"
+  status = 301
+
+[[redirects]]
+  from = "/el-oficio-de-escritor-introduccion"
+  to   = "/blog/el-oficio-de-escritor-introduccion"
+  status = 301
+
+[[redirects]]
+  from = "/encuentra-tu-voz"
+  to   = "/blog/encuentra-tu-voz"
+  status = 301
+
+[[redirects]]
+  from = "/entrevista-sobre-un-final-para-su-final"
+  to   = "/blog/entrevista-sobre-un-final-para-su-final"
+  status = 301
+
+[[redirects]]
+  from = "/la-clave-esta-en-las-circunstancias"
+  to   = "/blog/la-clave-esta-en-las-circunstancias"
+  status = 301
+
+[[redirects]]
+  from = "/la-inspiracion-no-es-indispensable"
+  to   = "/blog/la-inspiracion-no-es-indispensable"
+  status = 301
+
+[[redirects]]
+  from = "/la-originalidad-no-existe"
+  to   = "/blog/la-originalidad-no-existe"
+  status = 301
+
+[[redirects]]
+  from = "/las-cartas-de-arturo-i"
+  to   = "/blog/las-cartas-de-arturo-i"
+  status = 301
+
+[[redirects]]
+  from = "/no-lo-intentes"
+  to   = "/blog/no-lo-intentes"
+  status = 301
+
+[[redirects]]
+  from = "/no-somos-heroes-ep-1-heroes-y-antiheroes"
+  to   = "/blog/no-somos-heroes-ep-1-heroes-y-antiheroes"
+  status = 301
+
+[[redirects]]
+  from = "/no-somos-heroes-ep-2-el-mundo-ordinario"
+  to   = "/blog/no-somos-heroes-ep-2-el-mundo-ordinario"
+  status = 301
+
+[[redirects]]
+  from = "/no-somos-heroes-prologo"
+  to   = "/blog/no-somos-heroes-prologo"
+  status = 301
+
+[[redirects]]
+  from = "/nuestra-voz-es-nuestra"
+  to   = "/blog/nuestra-voz-es-nuestra"
+  status = 301
+
+[[redirects]]
+  from = "/paraisos-de-necesidad-artificial"
+  to   = "/blog/paraisos-de-necesidad-artificial"
+  status = 301
+
+[[redirects]]
+  from = "/prepara-tu-curriculum-vitae"
+  to   = "/blog/prepara-tu-curriculum-vitae"
+  status = 301
+
+[[redirects]]
+  from = "/que-tal-si-todos-se-equivocan"
+  to   = "/blog/que-tal-si-todos-se-equivocan"
+  status = 301
+
+[[redirects]]
+  from = "/sabes-que-es-lo-que-mas-impacto-tiene-en-nuestras-vidas"
+  to   = "/blog/sabes-que-es-lo-que-mas-impacto-tiene-en-nuestras-vidas"
+  status = 301
+
+[[redirects]]
+  from = "/sobre-el-bloqueo-del-escritor"
+  to   = "/blog/sobre-el-bloqueo-del-escritor"
+  status = 301
+
+[[redirects]]
+  from = "/sobre-las-editoriales-de-auto-edicion"
+  to   = "/blog/sobre-las-editoriales-de-auto-edicion"
+  status = 301
+
+[[redirects]]
+  from = "/todo-lo-que-buscas-esta-en-tu-cerebro"
+  to   = "/blog/todo-lo-que-buscas-esta-en-tu-cerebro"
+  status = 301
+
+[[redirects]]
+  from = "/un-final-para-su-final-prologo"
+  to   = "/blog/un-final-para-su-final-prologo"
+  status = 301
